@@ -193,7 +193,7 @@ div.nav-bar, div.nav-item{display:inline;}
 .mySlideshow img {
 
     max-height:300px;
-
+    max-width:100%;
    
 
     display:block;
