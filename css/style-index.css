@@ -123,17 +123,7 @@ div.nav-bar, div.nav-item{display:inline;}
 
 }
 
-@media only screen and (max-width : 640px) {
-.myHeader img {padding-left:5px;}
-.nav-bar{position:absolute;display:inline-block;vertical-align:top;margin-left:5px;margin-top:75px;font:18px/18px Helvetica, Sans-Serif;}
 
-.nav-item{padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;}
-
-.dropdown{padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;}
-.myHeader li {padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;}
-.myHeader img {width:100px;height:100px;}
-  .myHeader {display:inline-block;}
-}
 
 
 .tileContainer li {
