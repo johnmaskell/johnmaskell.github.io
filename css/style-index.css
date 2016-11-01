@@ -28,7 +28,7 @@ a {
 
 
 
-.nav-bar{position:absolute;display:inline-block;vertical-align:top;margin-left:150px;margin-top:75px;font:18px/18px Helvetica, Sans-Serif;}
+.nav-bar{float:right;display:inline-block;vertical-align:top;margin-left:150px;margin-top:75px;font:18px/18px Helvetica, Sans-Serif;}
 
 
 
