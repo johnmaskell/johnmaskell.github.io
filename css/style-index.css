@@ -130,7 +130,7 @@ div.nav-bar, div.nav-item{display:inline;}
 .nav-item{padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;}
 
 .dropdown{padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;}
-.myHeader li {padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;}
+.myHeader li {padding-left:5px;font: 18px/18px Helvetica, Sans-Serif;display:block;}
 }
 
 
