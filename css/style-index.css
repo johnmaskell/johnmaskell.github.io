@@ -6,7 +6,6 @@
 
 }
 
-.myHeader {width:1280px;}
 
 img {max-width:100%;} 
 
@@ -48,7 +47,7 @@ div.nav-bar, div.nav-item{display:inline;}
 
 .myHeader img {
 
-    padding-left:400px;
+    padding-left:20%;
 
 }
 
