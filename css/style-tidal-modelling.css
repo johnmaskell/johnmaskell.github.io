@@ -243,6 +243,12 @@ div.nav-bar, div.nav-item{display:inline;}
     height:400px;        
     margin-left:330px;
 }
+
+.tidegif {
+    width:600px;
+    background:url(https://qpf2aw-bn1306.files.1drv.com/y3mssqEhpuQ4Vxf8rhmNvKlrbLVUc-yqR83B2rbSbsRqIluoAV0qzaqkeyzEHVe4O05oHq0xjfKleJTceagjJrFdGaHcymQSezQDZOoyYXsnzZUDx-AKGr5Y2CUz5ppkpiAp8eY4qa4OnaKX9zopMU1D_Ikr1VCHtWPKe7fjKDuj2E?width=700&height=550&cropmode=none);
+}
+
 h2 span { 
 
    color: white; 
