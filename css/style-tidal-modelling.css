@@ -2,7 +2,7 @@
 
 /* Portrait and Landscape */
 @media screen 
-  and (device-width: 320px) 
+  and (max-width: 320px) 
  {
   
 .logoContainer {margin-left:50px;width:30px;height:30px;float:left;}
