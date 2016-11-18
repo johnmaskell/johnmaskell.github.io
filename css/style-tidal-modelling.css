@@ -10,10 +10,10 @@
 
 .myHeader ul li{display:inline;}
 .nav-bar a {text-decoration:none;color:black;}
-.nav-bar{position:absolute;display:inline-block;vertical-align:top;margin-left:5px;width:100%;margin-top:12px;font:14px/14px Helvetica, Sans-Serif;}
-.nav-item{margin-left:5px;font: 14px/14px Helvetica, Sans-Serif;}
+.nav-bar{position:absolute;display:inline-block;vertical-align:top;margin-left:5px;width:100%;margin-top:12px;font:8px/8px Helvetica, Sans-Serif;}
+.nav-item{margin-left:5px;font: 8px/8px Helvetica, Sans-Serif;}
 
-.dropdown{margin-left:10px;font: 14px/14px Helvetica, Sans-Serif;}
+.dropdown{margin-left:10px;font: 8px/8px Helvetica, Sans-Serif;}
 
 .dropdown {position: relative;display: inline-block;z-index:1000;}
 
