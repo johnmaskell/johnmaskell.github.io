@@ -1,4 +1,71 @@
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+.logoContainer {margin-left:50px;width:30px;height:30px;float:left;}
+.logoContainer img {max-width:100%;max-height:100%;}
 .myHeader {display:inline-block;}
+
+.myHeader ul li{display:inline;}
+.nav-bar a {text-decoration:none;color:black;}
+.nav-bar{position:absolute;display:inline-block;vertical-align:top;margin-left:25px;width:100%;margin-top:12px;font:14px/14px Helvetica, Sans-Serif;}
+.nav-item{margin-left:10px;font: 14px/14px Helvetica, Sans-Serif;}
+
+.dropdown{margin-left:10px;font: 14px/14px Helvetica, Sans-Serif;}
+
+.dropdown {position: relative;display: inline-block;z-index:1000;}
+
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+.dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+}
+
+/* ----------- Galaxy S4 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  
+.logoContainer {margin-left:50px;width:30px;height:30px;float:left;}
+.logoContainer img {max-width:100%;max-height:100%;}
+.myHeader {display:inline-block;}
+
+.myHeader ul li{display:inline;}
+.nav-bar a {text-decoration:none;color:black;}
+.nav-bar{position:absolute;display:inline-block;vertical-align:top;margin-left:25px;width:100%;margin-top:12px;font:14px/14px Helvetica, Sans-Serif;}
+.nav-item{margin-left:10px;font: 14px/14px Helvetica, Sans-Serif;}
+
+.dropdown{margin-left:10px;font: 14px/14px Helvetica, Sans-Serif;}
+
+.dropdown {position: relative;display: inline-block;z-index:1000;}
+
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+.dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+}
+
+
+myHeader {display:inline-block;}
 
 .myHeader ul li{display:inline;}
 
