@@ -28,7 +28,7 @@
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
      
 .myBanner {position:relative;width:360px;height:100px;margin-top:20px;} 
-.myBanner img {height:100px;width:320px;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.myBanner img {height:100px;width:340px;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
   
 }
 
