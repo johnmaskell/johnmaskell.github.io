@@ -6,7 +6,7 @@
  {
  
 .logoContainer {margin-left:50px;width:100px;height:100px;float:left;}
-.logoContainer img {max-width:100%;max-height:100%;}
+.logoContainer img {width:100px;width:100px;}
 .myHeader {display:inline-block;}
 
 .myHeader ul li{display:inline;}
