@@ -29,7 +29,7 @@
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
      
 .myBanner {position:relative;width:360px;height:100px;margin-top:20px;} 
-.myBanner img {height:100px;width:360px;display:block;}
+.myBanner img {height:100px;width:100px;display:block;}
 }
 
 
