@@ -49,7 +49,7 @@ header {
 	float: left;
 	width: 100px;
 	height: 100px;
-	background: url(<img src="https://l2yxxw-bn1306.files.1drv.com/y3moxYr-eUDGUROt-fQ5bkLaWArqlnLSAztzLRCVeMOHxfoDWZ0p1Nig7T6XUgKVl_7qiYDbeq2devYv3_ZKESbGDHphV1WaGr-OhD3MZPvcbVRL1ZLAJ4psTF8MZ8T_lguXYrKNC4CxSAXmSofQ6R2AwXGbTA1wsrTwjVR1w8-ENE?width=500&height=500&cropmode=none"/>) no-repeat center;
+	background: url(src="https://l2yxxw-bn1306.files.1drv.com/y3moxYr-eUDGUROt-fQ5bkLaWArqlnLSAztzLRCVeMOHxfoDWZ0p1Nig7T6XUgKVl_7qiYDbeq2devYv3_ZKESbGDHphV1WaGr-OhD3MZPvcbVRL1ZLAJ4psTF8MZ8T_lguXYrKNC4CxSAXmSofQ6R2AwXGbTA1wsrTwjVR1w8-ENE?width=500&height=500&cropmode=none") no-repeat center;
 	display: block;
 
 }
@@ -66,7 +66,7 @@ nav {
 	display: hidden;
 	width: 40px;
 	height: 40px;
-	background: #4C8FEC url(<img src="https://qpeyvw-bn1306.files.1drv.com/y3m9EIV2OGf9GiEn252Pe1pbeoJpURZlVU8ebRvC5Ng-DREI4tS7BGUUP3OmVAB0vDC8qeAEh3wQtERFVGgXMUHdR3l357xFAF2mXmiRSS-CQr3v37wE82S18N0sw-cJrATwkfmCp9-buOujBQkaq2pRW5LIW1EIhx8SiGfAClpVTs?width=128&height=128&cropmode=none"/>) center;
+	background: #4C8FEC url(src="https://qpeyvw-bn1306.files.1drv.com/y3m9EIV2OGf9GiEn252Pe1pbeoJpURZlVU8ebRvC5Ng-DREI4tS7BGUUP3OmVAB0vDC8qeAEh3wQtERFVGgXMUHdR3l357xFAF2mXmiRSS-CQr3v37wE82S18N0sw-cJrATwkfmCp9-buOujBQkaq2pRW5LIW1EIhx8SiGfAClpVTs?width=128&height=128&cropmode=none") center;
 
 }
 
