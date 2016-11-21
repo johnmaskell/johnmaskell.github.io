@@ -38,7 +38,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-bottom: 4px solid #4C9CF1;
+	border-bottom: 4px solid #008080;
 	z-index: 100;
 
 }
@@ -74,7 +74,7 @@ nav {
 
 a:hover#menu-icon {
 
-	background-color: #444;
+	background-color: #008080;
 	border-radius: 4px 4px 0 0;
 
 }
@@ -145,7 +145,7 @@ p {
 		position: absolute;
 		padding: 20px;
 		background: #fff;
-		border: 5px solid #444;
+		border: 5px solid #008080;
 		right: 20px;
 		top: 60px;
 		width: 50%;
