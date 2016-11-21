@@ -2,15 +2,15 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 /*MAIN*/
 body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, Helvetica, Arial;background: #f9f9f9;color: #555;}
-a {color: #008080;text-decoration: none;font-weight: bold;}
-a:hover {color: #444;}
-.nav-bar {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;}
+.nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
+.nav-bar a:hover {color: #444;}
+header {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;}
 #logo{margin: 20px;float: left;width: 100px;height: 100px;background: url(https://l2yxxw-bn1306.files.1drv.com/y3moxYr-eUDGUROt-fQ5bkLaWArqlnLSAztzLRCVeMOHxfoDWZ0p1Nig7T6XUgKVl_7qiYDbeq2devYv3_ZKESbGDHphV1WaGr-OhD3MZPvcbVRL1ZLAJ4psTF8MZ8T_lguXYrKNC4CxSAXmSofQ6R2AwXGbTA1wsrTwjVR1w8-ENE?width=500&height=500&cropmode=none) no-repeat center;display: block;background-size: 100px 100px;}
 nav {float: right;padding: 20px;top:80px;}
 #menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
-a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
-ul {list-style: none;}
-li {display: inline-block;float: left;padding: 10px;}
+.nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
+.nav-bar ul {list-style: none;}
+.nav-bar li {display: inline-block;float: left;padding: 10px;}
 .current {color: #008080;}
 .dropdown{font: 18px/18px Helvetica, Sans-Serif;}
 .dropdown {position: relative;display: inline-block;z-index:1000;}
