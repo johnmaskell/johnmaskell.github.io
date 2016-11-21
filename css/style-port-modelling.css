@@ -56,6 +56,6 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;}
-.content-text-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
+.content-text-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-left:20px;margin-top:20px;margin-bottom:20px;}
 .col img {width:90%;margin:0 auto;display:block;}
 }
