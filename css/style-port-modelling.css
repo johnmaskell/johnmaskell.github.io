@@ -25,14 +25,14 @@ nav {float: right;padding: 20px;top:80px;}
 .myBanner img {max-height:300px;max-width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;}
 .myBanner h2 {position: absolute;top: 200px;left:5%;width:100%;}
 .content-1 {position:relative;width:100%;height:500px;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
-.content-text-1 {width:30%;height:100%;margin:0 auto;margin-left:15%;}
-.content-text-2 {width:30%;height: 100%;margin:0 auto;margin-left:15%;}
+.content-text-1 {width:30%;height:100%;margin:0 auto;margin-left:5%;}
+.content-text-2 {width:30%;height: 100%;margin:0 auto;margin-left:5%;}
 .content-text-3 {width:30%;height: 100%; margin:0 auto;}
 .content-img-1 {width:60%;height:100%; margin:0 auto;}
-.p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:15%;margin-top:20px;margin-bottom:20px;}
+.p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5%;margin-top:20px;margin-bottom:20px;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-left:15%;margin-top:20px;}
-.p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:15%;margin-bottom:20px;}
-.content-text-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-left:15%;margin-top:20px;margin-bottom:20px;}
+.p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
+.content-text-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-left:5%;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
 .content-1 img {width:600px;height:400px;margin-top:20px;margin-left:5%;}
 .content-2 {position:relative;width:100%;height:500px;}
