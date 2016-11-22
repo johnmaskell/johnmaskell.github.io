@@ -19,7 +19,7 @@ nav {float: right;padding: 20px;top:80px;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
+@media only screen  and (min-width : 1024px) {
 /* Styles */
 .myBanner {position:relative;width:100%;height:300px;} 
 .myBanner img {max-height:300px;max-width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;}
