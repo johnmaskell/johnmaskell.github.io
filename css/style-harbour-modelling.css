@@ -25,7 +25,10 @@ nav {float: right;padding: 20px;top:80px;margin-right:15.5%;}
 .myBanner img {height:300px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;} 
 .myBanner h2 {position: absolute;top: 200px;left:20%;width:100%;}
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
-.text-intro {width: 66%;margin: 0 auto;}  
+.text-intro {width: 66%;margin: 0 auto;} 
+.img-container {display:inline-block;width: 66%;margin: 0 auto;}
+.img-left {float:left;width:50%;}
+.img-right {float:right;width:50%;} 
 .content-text-1 {width:30%;height:100%;margin:0 auto;margin-left:5%;}
 .content-text-2 {width:30%;height: 100%;margin:0 auto;margin-left:5%;}
 .content-text-3 {width:30%;height: 100%; margin:0 auto;}
