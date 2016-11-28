@@ -27,8 +27,8 @@ nav {float: right;padding: 20px;top:80px;margin-right:15.5%;}
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 66%;margin: 0 auto;} 
 .img-container {display:inline-block;width: 66%;margin: 0 auto;}
-.img-left {float:left;width:50%;}
-.img-right {float:right;width:50%;} 
+.img-left {float:left;width:40%;}
+.img-right {float:right;width:40%;} 
 .content-text-1 {width:30%;height:100%;margin:0 auto;margin-left:5%;}
 .content-text-2 {width:30%;height: 100%;margin:0 auto;margin-left:5%;}
 .content-text-3 {width:30%;height: 100%; margin:0 auto;}
