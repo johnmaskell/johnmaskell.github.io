@@ -44,10 +44,10 @@ h3:hover{background-color:red;color:red;//background-size:cover;}
 .category {position:relative;display: inline-block;float:left;padding:10px;}
 .contain {max-width:1044px;text-align:center;}   
 .wrapper {overflow: auto;} 
-.bgimage {height: 750px;width: 1044px;background-image: url("https://qphurw-bn1306.files.1drv.com/y3mu0zHzaIoc_c5VcwHY26M034WpSXbJ0IBus7GSorGfSgW-S60-0ukzN0yJT5lFvrzS1aX5w7afEorfiqZYFWEsENVHFEM3oSA0mA233Chj0LfrQnwU36lYASgRnUIiUNRWu-zjxFqGARK1t0Qijcm3EHbtWR29DX13V9QgsAoXOI?width=1044&height=750&cropmode=none");}
-.bgimagetp {height: 750px;width: 1044px;background-image: url("https://qpfvva-bn1306.files.1drv.com/y3mTImvQJR2TCyn7UORXEk9f-47WuEActOmgJxzAsPxftLDeW13bTWq37aVUW6IM-A2VVGRJ-4YYCFcJk_GUMZpDWvnk6uHeFDvv6f8-tZdMCbcqlUXfTYTzIgeuO_cGmwRb-IiOSaklWznlYBhaJq4ERUQCAV20fbCXyNRgFWIpts?width=1044&height=750&cropmode=none");}
-.bgimagedike {height: 750px;width: 1044px;background-image: url("https://yx0fsg-bn1306.files.1drv.com/y3mrZgByGr426WYwaSKSqLaaAMMmJii-M8sU6KgW9lr6GfuhLuZ-kdiiQiBhbMtHnB0Q5NmpWnipQPeB2i2RqVxPkL5vbPYUoiUf-GLrmo0kis-8AKLDzkujacO7YLCenpNMoGyb2mtCB8Ej-jGmXvxO0hBW1iJfoIICSY5j4en3m8?width=1044&height=750&cropmode=none");}
-.bgimagewall {height: 750px;width: 1044px;background-image: url("https://yx2gvg-bn1306.files.1drv.com/y3m8JzIzpBVVkEaKvHh6vQYq_QLLpIBLTcsEmcWu7JaEgrlnQCyUQYJk8_AftxdXg2mgP5VmZxq2JX7h-E9w6jrhEQ4i4mp96-qiiRNTi37J_G5cSKeouGFjXX-_82cy7ukt_ZfPZ6mP_9D9FpXZb3KwVCwHpFxo5o0ki9548wjKmg?width=1044&height=750&cropmode=none");}
+.bgimage {height: 750px;width: 1044px;background-image: url(https://qphurw-bn1306.files.1drv.com/y3mu0zHzaIoc_c5VcwHY26M034WpSXbJ0IBus7GSorGfSgW-S60-0ukzN0yJT5lFvrzS1aX5w7afEorfiqZYFWEsENVHFEM3oSA0mA233Chj0LfrQnwU36lYASgRnUIiUNRWu-zjxFqGARK1t0Qijcm3EHbtWR29DX13V9QgsAoXOI?width=1044&height=750&cropmode=none);}
+.bgimagetp {height: 750px;width: 1044px;background-image: url(https://qpfvva-bn1306.files.1drv.com/y3mTImvQJR2TCyn7UORXEk9f-47WuEActOmgJxzAsPxftLDeW13bTWq37aVUW6IM-A2VVGRJ-4YYCFcJk_GUMZpDWvnk6uHeFDvv6f8-tZdMCbcqlUXfTYTzIgeuO_cGmwRb-IiOSaklWznlYBhaJq4ERUQCAV20fbCXyNRgFWIpts?width=1044&height=750&cropmode=none);}
+.bgimagedike {height: 750px;width: 1044px;background-image: url(https://yx0fsg-bn1306.files.1drv.com/y3mrZgByGr426WYwaSKSqLaaAMMmJii-M8sU6KgW9lr6GfuhLuZ-kdiiQiBhbMtHnB0Q5NmpWnipQPeB2i2RqVxPkL5vbPYUoiUf-GLrmo0kis-8AKLDzkujacO7YLCenpNMoGyb2mtCB8Ej-jGmXvxO0hBW1iJfoIICSY5j4en3m8?width=1044&height=750&cropmode=none);}
+.bgimagewall {height: 750px;width: 1044px;background-image: url(https://yx2gvg-bn1306.files.1drv.com/y3m8JzIzpBVVkEaKvHh6vQYq_QLLpIBLTcsEmcWu7JaEgrlnQCyUQYJk8_AftxdXg2mgP5VmZxq2JX7h-E9w6jrhEQ4i4mp96-qiiRNTi37J_G5cSKeouGFjXX-_82cy7ukt_ZfPZ6mP_9D9FpXZb3KwVCwHpFxo5o0ki9548wjKmg?width=1044&height=750&cropmode=none);}
 .instruction {margin-top:375px;}
 .testcontainer {float:left;margin-right:50px;}
 .instructtext {font-size:30px;font-weight:bold;}
