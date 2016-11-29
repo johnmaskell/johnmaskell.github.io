@@ -14,15 +14,142 @@
 
 	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-		<link rel="stylesheet" href="/css/style-harbour-modelling.css">
+		<link rel="stylesheet" href="/css/style-defence-modelling.css">
 		<link rel="stylesheet" href="/css/style-footer.css">
-
-
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+                <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+                <link rel="stylesheet" href="https://resources/demos/style.css">
+	        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
 	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script>
+
+
+
+  $( function() {
+
+    $( ".drag" ).draggable({helper : 'clone' });
+
+    $( "#droppable" ).droppable({ 
+
+      drop: function( event, ui ) {      
+
+      $("#droppable").addClass("newclass").fadeIn(300).fadeOut(300).fadeIn(300).removeClass("newclass",1500);
+
+       
+
+      if(ui.draggable.is("#dragtp")){
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        alert("Tertapod layer added")
+
+        $("#fldimage").addClass("bgimagetp");
+
+        }, 2000);
+
+
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        
+
+        $("#fldimage").removeClass("bgimagetp");
+
+        }, 60000);
+
+      }
+
+      if(ui.draggable.is("#dragdike")){
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        alert("Dike layer added")
+
+        $("#fldimage").addClass("bgimagedike");
+
+        }, 2000);
+
+
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        
+
+        $("#fldimage").removeClass("bgimagedike");
+
+        }, 60000);
+
+      }
+
+      if(ui.draggable.is("#dragsw")){
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        alert("Sea wall layer added")
+
+        $("#fldimage").addClass("bgimagewall");
+
+        }, 2000);
+
+
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        
+
+        $("#fldimage").removeClass("bgimagewall");
+
+        }, 60000);
+
+      }
+
+      
+
+      },
+
+
+
+tolerance: "touch"
+
+
+
+    });
+
+
+
+       
+
+  });
+
+
+
+</script>
+
 
 </head>
 
@@ -75,3 +202,51 @@
 		</div>
 	<h2><span>Defence modelling</span></h2>
 </div>
+<div class="wrapper">
+
+<div class="container">
+
+   <div id="droppable" class="disp"></div>
+
+   <div id="fldimage" class="bgimage"></div>
+
+   
+
+</div>
+
+
+
+<div class="testcontainer">
+
+<div>
+
+<img src="https://yx1xha-bn1306.files.1drv.com/y3meGlkX9-yWOBLeskeqmqhgKp7h6-Rtg_0-Mvq9DLjncywWpkQIpUij8v_h6_RfsATMg4EDRkmW02ZLp3ZY8EhFTqcFtQGchisSnD0Dhx6wsuHhfXIlRfUXxQuXlC_3-VVQhBAZJ8rHU3zfCRHKhUNHLy18ZiNpuZ1HM2EafMFWBk?width=750&height=774&cropmode=none" height="250px" width="250px" id="dragtp" class="drag"/>
+
+</div>
+
+<div>
+
+<img src="https://yx3pya-bn1306.files.1drv.com/y3mMDG8shxgMUKMK-8jW0kvlrq7fX6Vd8H9JE9bF_EcKznQceB_uW6tJIMdN4Vr6yLcdilqjw9PCnaiDh-EpbMd6I6LL8apWKhE0M_fiJtMLpYHahAS0mBvvVS2dJwuRQCYZcMDkZEtyOJJqmHbPm1rEHReU9msuaji6LugWDfAC08?width=720&height=540&cropmode=none" height="250px" width="250px" id="dragdike" class="drag"/>
+
+</div>
+
+<div>
+
+<img src="https://yx1q1q-bn1306.files.1drv.com/y3mUoJ347KTvhtEvBi8b5uSg8CQXmyjSpYn3GyfVxGYhBSdWmvYWlyqFqLbL8lxtkmCahFU-WAx3WntrgPzxvLT2kAT0CuUtPWMujcFiLDY8v2YoisMNLh0spnRA-lcLuTxcnqHmK-pz9bp9BzMUGfj-9TER0r7-YZ_-h_9rnNGJIA?width=519&height=389&cropmode=none" height="250px" width="250px" id="dragsw" class="drag"/>
+
+</div>
+
+</div>
+
+<div class="instruction">
+
+<p class="instructtext">Add a defence type to the proposed new defence region.</p>
+
+<input type="button" value="Reset" onClick="window.location.reload()" style="font-size:26px; margin-left:175px;" >
+
+</div>
+
+</div>
+
+	
+
