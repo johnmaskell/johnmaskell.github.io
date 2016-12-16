@@ -2,7 +2,7 @@ html, body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, H
 .nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
 .nav-bar a:hover {color: #444;}
 header {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
-#logo{margin: 20px;float: left;width: 200px;height: 75px;background: url(https://yx07mw-bn1306.files.1drv.com/y3maathAaHhiOYG99FTO_znD4sYpMIAxmKEY1umJoI-a9OfCMzLt0OQ2wRuJIv105DAP51q-nqkONFnJak1n8EtYijfwPJdoQpN4TH8UzL5k2bRrrkG32yHyQpwp_ynEdsZh6Cal_H13jzPaihPqOkYsthf6-YFjgzY9OzAJiILIkg?width=480&height=153&cropmode=none) no-repeat center;display: block;background-size: 200px 100px;}
+#logo{margin: 20px;float: left;width: 200px;height: 75px;background: url(https://yx07mw-bn1306.files.1drv.com/y3maathAaHhiOYG99FTO_znD4sYpMIAxmKEY1umJoI-a9OfCMzLt0OQ2wRuJIv105DAP51q-nqkONFnJak1n8EtYijfwPJdoQpN4TH8UzL5k2bRrrkG32yHyQpwp_ynEdsZh6Cal_H13jzPaihPqOkYsthf6-YFjgzY9OzAJiILIkg?width=480&height=153&cropmode=none) no-repeat center;display: block;background-size: 200px 75px;}
 nav {float: right;padding: 20px;top:80px;}
 #menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
 .nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
