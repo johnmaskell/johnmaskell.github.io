@@ -30,7 +30,7 @@ nav {float: right;padding: 20px;top:80px;}
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:inline:block;width:50%;margin-left:2%;margin-right:2%;} 
+.img-displayed {display:inline:block;width:40%;margin-left:2%;margin-right:2%;} 
 
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
