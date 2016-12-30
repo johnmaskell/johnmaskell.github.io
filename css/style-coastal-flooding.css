@@ -40,6 +40,7 @@ nav {float: right;padding: 20px;top:80px;}
 h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 }
 
+/* Tablets ----------- */
 /* Portrait */
 @media only screen
 and (min-device-width: 640px) 
@@ -69,7 +70,31 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .col {float:left;}
 }
 
-   
+/* Landscape */
+@media only screen
+and (min-device-width: 640px) 
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+/* Styles */
+#logo {margin-left:15%;}
+nav {margin-right:15.5%;}
+.mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
+.myBanner {position:relative;width:100%;height:300px;}
+.imgcontainer{width:100%;margin: 0 auto;height:300px;}
+.myBanner img {height:300px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;} 
+.myBanner h2 {position: absolute;top: 200px;left:3%;width:100%;}
+.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
+.text-intro {width: 100%;margin: 0 auto;} 
+.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
+.img-displayed {display:inline:block;width:48%;margin-left:1%;margin-right:1%;} 
+
+.p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
+.p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
+.p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
+.content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
+.col {float:left;}
+h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
+}  
 
 
 /*MEDIA QUERY*/
