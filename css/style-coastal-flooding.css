@@ -78,7 +78,7 @@ and (orientation: landscape) {
 /* Styles */
 #logo {margin-left:15%;}
 nav {float: right;top:1px;}
-nav {margin-right:15.5%;}
+nav {margin-right:1%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
 .myBanner {position:relative;width:100%;height:300px;}
 .imgcontainer{width:100%;margin: 0 auto;height:300px;}
