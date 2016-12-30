@@ -77,7 +77,7 @@ and (max-device-width: 1024px)
 and (orientation: landscape) {
 /* Styles */
 #logo {margin-left:15%;}
-nav {float: right;padding: 20px;top:40px;}
+nav {float: right;padding: 20px;top:1px;}
 nav {margin-right:15.5%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
 .myBanner {position:relative;width:100%;height:300px;}
