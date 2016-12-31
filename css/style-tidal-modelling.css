@@ -83,25 +83,17 @@ and (orientation: landscape) {
 #logo {margin-left:15%;}
 nav {float: right;top:1px;}
 nav {margin-right:1%;}
-.mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
-.myBanner {position:relative;width:100%;height:300px;}
-.imgcontainer{width:100%;margin: 0 auto;height:300px;}
-.myBanner img {height:300px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;} 
-.myBanner h2 {position: absolute;top: 200px;left:3%;width:100%;}
+.mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;} 
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
-.content-2 {text-align:center;font-size:0;width:100%;margin: 0 auto;overflow: auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
-.img-container {float:left;width:48%;}
-.img-container img {display:block;}
-.img-displayed {width:100%;margin-left:1%;margin-right:1%;margin-top:20px;} 
-.content-text-1{margin-left:5%;float:left;width:40%;}
-
+.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
+.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
+.objectrightMargin{margin-left:0%;}
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
 .p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
 .content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
-h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 }  
 
 
