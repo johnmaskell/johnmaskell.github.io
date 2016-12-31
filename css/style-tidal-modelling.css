@@ -83,6 +83,11 @@ and (orientation: landscape) {
 #logo {margin-left:15%;}
 nav {float: right;top:1px;}
 nav {margin-right:1%;}
+.spacer {height:120px;}
+.myBanner {position:relative;width:100%;height:100px;margin-top:5px;} 
+.myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.myBanner h2 {position: absolute;top: 30px;left:10px; width: 100%;}
+h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;} 
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
@@ -94,7 +99,7 @@ nav {margin-right:1%;}
 .p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
 .content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
-}  
+} 
 
 
 /*MEDIA QUERY*/
