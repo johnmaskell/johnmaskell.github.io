@@ -79,6 +79,7 @@ and (orientation: landscape) {
 #logo {margin-left:15%;}
 nav {float: right;top:1px;}
 nav {margin-right:1%;}
+.spacer {height:120px;} 
 .myBanner {position:relative;width:100%;height:100px;margin-top:5px;} 
 .myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 30px;left:10px; width: 100%;}
