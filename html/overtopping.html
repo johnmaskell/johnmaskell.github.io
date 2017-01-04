@@ -31,11 +31,9 @@
 <script>
 
 
-  $( function() {
 
-    $( ".drag" ).draggable({helper: function(event) {
-    return $('<img src="http://gifyu.com/images/blackpoolStill.jpg"/>');
-  });
+  $( function() {
+    $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
 
       drop: function( event, ui ) {      
@@ -224,7 +222,7 @@ tolerance: "touch"
 
 <div class="testcontainer">
 
-<div class="drag" id="topBoximg">
+<div class="dragBoxblackpool" id="topBoximg">
 
 </div>
 
