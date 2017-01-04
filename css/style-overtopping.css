@@ -42,6 +42,7 @@ nav {float: right;padding: 20px;top:80px;}
 .dragBoxblackpool{width:300px;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .dragBoxblackpool:hover{width:300px;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpooltour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .tetrapodElem{width:300px;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(https://1.bp.blogspot.com/-wOgYKsAFlPg/WD3UaA9wcDI/AAAAAAAAAVI/ft7fUR2QZ9ktrdPqMOQy21m---REX9_wQCLcB/s1600/out.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodElem:hover{width:300px;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(https://1.bp.blogspot.com/-wOgYKsAFlPg/WD3UaA9wcDI/AAAAAAAAAVI/ft7fUR2QZ9ktrdPqMOQy21m---REX9_wQCLcB/s1600/out.gif);background-size:100% 100%;background-repeat:no-repeat;}  
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
