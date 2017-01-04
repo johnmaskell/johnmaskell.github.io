@@ -64,7 +64,10 @@ $(document).ready(function() {  /* Just added this part */
 
   $( function() {
 
-    $( ".drag" ).draggable({helper : 'clone' });
+    $( ".drag" ).draggable({helper : 'clone',  start: function(e, ui)
+ {
+  $(ui.helper).addClass("ui-draggable-helper");
+ }});
 
     $( "#droppable" ).droppable({ 
 
@@ -259,7 +262,7 @@ tolerance: "touch"
 </div>
 
 <div class="dragBoxblackpoolnb">
-<img src='http://gifyu.com/images/blackpoolStill.jpg' onmouseover="this.src='http://gifyu.com/images/blackpooltour.gif';" onmouseout="this.src='http://gifyu.com/images/blackpoolStill.jpg';" class="drag" id="testimg" style="width:0px; height:0px;"/>
+<img src='http://gifyu.com/images/blackpoolStill.jpg' onmouseover="this.src='http://gifyu.com/images/blackpooltour.gif';" onmouseout="this.src='http://gifyu.com/images/blackpoolStill.jpg';" class="drag" id="testimg"/>
 
 </div>
 
