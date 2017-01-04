@@ -33,7 +33,7 @@
 
   $( function() {
 
-    $( ".drag" ).draggable({helper : 'clone',  start: function(e, ui)
+    $( ".drag" ).draggable(function()
  {
     helper: function(){
     return $("<img src='http://gifyu.com/images/blackpoolStill.jpg' width:'300px' height='195px'>");
