@@ -37,8 +37,8 @@
     $( "#droppable" ).droppable({ 
 
       drop: function( event, ui ) {      
-
-      $("#droppable").addClass("newclassBpool").removeClass("newclassBpool").addClass("newclassBPoolhl").removeClass("newclassBpool");
+      $("#droppable").addClass("newclassBpool")
+      $("#droppable").addClass("newclassBpoolhl").fadeIn(300).fadeOut(300).fadeIn(300).removeClass("newclassBpoolhl");
      
       $("#topBoxdiv").addClass("tetrapodElem"); 
 
