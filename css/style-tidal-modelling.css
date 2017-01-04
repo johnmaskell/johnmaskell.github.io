@@ -2,7 +2,7 @@ html, body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, H
 .nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
 .nav-bar a:hover {color: #444;}
 header {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
-#logo{margin: 20px;float: left;width: 200px;height: 50px;background-size:100%;background: url(https://cxivig-bn1306.files.1drv.com/y3mlwTGPP8Qo0LM2_X_Ru8X1A8-wDJ2fnhZdfUNE294ddQixZUeSp0jJWfSFmzarBsRRc-zdR-D-Ze-ESzrv6iZmVc--_gvjT9Kod-SXWmWGn1VhTob_qDA32W_ZglB6Bsd6LHamzb9yBafAwIUM9ZqMv0S2NTv85MlR9L0g09YezY?width=842&height=219&cropmode=none) no-repeat center;display: block;}
+#logo{margin: 20px;float: left;width: 200px;height: 50px;background-size:200px 50px;background: url(https://cxivig-bn1306.files.1drv.com/y3mlwTGPP8Qo0LM2_X_Ru8X1A8-wDJ2fnhZdfUNE294ddQixZUeSp0jJWfSFmzarBsRRc-zdR-D-Ze-ESzrv6iZmVc--_gvjT9Kod-SXWmWGn1VhTob_qDA32W_ZglB6Bsd6LHamzb9yBafAwIUM9ZqMv0S2NTv85MlR9L0g09YezY?width=842&height=219&cropmode=none) no-repeat center;display: block;}
 nav {float: right;padding: 20px;top:80px;}
 #menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
 .nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
