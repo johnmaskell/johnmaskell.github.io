@@ -31,12 +31,13 @@
 $(document).ready(function() {  /* Just added this part */
 alert("ready"); 
   $('.dragBoxblackpoolnb').each(function() {
+    alert("found");  
     var $this = $(this),
-      $div = $this.find('div');
+      $dragBoxblackpoolnb = $this.find('dragBoxblackpoolnb');
 
       $dragBox.load(function(){
-         var w = $this.find('div').width();
-         var h = $this.find('div').height();
+         var w = $this.find('dragBoxblackpoolnb').width();
+         var h = $this.find('dragBoxblackpoolnb').height();
 	 alert("width: " + w + " & height: " + h);     
       });
 
