@@ -22,7 +22,136 @@
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
+	
 	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script>
+
+
+
+  $( function() {
+
+    $( ".drag" ).draggable({helper : 'clone' });
+
+    $( "#droppable" ).droppable({ 
+
+      drop: function( event, ui ) {      
+
+      
+      
+       
+
+      if(ui.draggable.is("#topBoximg")){
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        $("#droppable").addClass("newclassBpool");
+
+
+        }, 2000);
+
+
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        
+
+        $("#fldimage").removeClass("bgimagetp");
+
+        }, 60000);
+
+      }
+
+      if(ui.draggable.is("#dragdike")){
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        alert("Dike layer added")
+
+        $("#fldimage").addClass("bgimagedike");
+
+        }, 2000);
+
+
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        
+
+        $("#fldimage").removeClass("bgimagedike");
+
+        }, 60000);
+
+      }
+
+      if(ui.draggable.is("#dragsw")){
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        alert("Sea wall layer added")
+
+        $("#fldimage").addClass("bgimagewall");
+
+        }, 2000);
+
+
+
+        setTimeout(
+
+        function() 
+
+        {
+
+        
+
+        $("#fldimage").removeClass("bgimagewall");
+
+        }, 60000);
+
+      }
+
+      
+
+      },
+
+
+
+tolerance: "touch"
+
+
+
+    });
+
+
+
+       
+
+  });
+
+
+
+</script>
 
 </head>
 
