@@ -30,13 +30,13 @@
 <script>
 $(document).ready(function() {  /* Just added this part */
 alert("ready"); 
-  $('.item').each(function() {
+  $('.dragBoxblackpoolnb').each(function() {
     var $this = $(this),
-      $dragBox = $this.find('dragBoxblackpoolnp');
+      $div = $this.find('div');
 
       $dragBox.load(function(){
-         var w = $this.find('dragBoxblackpoolnp').width();
-         var h = $this.find('dragBoxblacpoolnp').height();
+         var w = $this.find('div').width();
+         var h = $this.find('div').height();
 	 alert("width: " + w + " & height: " + h);     
       });
 
@@ -257,7 +257,7 @@ tolerance: "touch"
 
 </div>
 
-<div class="dragBoxblackpoolnb item">
+<div class="dragBoxblackpoolnb">
 <img src='http://gifyu.com/images/blackpoolStill.jpg' onmouseover="this.src='http://gifyu.com/images/blackpooltour.gif';" onmouseout="this.src='http://gifyu.com/images/blackpoolStill.jpg';" class="drag" id="testimg" style="width:0px; height:0px;"/>
 
 </div>
