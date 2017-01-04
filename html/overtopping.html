@@ -33,7 +33,9 @@
 
   $( function() {
 
-    $( ".drag" ).draggable({helper : 'clone' });
+    $( ".drag" ).draggable({helper: function(event) {
+    return $('<img src="http://gifyu.com/images/blackpoolStill.jpg" style="width:300px; height=195px;"/>');
+  });
     $( "#droppable" ).droppable({ 
 
       drop: function( event, ui ) {      
