@@ -49,7 +49,7 @@
           $("#droppable").addClass("newclassBpool"); 
       }
 	      
-      if((ui.draggable.is(".tetrapodElem"))&&(stage>1)&&(tpbp<2)){
+      if((ui.draggable.is(".tetrapodElem"))&&(stage>1||tpbp<2)){
 	      
 	  $("#myInstruction").text("Adding a tetrapod layer.");
           $("#droppable").addClass("bpoolTetrapods");
