@@ -38,6 +38,7 @@
       
       
       $("#topBoxdiv").addClass("tetrapodElem");
+      $("#topboxdiv").removeClass(".dragBoxblackpool")
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");   
       $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
@@ -54,11 +55,24 @@
   });
 });
 	
+$( function() {
+    $( ".tetrapodElem" ).draggable({helper : 'clone' });
+    $( "#droppable" ).droppable({ 
 
+      drop: function( event, ui ) {      
+	
+      if(ui.draggable.is(".tetrapodElem")){
+          $("#droppable").addClass("bpoolTetrapods");
+ 
+      }	   
+    }, tolerance: "touch"
+  });
+});
 
 
 
 </script>
+
 
 </head>
 
