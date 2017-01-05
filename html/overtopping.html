@@ -33,7 +33,7 @@
 
 
   $( function() {
-    $( "#topBoxdiv" ).draggable({helper : 'clone' });
+    $( ".drag" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
 
       drop: function( event, ui ) {      
@@ -44,6 +44,7 @@
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");   
       $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
+	      
 
       if(ui.draggable.is("#topBoxdiv")){
 
@@ -223,15 +224,15 @@ tolerance: "touch"
 
 <div class="testcontainer">
 
-<div class="dragBoxblackpool" id="topBoxdiv">
+<div class="dragBoxblackpool drag" id="topBoxdiv">
 
 </div>
 
-<div class="dragBoxblackpool" id="middleBoxdiv">
+<div class="dragBoxblackpool drag" id="middleBoxdiv">
 
 </div>
 
-<div class="dragBoxblackpool" id="bottomBoxdiv">
+<div class="dragBoxblackpool drag" id="bottomBoxdiv">
 
 </div>
 
