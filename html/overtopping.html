@@ -66,8 +66,11 @@
                           $input.appendTo($("#dynamicinstructionBox"));
                           
 	          },15000); 
-      }    
+      }
 	      
+      if((ui.draggable.is(".tetrapodResultBlackpool")){
+	 $('#droppable').append('<table width="100%" border="1"><tr><td colspan="2" rowspan="1">' + " wdw" + '</td></tr><tr><td width="118">' + "sxs" + '</td><td width="186">' + "xs" + '</td></tr></table>');
+      }	      
 	      
       if((ui.draggable.is(".slopeElem"))&&(stage>1)){
 	  $("#myInstruction").text("Adding a dike/concrete slope.");    
