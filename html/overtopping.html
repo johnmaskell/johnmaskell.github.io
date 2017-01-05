@@ -49,9 +49,18 @@
 	  
  
       }
-      if((ui.draggable.is(".tetrapodElem"))&&(stage==2)){
+      if((ui.draggable.is(".tetrapodElem"))&&(stage>1)){
           $("#droppable").addClass("bpoolTetrapods"); 
-      }      
+      }
+      if((ui.draggable.is(".slopeElem"))&&(stage>1)){
+          $("#droppable").addClass("bpoolSlope"); 
+      } 
+      if((ui.draggable.is(".wallElem"))&&(stage>1)){
+          $("#droppable").addClass("bpoolWall"); 
+      }
+	      
+	      
+	      
       stage = stage + 1;
     }, tolerance: "touch"
   });
