@@ -34,9 +34,8 @@
     $( "#droppable" ).droppable({ 
 
       drop: function( event, ui ) {      
-      $("#myVisualisationtext").text("");
-      
-      
+      $("#myVisualisationtext").text("");      
+      $("#topBoxdiv").removeClass(".dragBoxblackpool")
       $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");   
