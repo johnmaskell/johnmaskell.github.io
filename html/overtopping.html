@@ -64,7 +64,7 @@
 			  $("#topBoxdiv").addClass("tetrapodResultblackpool")
 			  function createInput(){
                               var $input = $('<input class=resetButton type="button" value="View results" />');
-                              $input.appendTo($("instructionBox"));
+                              $input.appendTo($("#dynamicinstructionBox"));
                           }
 	          },15000); 
       }    
@@ -147,7 +147,7 @@
 	<h2><span>Overtopping</span></h2>
 </div>
 
-<div class="instructionBox">
+<div class="instructionBox" id="dynamicinstructionBox">
 <p class="instructionText" id="myInstruction">Drag and drop a location into the visualisation area.</p>
 <input class="resetButton" type="button" value="Reset" onClick="window.location.reload()" >
 </div>
