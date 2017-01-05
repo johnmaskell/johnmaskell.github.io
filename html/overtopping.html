@@ -3,7 +3,23 @@
 <html lang="en">
 
 <head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 	<meta charset="utf-8">
 
 	<title>flood-modelling</title>
@@ -31,7 +47,7 @@
 <script>
   var stage = 1;
   var tpbp = 1;
-  
+  var $table1 = $('<table><tr><th>Company</th><th>Contact</th><th>Country</th</tr></table>');
 	
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
