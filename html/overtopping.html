@@ -46,9 +46,13 @@
 
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
           $("#droppable").addClass("newclassBpool");
+	  
  
       }
-	   
+      if((ui.draggable.is(".tetrapodElem"))&&(stage==2)){
+          $("#droppable").addClass("bpoolTetrapods"); 
+      }      
+      stage = stage + 1;
     }, tolerance: "touch"
   });
 });
