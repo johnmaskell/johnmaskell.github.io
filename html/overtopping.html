@@ -31,6 +31,8 @@
 <script>
   var stage = 1;
   var tpbp = 1;
+  
+	
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
@@ -68,7 +70,10 @@
 	          },15000); 
       }
 	      
-       
+      if((ui.draggable.is(".tetrapodResultblackpool")){
+	 var $table1 = $('<table><tr><th>Company</th><th>Contact</th><th>Country</th</tr></table>');
+	 $table1.appendTo($("#droppable"));
+      }	 
 	      
       if((ui.draggable.is(".slopeElem"))&&(stage>1)){
 	  $("#myInstruction").text("Adding a dike/concrete slope.");    
