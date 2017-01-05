@@ -51,6 +51,11 @@
           $("#droppable").addClass("newclassBpool"); 
       }
 	      
+      if(ui.draggable.is(".tetrapodResultblackpool")){
+	 var $table1 = $('<table><tr><th>Company</th><th>Contact</th><th>Country</th</tr></table>');
+	 $table1.appendTo($("#droppable"));
+      }	
+	      
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&tpbp<3)){
 	      
 	  $("#myInstruction").text("Adding a tetrapod layer.");
