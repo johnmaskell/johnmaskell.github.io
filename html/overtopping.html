@@ -62,7 +62,7 @@
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
 			  $("#topBoxdiv").removeClass("tetrapodElem")
 			  $("#topBoxdiv").addClass("tetrapodResultblackpool")
-			  var $input = $('<input class=resetButton type="button" value="View results" />');
+			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
                           $input.appendTo($("#dynamicinstructionBox"));
                           
 	          },15000); 
@@ -86,7 +86,11 @@
   });
 });
 	
-
+function viewResults() {
+	$("#droppable").addClass("container")
+	$("#myVisualisationtext").text("Results viewer")
+}
+	
 
 
 
