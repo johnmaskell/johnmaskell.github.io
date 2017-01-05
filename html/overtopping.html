@@ -35,16 +35,15 @@
 
       drop: function( event, ui ) {      
       $("#myVisualisationtext").text("");      
-      $("#topBoxdiv").removeClass(".dragBoxblackpool")
       $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");   
       $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
 	      
-
+      var stage = 1;
 	      
 
-      if(ui.draggable.is(".dragBoxblackpool")){
+      if(ui.draggable.is(".dragBoxblackpool"))&&(stage==1){
           $("#droppable").addClass("newclassBpool");
  
       }
