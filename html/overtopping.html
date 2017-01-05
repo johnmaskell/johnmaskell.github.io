@@ -52,8 +52,14 @@
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1)){
 	      
 	  $("#myInstruction").text("Adding a tetrapod layer.");
-          $("#droppable").addClass("bpoolTetrapods"); 
+          $("#droppable").addClass("bpoolTetrapods");
+	  setTimeout(
+		  function(){
+			  $("myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
+		  },5000);
       }
+	      
+	      
       if((ui.draggable.is(".slopeElem"))&&(stage>1)){
 	  $("#myInstruction").text("Adding a dike/concrete slope.");    
           $("#droppable").addClass("bpoolSlope"); 
