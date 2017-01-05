@@ -50,12 +50,16 @@
  
       }
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1)){
+	      
+	  $("#myInstruction").text("Adding a tetrapod layer.");
           $("#droppable").addClass("bpoolTetrapods"); 
       }
       if((ui.draggable.is(".slopeElem"))&&(stage>1)){
+	  $("#myInstruction").text("Adding a dike/concrete slope.");    
           $("#droppable").addClass("bpoolSlope"); 
       } 
       if((ui.draggable.is(".wallElem"))&&(stage>1)){
+	  $("#myInstruction").text("Adding a wall.");    
           $("#droppable").addClass("bpoolWall"); 
       }
 	      
