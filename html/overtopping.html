@@ -62,8 +62,12 @@
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
 			  $("#topBoxdiv").removeClass("tetrapodElem")
 			  $("#topBoxdiv").addClass("tetrapodResultblackpool")
+			  function createInput(){
+                              var $input = $('<input class=resetButton type="button" value="View results" />');
+                              $input.appendTo($("instructionBox"));
+                          }
 	          },15000); 
-      }
+      }    
 	      
 	      
       if((ui.draggable.is(".slopeElem"))&&(stage>1)){
