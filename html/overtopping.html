@@ -29,6 +29,7 @@
 
 
 <script>
+  var stage = 1;
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
@@ -40,10 +41,10 @@
       $("#bottomBoxdiv").addClass("wallElem");   
       $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
 	      
-      var stage = 1;
+    
 	      
 
-      if(ui.draggable.is(".dragBoxblackpool"))&&(stage==1){
+      if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
           $("#droppable").addClass("newclassBpool");
  
       }
