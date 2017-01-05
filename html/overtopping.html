@@ -30,6 +30,7 @@
 
 <script>
   var stage = 1;
+  var tpbp = 1;
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
@@ -45,11 +46,10 @@
 	      
 
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
-          $("#droppable").addClass("newclassBpool");
-	  
- 
+          $("#droppable").addClass("newclassBpool"); 
       }
-      if((ui.draggable.is(".tetrapodElem"))&&(stage>1)){
+	      
+      if((ui.draggable.is(".tetrapodElem"))&&(stage>1)&&(tpbp<2){
 	      
 	  $("#myInstruction").text("Adding a tetrapod layer.");
           $("#droppable").addClass("bpoolTetrapods");
@@ -78,6 +78,7 @@
 	      
 	      
       stage = stage + 1;
+      tpbp = tpbp + 1;
     }, tolerance: "touch"
   });
 });
