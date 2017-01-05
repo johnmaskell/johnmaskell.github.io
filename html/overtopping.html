@@ -40,7 +40,8 @@
       
       $("#droppable").addClass("newclassBpoolhl").addClass("newclassBpool").addClass("newclassBpoolhl");
      
-      $("#topBoxdiv").addClass("tetrapodElem"); 
+      $("#topBoxdiv").addClass("tetrapodElem");
+      $("myInstruction").update("Drag a defence type on the proposed defence zone in grey.");
 
       if(ui.draggable.is("#topBoxdiv")){
 
@@ -207,7 +208,7 @@ tolerance: "touch"
 </div>
 
 <div class="instructionBox">
-<p class="instructionText">Drag and drop a location into the visualisation area.</p>
+<p class="instructionText" id="myInstruction">Drag and drop a location into the visualisation area.</p>
 </div>
 	
 <div class="wrapper">
