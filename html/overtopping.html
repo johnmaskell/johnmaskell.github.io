@@ -37,8 +37,7 @@
       $("#myVisualisationtext").text("");
       
       
-      $("#topBoxdiv").addClass("tetrapodElem");
-      $("#topboxdiv").removeClass(".dragBoxblackpool")
+      $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");   
       $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
@@ -46,7 +45,7 @@
 
 	      
 
-      if(ui.draggable.is("#topBoxdiv")){
+      if(ui.draggable.is(".dragBoxblackpool")){
           $("#droppable").addClass("newclassBpool");
  
       }
