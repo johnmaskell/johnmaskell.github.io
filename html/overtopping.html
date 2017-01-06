@@ -47,8 +47,8 @@ tr:nth-child(even) {
 <script>
   var stage = 1;
   var tpbp = 1;
-  
-	
+  var slbp = 1;
+  var wabp = 1;	
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
@@ -74,12 +74,12 @@ tr:nth-child(even) {
 	      
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&tpbp<3)){
 	      
-	  $("#myInstruction").text("Adding a tetrapod layer.");
+	  $("#myInstruction").text("Tetrapod layer added.");
           $("#droppable").addClass("bpoolTetrapods");
 	  setTimeout(
 		  function(){
 			  $("#myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
-		  },5000);
+		  },3000);
 	  setTimeout(
 		  function(){
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
@@ -88,24 +88,54 @@ tr:nth-child(even) {
 			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
                           $input.appendTo($("#dynamicinstructionBox"));
                           
-	          },15000); 
+	          },9000); 
+      }
+	      
+      if((ui.draggable.is(".slopeElem"))&&(stage>1&&slbp<3)){
+	      
+	  $("#myInstruction").text("Seaward slope added.");
+          $("#droppable").addClass("bpoolSlope");
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
+		  },3000);
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  $("#middleBoxdiv").removeClass("slopeElem")
+			  $("#middleBoxdiv").addClass("slopeResultblackpool")
+			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                          $input.appendTo($("#dynamicinstructionBox"));
+                          
+	          },9000); 
       }
 	      
  
+      if((ui.draggable.is(".wallElem"))&&(stage>1&&wabp<3)){
 	      
-      if((ui.draggable.is(".slopeElem"))&&(stage>1)){
-	  $("#myInstruction").text("Adding a dike/concrete slope.");    
-          $("#droppable").addClass("bpoolSlope"); 
-      } 
-      if((ui.draggable.is(".wallElem"))&&(stage>1)){
-	  $("#myInstruction").text("Adding a wall.");    
-          $("#droppable").addClass("bpoolWall"); 
+	  $("#myInstruction").text("Sea wall added.");
+          $("#droppable").addClass("bpoolWall");
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
+		  },3000);
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  $("#middleBoxdiv").removeClass("wallElem")
+			  $("#middleBoxdiv").addClass("wallResultblackpool")
+			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                          $input.appendTo($("#dynamicinstructionBox"));
+                          
+	          },9000); 
       }
 	      
 	      
 	      
       stage = stage + 1;
       tpbp = tpbp + 1;
+      slbp = slbp + 1;
+      wabp = wabp + 1;
     }, tolerance: "touch"
   });
 });
