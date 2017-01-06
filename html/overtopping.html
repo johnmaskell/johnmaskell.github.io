@@ -46,9 +46,6 @@ tr:nth-child(even) {
 
 <script>
   var stage = 1;
-  var tpbp = 1;
-  var slbp = 1;
-  var wabp = 1;
   var bpwall = ""	
   var bpslope = ""
   var bptetra = ""
@@ -63,9 +60,10 @@ tr:nth-child(even) {
       $("#myVisualisationtext").text("");      
       $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
-      $("#bottomBoxdiv").addClass("wallElem");   
-      $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
-	      
+      $("#bottomBoxdiv").addClass("wallElem");
+      if (stage==1){
+          $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
+      }	      
     
 	      
 
@@ -148,9 +146,6 @@ tr:nth-child(even) {
 	      
 	      
       stage = stage + 1;
-      tpbp = tpbp + 1;
-      slbp = slbp + 1;
-      wabp = wabp + 1;
     }, tolerance: "touch"
   });
 });
