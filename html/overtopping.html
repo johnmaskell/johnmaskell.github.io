@@ -109,7 +109,11 @@ tr:nth-child(even) {
 		  },3000);
 	  setTimeout(
 		  function(){
-			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  if (nruns<3) {
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  } else {
+			      $("#myInstruction").text("Visualisation finished. View results.")  
+			  }
 			  $("#topBoxdiv").removeClass("tetrapodElem")
 			  $("#topBoxdiv").addClass("tetrapodResultblackpool")
 			  if (nruns==1){
@@ -131,7 +135,11 @@ tr:nth-child(even) {
 		  },3000);
 	  setTimeout(
 		  function(){
-			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  if (nruns<3) {
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  } else {
+			      $("#myInstruction").text("Visualisation finished. View results.")  
+			  }
 			  $("#middleBoxdiv").removeClass("slopeElem")
 			  $("#middleBoxdiv").addClass("slopeResultblackpool")
 			  if (nruns==1){
@@ -154,7 +162,11 @@ tr:nth-child(even) {
 		  },3000);
 	  setTimeout(
 		  function(){
-			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  if (nruns<3) {
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  } else {
+			      $("#myInstruction").text("Visualisation finished. View results.")  
+			  }
 			  $("#bottomBoxdiv").removeClass("wallElem")
 			  $("#bottomBoxdiv").addClass("wallResultblackpool")
 			  if (nruns==1){
