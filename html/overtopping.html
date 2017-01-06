@@ -48,7 +48,9 @@ tr:nth-child(even) {
   var stage = 1;
   var tpbp = 1;
   var slbp = 1;
-  var wabp = 1;	
+  var wabp = 1;
+  var bpwall = ""	
+	
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
@@ -111,8 +113,8 @@ tr:nth-child(even) {
       }
 	      
  
-      if((ui.draggable.is(".wallElem"))&&(stage>1&&wabp<3)){
-	      
+      if((ui.draggable.is(".wallElem"))&&(stage>1&&bpwall!=="run")){
+	  bpwall = "run"    
 	  $("#myInstruction").text("Sea wall added.");
           $("#droppable").addClass("bpoolWall");
 	  setTimeout(
@@ -122,8 +124,8 @@ tr:nth-child(even) {
 	  setTimeout(
 		  function(){
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
-			  $("#middleBoxdiv").removeClass("wallElem")
-			  $("#middleBoxdiv").addClass("wallResultblackpool")
+			  $("#bottomBoxdiv").removeClass("wallElem")
+			  $("#bottomBoxdiv").addClass("wallResultblackpool")
 			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
                           $input.appendTo($("#dynamicinstructionBox"));
                           
