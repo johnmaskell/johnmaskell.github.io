@@ -50,7 +50,11 @@ tr:nth-child(even) {
   var slbp = 1;
   var wabp = 1;
   var bpwall = ""	
-	
+  var bpslope = ""
+  var bptetra = ""
+  nruns = 0
+  
+  
   $( function() {
     $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
@@ -74,8 +78,9 @@ tr:nth-child(even) {
          $table1.appendTo($("#droppable"));
       }	
 	      
-      if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&tpbp<3)){
-	      
+      if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&bptetra!=="run")){
+	  bptetra = "run"
+	  nruns = nruns + 1
 	  $("#myInstruction").text("Tetrapod layer added.");
           $("#droppable").addClass("bpoolTetrapods");
 	  setTimeout(
@@ -87,14 +92,17 @@ tr:nth-child(even) {
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
 			  $("#topBoxdiv").removeClass("tetrapodElem")
 			  $("#topBoxdiv").addClass("tetrapodResultblackpool")
-			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
-                          $input.appendTo($("#dynamicinstructionBox"));
+			  if (nruns==1){
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                               $input.appendTo($("#dynamicinstructionBox"));
+			  }
                           
 	          },9000); 
       }
 	      
-      if((ui.draggable.is(".slopeElem"))&&(stage>1&&slbp<3)){
-	      
+      if((ui.draggable.is(".slopeElem"))&&(stage>1&&bpslope!=="run")){
+	  bpslope="run"
+	  nruns = nruns + 1
 	  $("#myInstruction").text("Seaward slope added.");
           $("#droppable").addClass("bpoolSlope");
 	  setTimeout(
@@ -106,15 +114,18 @@ tr:nth-child(even) {
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
 			  $("#middleBoxdiv").removeClass("slopeElem")
 			  $("#middleBoxdiv").addClass("slopeResultblackpool")
-			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
-                          $input.appendTo($("#dynamicinstructionBox"));
+			  if (nruns==1){
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                               $input.appendTo($("#dynamicinstructionBox"));
+			  }
                           
 	          },9000); 
       }
 	      
  
       if((ui.draggable.is(".wallElem"))&&(stage>1&&bpwall!=="run")){
-	  bpwall = "run"    
+	  bpwall = "run"
+	  nruns = nruns + 1
 	  $("#myInstruction").text("Sea wall added.");
           $("#droppable").addClass("bpoolWall");
 	  setTimeout(
@@ -126,8 +137,10 @@ tr:nth-child(even) {
 			  $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
 			  $("#bottomBoxdiv").removeClass("wallElem")
 			  $("#bottomBoxdiv").addClass("wallResultblackpool")
-			  var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
-                          $input.appendTo($("#dynamicinstructionBox"));
+			  if (nruns==1){
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                               $input.appendTo($("#dynamicinstructionBox"));
+			  }	  
                           
 	          },9000); 
       }
