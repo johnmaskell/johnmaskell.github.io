@@ -65,16 +65,18 @@ tr:nth-child(even) {
       $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");
-      if (stage==1){
-          $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
-      }	      
-    
 	      
-
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
-          $("#droppable").addClass("newclassBpool"); 
-      }
+          $("#droppable").addClass("newclassBpool");	  
+		$("#myInstruction").text("Blackpool added.") 	  
+      }      
 	      
+      if (stage==1){
+	  function(){  
+              $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
+	  },3000);  
+      }	      
+   	      
       if((ui.draggable.is(".tetrapodResultblackpool"))&&(resViewer=="ready"&&bptetraresLoad!=="yes")){
 	 bptetraresLoad = "yes"
 	 var $table1 = $('<table><tr><th>Model Parameters</th><th></th></tr><tr><th>Location</th><th>Blackpool</th></tr><tr><th>Defence type</th><th>Tetrapod</th></tr><tr><th>Wave height</th><th>3 m</th></tr><tr><th>Wave Period</th><th>8 secs</th></tr><tr><th>Min freeboard</th><th>+1 m</th></tr><tr><th>Resolution</th><th>5 m</th></tr><tr><th>Results</th><th></th></tr><tr><th>Max depth</th><th>4.35 m</th></tr><tr><th>Flooded area</th><th>30925 m^2</th></tr><tr><th>No. buildings</th><th>4</th></tr><tr><th>Infrastructure</th><th>roads;rail/tram;</th></tr></table>');
