@@ -33,11 +33,11 @@ nav {float: right;padding: 20px;top:80px;}
 .resetButton{float:left;margin-left:5%;font: 18px/18px Helvetica, Sans-Serif;margin-top:50px;}
 .wrapper{overflow:auto;width:100%}
 .container{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;overflow:auto;} 
-.newclassBpool{width:66%;height:600px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/defefenceZone.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
-.newclassBpoolhl{width:66%;height:600px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/defefenceZonehighlight.jpg);background-size:100% 100%;background-repeat:no-repeat;}  
-.bpoolTetrapods{width:66%;height:600px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpooltetrapods.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.bpoolSlope{width:66%;height:600px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpoolslope.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.bpoolWall{width:66%;height:600px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpoolwall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.newclassBpool{width:66%;height:100%;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/defefenceZone.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
+.newclassBpoolhl{width:66%;height:100%;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/defefenceZonehighlight.jpg);background-size:100% 100%;background-repeat:no-repeat;}  
+.bpoolTetrapods{width:66%;height:100%;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpooltetrapods.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.bpoolSlope{width:66%;height:100%;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpoolslope.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.bpoolWall{width:66%;height:100%;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpoolwall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
  
  
  
