@@ -114,7 +114,7 @@ tr:nth-child(even) {
 	          },9000); 
       }
 	      
-      if((ui.draggable.is(".slopeElem"))&&(stage>1&&bpslope!=="run")){
+      if((ui.draggable.is(".slopeElem"))&&(stage>1&&bpslope!=="run"&&resViewer!=="ready")){
 	  bpslope="run"
 	  nruns = nruns + 1
 	  $("#myInstruction").text("Seaward slope added.");
@@ -137,7 +137,7 @@ tr:nth-child(even) {
       }
 	      
  
-      if((ui.draggable.is(".wallElem"))&&(stage>1&&bpwall!=="run")){
+      if((ui.draggable.is(".wallElem"))&&(stage>1&&bpwall!=="run"&&resViewer!=="ready")){
 	  bpwall = "run"
 	  nruns = nruns + 1
 	  $("#myInstruction").text("Sea wall added.");
