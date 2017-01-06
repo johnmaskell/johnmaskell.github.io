@@ -72,9 +72,10 @@ tr:nth-child(even) {
       }      
 	      
       if (stage==1){
-	  function(){  
-              $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
-	  },3000);  
+	  setTimeout(
+	      function(){  
+                  $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
+	      },3000);  
       }	      
    	      
       if((ui.draggable.is(".tetrapodResultblackpool"))&&(resViewer=="ready"&&bptetraresLoad!=="yes")){
