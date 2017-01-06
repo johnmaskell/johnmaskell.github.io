@@ -91,10 +91,8 @@ tr:nth-child(even) {
 	      
 	      
 	      
-      if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&bptetra!=="run")){
-	  if (resViewer=="ready"){
-	      $("#droppable").addClass("container");
-	  }
+      if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&bptetra!=="run"&&resViewer!=="ready")){
+
 	  bptetra = "run"
 	  nruns = nruns + 1
 	  $("#myInstruction").text("Tetrapod layer added.");
