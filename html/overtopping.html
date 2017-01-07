@@ -59,12 +59,7 @@ tr:nth-child(even) {
   var dwtetra = ""  
   var dwwallresLoad = ""
   var dwsloperesLoad = ""
-  var dwtetraresLoad = ""
-  
-  
-  
-  
-  
+  var dwtetraresLoad = ""  
   nruns = 0
   
   
@@ -81,7 +76,14 @@ tr:nth-child(even) {
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
           $("#droppable").addClass("newclassBpool");	  
 		$("#myInstruction").text("Blackpool added.") 	  
-      }      
+      }    
+	      
+     if((ui.draggable.is(".dragBoxdawlish"))&&(stage==1)){
+          $("#droppable").addClass("newclassDawlish");	  
+		$("#myInstruction").text("Dawlish added.") 	  
+      } 
+	      
+	      
 	      
       if (stage==1){
 	  setTimeout(
