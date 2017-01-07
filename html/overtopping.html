@@ -53,11 +53,23 @@ tr:nth-child(even) {
   var bpwallresLoad = ""
   var bpsloperesLoad = ""
   var bptetraresLoad = ""
+  
+  var dwwall = ""	
+  var dwslope = ""
+  var dwtetra = ""  
+  var dwwallresLoad = ""
+  var dwsloperesLoad = ""
+  var dwtetraresLoad = ""
+  
+  
+  
+  
+  
   nruns = 0
   
   
   $( function() {
-    $( ".dragBoxblackpool" ).draggable({helper : 'clone' });
+    $( ".drag" ).draggable({helper : 'clone' });
     $( "#droppable" ).droppable({ 
 
       drop: function( event, ui ) {      
@@ -276,15 +288,15 @@ function viewResults() {
 
 <div class="testcontainer">
 
-<div class="dragBoxblackpool" id="topBoxdiv">
+<div class="dragBoxblackpool drag" id="topBoxdiv">
 
 </div>
 
-<div class="dragBoxdawlish" id="middleBoxdiv">
+<div class="dragBoxdawlish drag" id="middleBoxdiv">
 
 </div>
 
-<div class="dragBoxblackpool" id="bottomBoxdiv">
+<div class="dragBoxblackpool drag" id="bottomBoxdiv">
 
 </div>
 
