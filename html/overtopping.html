@@ -101,8 +101,8 @@ tr:nth-child(even) {
 	      
 	      
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&bptetra!=="run"&&resViewer!=="ready")){
-          $("#droppable").removeClass(".bpoolSlope");
-	  $("#droppable").removeClass(".bpoolWall");
+          $("#droppable").removeClass("bpoolSlope");
+	  $("#droppable").removeClass("bpoolWall");
 	  bptetra = "run"
 	  nruns = nruns + 1
 	  $("#myInstruction").text("Tetrapod layer added.");
@@ -129,8 +129,8 @@ tr:nth-child(even) {
       }
 	      
       if((ui.draggable.is(".slopeElem"))&&(stage>1&&bpslope!=="run"&&resViewer!=="ready")){
-	  $("#droppable").removeClass(".bpoolTetrapods");
-	  $("#droppable").removeClass(".bpoolWall");    
+	  $("#droppable").removeClass("bpoolTetrapods");
+	  $("#droppable").removeClass("bpoolWall");    
 	  bpslope="run"
 	  nruns = nruns + 1
 	  $("#myInstruction").text("Seaward slope added.");
@@ -158,8 +158,8 @@ tr:nth-child(even) {
 	      
  
       if((ui.draggable.is(".wallElem"))&&(stage>1&&bpwall!=="run"&&resViewer!=="ready")){
-	  $("#droppable").removeClass(".bpoolSlope");
-	  $("#droppable").removeClass(".bpoolTetrapods");    
+	  $("#droppable").removeClass("bpoolSlope");
+	  $("#droppable").removeClass("bpoolTetrapods");    
 	  bpwall = "run"
 	  nruns = nruns + 1
 	  alert(nruns);
