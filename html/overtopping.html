@@ -76,6 +76,9 @@ tr:nth-child(even) {
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
           $("#droppable").addClass("newclassBpool");	  
 	  $("#myInstruction").text("Blackpool added.")
+	  $("#topBoxdiv").addClass("thisBpool");      
+          $("#middleBoxdiv").addClass("thisBpool");
+          $("#bottomBoxdiv").addClass("thisBpool");
 	  setTimeout(
 	      function(){  
                   $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
@@ -85,6 +88,9 @@ tr:nth-child(even) {
      if((ui.draggable.is(".dragBoxdawlish"))&&(stage==1)){
           $("#droppable").addClass("newclassDawl");	  
 	  $("#myInstruction").text("Dawlish added.")
+	  $("#topBoxdiv").addClass("thisDawl");      
+          $("#middleBoxdiv").addClass("thisDawl");
+          $("#bottomBoxdiv").addClass("thisDawl");
 	  setTimeout(
 	      function(){  
                   $("#myInstruction").text("Drag a defence type on the proposed defence zone in red.");
@@ -123,7 +129,7 @@ tr:nth-child(even) {
          $table1.appendTo($("#droppable"));
       }	
 	      
-      if(ui.draggable.is(".newclassBpool")) {
+      if(ui.draggable.is(".thisBpool")) {
       
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&bptetra!=="run"&&resViewer!=="ready")){
           $("#droppable").removeClass("bpoolSlope");
@@ -212,7 +218,7 @@ tr:nth-child(even) {
       }	      
 	      
 	      
-      if(ui.draggable.is(".newclassDawl")) {
+      if(ui.draggable.is(".thisDawl")) {
       if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&dwtetra!=="run"&&resViewer!=="ready")){
           $("#droppable").removeClass("dawlSlope");
 	  $("#droppable").removeClass("dawlWall");
