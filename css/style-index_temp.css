@@ -61,6 +61,7 @@ h3 {top: 200px;left: 25px;width: 100%;}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
 /* Styles */
+header {position: absolute;}
  #logo {margin-left:15%;}
  nav {margin-right:15.5%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
