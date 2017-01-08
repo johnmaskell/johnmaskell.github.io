@@ -24,8 +24,8 @@ a {text-decoration:none;color:black;}
 
 
 .mySlideshow a {cursor: pointer;}
-.displayleft {position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.displayright {position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
+.displayleft {position:absolute;top:55%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.displayright {position:absolute;top:55%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
 h3 {top: 200px;left: 25px;width: 100%;}
 .all-tiles h3 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 
