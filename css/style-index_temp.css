@@ -2,7 +2,7 @@ html, body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, H
 .nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
 .nav-bar a:hover {color: #444;}
 header {background: #fff;width: 100%;height: 120px;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
-#logo{margin: 20px;float: left;width: 300px;height: 75px;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 300px 75px;}
+
 nav {float: right;padding: 20px;top:80px;}
 #menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
 .nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
@@ -58,6 +58,7 @@ h3 {top: 200px;left: 25px;width: 100%;}
 /* Styles */
 header {position: absolute;}
 .spacer {height:120px;}
+ #logo{margin: 20px;float: left;width: 300px;height: 75px;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 300px 75px;} 
  #logo {margin-left:16.5%;}
  nav {margin-right:15.5%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
@@ -151,6 +152,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
 header {position: absolute;}
+#logo{margin: 20px;float: left;width: 50%;height: 50%;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 50% 50%;} 
 #menu-icon {display:inline-block;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
