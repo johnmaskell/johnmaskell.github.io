@@ -31,10 +31,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 h3 {top: 200px;left: 25px;width: 100%;}
 .all-tiles h3 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 
-.tile-1 {float: left;width: 23%;height: 400px;}
-.tile-2{float: left;width: 23%;height: 400px;}
-.tile-3{float: left;width: 23%;height: 400px;}
-.tile-4 {float: left;width: 23%;height: 400px;}
+
 .all-tiles {margin-left:2%;margin-top:20px;margin-bottom:20px;float:left;background-size: 100% 100%;border-radius:5%;background-repeat:no-repeat;}
 .tile-1 {background-image: url('https://l2yl7q-bn1306.files.1drv.com/y3mHnpbwjPZErlxwwr3soWAqXbEGwBUVeRCb3Qp1ESpZwtzZERGOMhMDtQZk81ePWpx21qpq235755jKkn1BsDXxvph129BWWKldRICjHZc6tdyA7dJ5DmyIX7_IgexwCpJNhLRmzr1qs4FqFAn57PpiBd8wZJdDbooSt455hqdFq8?width=1920&height=1266&cropmode=none');}
 .tile-2 {background-image: url('https://mtsceq-bn1306.files.1drv.com/y3muwYtvnSg64khHakARxCk206fW93YKG7m9qQ8bDp8jEDKsIVwxmjyK9DSSQlpohj-UuhZ6CO_7uyew5APSPAslGr7Sb1M3TY-pxTEsl0C-efsG2Z90XtRAbTteUCYm4vczvB6TG_hYrXTBdsPs0CVnTNFLhyr64RqP4WukNl6Irc?width=1920&height=1280&cropmode=none');}
@@ -82,7 +79,10 @@ header {position: absolute;}
 .col {float:left;}
 h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
  
-
+.tile-1 {float: left;width: 48%;height: 400px;}
+.tile-2{float: left;width: 48%;height: 400px;}
+.tile-3{float: left;width: 48%;height: 400px;}
+.tile-4 {float: left;width: 48%;height: 400px;}
 .tileContainer{width:100%;height: 440px;margin:0 auto;display:inline-block;}
 .subContainer{width:50%;display:inline-block;float:left;}
 .all-tiles {margin-left:2%;margin-top:20px;margin-bottom:20px;float:left;background-size: 100% 100%;border-radius:5%;background-repeat:no-repeat;}
