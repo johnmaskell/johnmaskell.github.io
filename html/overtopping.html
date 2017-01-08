@@ -60,6 +60,13 @@ tr:nth-child(even) {
   var dwwallresLoad = ""
   var dwsloperesLoad = ""
   var dwtetraresLoad = ""  
+  
+  var wywall = ""	
+  var wyslope = ""
+  var wytetra = ""  
+  var wywallresLoad = ""
+  var wysloperesLoad = ""
+  var wytetraresLoad = ""  
   nruns = 0
   
   
@@ -95,7 +102,19 @@ tr:nth-child(even) {
 	      function(){  
                   $("#myInstruction").text("Drag a defence type on the proposed defence zone in red.");
 	      },3000); 
-      } 
+      }
+	      
+      if((ui.draggable.is(".dragBoxweymouth"))&&(stage==1)){
+          $("#droppable").addClass("newclassWey");	  
+	  $("#myInstruction").text("Weymouth added.")
+	  $("#topBoxdiv").addClass("thisWey");      
+          $("#middleBoxdiv").addClass("thisWey");
+          $("#bottomBoxdiv").addClass("thisWey");
+	  setTimeout(
+	      function(){  
+                  $("#myInstruction").text("Drag a defence type on the proposed defence zone in grey.");
+	      },3000); 
+      }
 	           
       if((ui.draggable.is(".tetrapodResultblackpool"))&&(resViewer=="ready"&&bptetraresLoad!=="yes")){
 	 bptetraresLoad = "yes"
@@ -128,6 +147,22 @@ tr:nth-child(even) {
 	 var $table1 = $('<table><tr><th>Model Parameters</th><th></th></tr><tr><th>Location</th><th>Dawlish</th></tr><tr><th>Defence type</th><th>Wall</th></tr><tr><th>Wave height</th><th>3 m</th></tr><tr><th>Wave Period</th><th>8 secs</th></tr><tr><th>Min freeboard</th><th>+1 m</th></tr><tr><th>Resolution</th><th>5 m</th></tr><tr><th>Results</th><th></th></tr><tr><th>Max depth/th><th>3.5 m</th></tr><tr><th>Flooded area</th><th>9900 m^2</th></tr><tr><th>No. buildings</th><th>32</th></tr><tr><th>Infrastructure</th><th>roads;rail/tram;</th></tr></table>');
          $table1.appendTo($("#droppable"));
       }	
+	      
+      if((ui.draggable.is(".tetrapodResultweymouth"))&&(resViewer=="ready"&&wytetraresLoad!=="yes")){
+	 wytetraresLoad = "yes"
+	 var $table1 = $('<table><tr><th>Model Parameters</th><th></th></tr><tr><th>Location</th><th>Weymouth</th></tr><tr><th>Defence type</th><th>Tetrapod</th></tr><tr><th>Wave height</th><th>3 m</th></tr><tr><th>Wave Period</th><th>8 secs</th></tr><tr><th>Min freeboard</th><th>+1 m</th></tr><tr><th>Resolution</th><th>5 m</th></tr><tr><th>Results</th><th></th></tr><tr><th>Max depth/th><th>2.41 m</th></tr><tr><th>Flooded area</th><th>53950 m^2</th></tr><tr><th>No. buildings</th><th>98</th></tr><tr><th>Infrastructure</th><th>roads;</th></tr></table>');
+         $table1.appendTo($("#droppable"));
+      }	
+      if((ui.draggable.is(".slopeResultweymouth"))&&(resViewer=="ready"&&wysloperesLoad!=="yes")){
+	 wysloperesLoad = "yes"
+	 var $table1 = $('<table><tr><th>Model Parameters</th><th></th></tr><tr><th>Location</th><th>Weymouth</th></tr><tr><th>Defence type</th><th>Slope</th></tr><tr><th>Wave height</th><th>3 m</th></tr><tr><th>Wave Period</th><th>8 secs</th></tr><tr><th>Min freeboard</th><th>+1 m</th></tr><tr><th>Resolution</th><th>5 m</th></tr><tr><th>Results</th><th></th></tr><tr><th>Max depth/th><th>3.15 m</th></tr><tr><th>Flooded area</th><th>115925 m^2</th></tr><tr><th>No. buildings</th><th>157</th></tr><tr><th>Infrastructure</th><th>roads;rail/tram;</th></tr></table>');
+         $table1.appendTo($("#droppable"));
+      }	
+      if((ui.draggable.is(".wallResultweymouth"))&&(resViewer=="ready"&&wywallresLoad!=="yes")){
+	 wywallresLoad = "yes"
+	 var $table1 = $('<table><tr><th>Model Parameters</th><th></th></tr><tr><th>Location</th><th>Weymouth</th></tr><tr><th>Defence type</th><th>Wall</th></tr><tr><th>Wave height</th><th>3 m</th></tr><tr><th>Wave Period</th><th>8 secs</th></tr><tr><th>Min freeboard</th><th>+1 m</th></tr><tr><th>Resolution</th><th>5 m</th></tr><tr><th>Results</th><th></th></tr><tr><th>Max depth/th><th>2.42 m</th></tr><tr><th>Flooded area</th><th>57750 m^2</th></tr><tr><th>No. buildings</th><th>104</th></tr><tr><th>Infrastructure</th><th>roads;</th></tr></table>');
+         $table1.appendTo($("#droppable"));
+      }
 	      
       if(ui.draggable.is(".thisBpool")) {
       
@@ -303,7 +338,95 @@ tr:nth-child(even) {
                           
 	          },9000); 
       }
+      }	  
+	      
+       if(ui.draggable.is(".thisWey")) {
+      if((ui.draggable.is(".tetrapodElem"))&&(stage>1&&wytetra!=="run"&&resViewer!=="ready")){
+          $("#droppable").removeClass("weySlope");
+	  $("#droppable").removeClass("weyWall");
+	  wytetra = "run"
+	  nruns = nruns + 1
+	  $("#myInstruction").text("Tetrapod layer added.");
+          $("#droppable").addClass("weyTetrapods");
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
+		  },3000);
+	  setTimeout(
+		  function(){
+			  if (nruns<3) {
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  } else {
+			      $("#myInstruction").text("Visualisation finished. View results.")  
+			  }
+			  $("#topBoxdiv").removeClass("tetrapodElem")
+			  $("#topBoxdiv").addClass("tetrapodResultweymouth")
+			  if (nruns==1){
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                               $input.appendTo($("#dynamicinstructionBox"));
+			  }
+                          
+	          },9000); 
+      }
+	      
+      if((ui.draggable.is(".slopeElem"))&&(stage>1&&wyslope!=="run"&&resViewer!=="ready")){
+	  $("#droppable").removeClass("weyTetrapods");
+	  $("#droppable").removeClass("weyWall");    
+	  wyslope="run"
+	  nruns = nruns + 1
+	  $("#myInstruction").text("Seaward slope added.");
+          $("#droppable").addClass("weySlope");
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
+		  },3000);
+	  setTimeout(
+		  function(){
+			  if (nruns<3) {
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  } else {
+			      $("#myInstruction").text("Visualisation finished. View results.")  
+			  }
+			  $("#middleBoxdiv").removeClass("slopeElem")
+			  $("#middleBoxdiv").addClass("slopeResultweymouth")
+			  if (nruns==1){
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                               $input.appendTo($("#dynamicinstructionBox"));
+			  }
+                          
+	          },9000); 
+      }
+	      
+ 
+      if((ui.draggable.is(".wallElem"))&&(stage>1&&wywall!=="run"&&resViewer!=="ready")){
+	  $("#droppable").removeClass("weySlope");
+	  $("#droppable").removeClass("weyTetrapods");    
+	  wywall = "run"
+	  nruns = nruns + 1
+	  $("#myInstruction").text("Sea wall added.");
+          $("#droppable").addClass("weyWall");
+	  setTimeout(
+		  function(){
+			  $("#myInstruction").text("Visualising overtopping for: Wave height - 3m; Wave period - 8 secs; Freeboard at HW - +1m") 
+		  },3000);
+	  setTimeout(
+		  function(){
+			  if (nruns<3) {
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			  } else {
+			      $("#myInstruction").text("Visualisation finished. View results.")  
+			  }
+			  $("#bottomBoxdiv").removeClass("wallElem")
+			  $("#bottomBoxdiv").addClass("wallResultweymouth")
+			  if (nruns==1){
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+                               $input.appendTo($("#dynamicinstructionBox"));
+			  }	  
+                          
+	          },9000); 
+      }
       }	      
+
 	      
 	      
       stage = stage + 1;
@@ -321,7 +444,10 @@ function viewResults() {
 	$("#droppable").removeClass("dawlTetrapods")	
 	$("#droppable").removeClass("dawlSlope")	
 	$("#droppable").removeClass("dawlWall")
-	
+	$("#droppable").removeClass("newclassWey")
+	$("#droppable").removeClass("weyTetrapods")	
+	$("#droppable").removeClass("weySlope")	
+	$("#droppable").removeClass("weyWall")	
 	
 	$("#myVisualisationtext").text("Results viewer")
 	$("#myInstruction").text("Drag one or more result folders into the results viewer.");
@@ -409,7 +535,7 @@ function viewResults() {
 
 </div>
 
-<div class="dragBoxblackpool drag" id="bottomBoxdiv">
+<div class="dragBoxweymouth drag" id="bottomBoxdiv">
 
 </div>
 
