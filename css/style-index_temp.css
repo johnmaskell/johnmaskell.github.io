@@ -152,7 +152,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
 header {position: absolute;}
-#logo{margin: 20px;float: left;width: 50%;height: 50%;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 50% 50%;} 
+#logo{margin: 20px;float: left;width: 150px;height: 37px;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 150px 37px;} 
 #menu-icon {display:inline-block;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
