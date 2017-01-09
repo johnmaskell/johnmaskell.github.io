@@ -16,9 +16,9 @@ nav {float: right;padding: 20px;top:80px;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 h1 {line-height:1.4;}
-.mySidebar a:link{color:white;font: 14px/14px Helvetica, Sans-Serif;margin-top:5%;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
-.mySidebar a:hover{color: #292c2f;font: 14px/14px Helvetica, Sans-Serif;margin-top:5%;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
-.mySidebar a:visited{color: white;font: 14px/14px Helvetica, Sans-Serif;margin-top:5%;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
+.mySidebar a:link{color:white;font: 14px/14px Helvetica, Sans-Serif;margin-top:10%;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
+.mySidebar a:hover{color: #292c2f;font: 14px/14px Helvetica, Sans-Serif;margin-top:10%;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
+.mySidebar a:visited{color: white;font: 14px/14px Helvetica, Sans-Serif;margin-top:10%;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
 /* Styles */
