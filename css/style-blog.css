@@ -132,7 +132,7 @@ nav:hover ul {display: block;}
 .img-displayed {display:inline:block;width:100%;margin-left:1%;margin-right:1%;}  
  
  h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.wrapContent{width:100%;display:block;}
+.wrapContent{width:90%;display:block;margin-left:auto;margin-right:auto;}
 .content-1 {position:relative;width:90%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;}
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;text-align:justify;}
