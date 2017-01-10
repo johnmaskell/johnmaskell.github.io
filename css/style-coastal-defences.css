@@ -33,7 +33,8 @@ nav {float: right;padding: 20px;top:80px;}
 .img-container {float:left;width:45%;}
 .img-container img {display:block;}
 .img-displayed {width:100%;margin-top:20px;} 
-.content-text-1{width:100%;}
+.content-text-1{float:left;width:40%;}
+.content-text-2{width:100%;}
 .objectrightMargin{margin-left:5%;}
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
@@ -65,6 +66,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;}
 .content-text-1{width: 100%;margin: 0 auto;}
+.content-text-2{width:100%;margin: 0 auto;} 
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
 .objectrightMargin{margin-left:0%;}
@@ -93,6 +95,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;}
 .content-text-1{width: 100%;margin: 0 auto;} 
+.content-text-2{width:100%;margin: 0 auto;}  
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
 .objectrightMargin{margin-left:0%;}
@@ -117,6 +120,7 @@ nav:hover ul {display: block;}
 .myBanner h2 {position: absolute;top: 30px;left:10px; width: 100%;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
 .content-text-1{width: 100%;margin: 0 auto;}
+.content-text-2{width:100%;margin: 0 auto;}  
 .content-1 {position:relative;width:90%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;}
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;text-align:justify;}
