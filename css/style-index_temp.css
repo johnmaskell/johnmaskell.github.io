@@ -110,6 +110,8 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 .tile-about {width:31%;height:400px;background-color: #008080;}
 .tileContainer{width:100%;margin:0 auto;display:inline-block;}
 .subContainer{width:100%;display:inline-block;float:left;}
+.showonhover {display: inline;}
+.alwaysshowme:hover .showonhover {display: inline;}
 }
 
 /* Landscape */
@@ -140,6 +142,8 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 .tile-about {width:31%;height:400px;background-color: #008080;}
 .tileContainer{width:100%;margin:0 auto;display:inline-block;}
 .subContainer{width:100%;display:inline-block;float:left;}
+.showonhover {display: inline;}
+.alwaysshowme:hover .showonhover {display: inline;} 
 }  
 
 
