@@ -24,7 +24,7 @@ a {text-decoration:none;color:black;}
 .displayleft {position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
 h3 {top: 200px;left: 25px;width: 100%;}
-.all-tiles h3 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
+.all-tiles h3 span {color: white;font: bold 22px/40px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 
 
 .all-tiles {margin-left:1%;margin-right:1%;margin-top:20px;margin-bottom:20px;float:left;background-size: 100% 100%;border-radius:5%;background-repeat:no-repeat;}
@@ -36,16 +36,16 @@ h3 {top: 200px;left: 25px;width: 100%;}
 .tile-6 {background-image: url('https://l2akea-bn1306.files.1drv.com/y3mFrqrwkX4pb1NAsqqPQXIpaE1ZnmriZBnVvNMUFmEX1GK-uBnmKugVb8gxAxM3dE0eWD51OgsumwN64i_OlJMQILxDN6bus5tUqE7Wl0vrruSg0iL0ZM_kwKM-z7qRIj3V9rPtw6Km1zmHEC73cNGFtni_i9tSwbiBtR8Cc-72gs?width=1920&height=1280&cropmode=none');}
 .tile-news {background-color: #008080;}
 .tile-news ul {list-style:none;padding:15px;}
-.tile-news a {color:white;font: 18px/18px Helvetica, Sans-Serif;margin-left:15px;margin-right:15px;line-height:1.4;}    
-.tile-news span {color: black;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 10px;}
+.tile-news a {color:white;font: 16px/16px Helvetica, Sans-Serif;margin-left:15px;margin-right:15px;line-height:1.4;}    
+.tile-news span {color: black;font: bold 16px/16px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 10px;}
 .tile-news li {margin-bottom:20px;}
 
-.tile-about p {color:white;font: 18px/18px Helvetica, Sans-Serif;margin-left:1%;margin-right:1%;line-height:1.4;}  
+.tile-about p {color:white;font: 16px/16px Helvetica, Sans-Serif;margin-left:1%;margin-right:1%;line-height:1.4;}  
 .tile-about a {color:white;} 
 .tile-about a:hover {color: #292c2f;}    
 .showonhover {display: none;}
 .alwaysshowme:hover .showonhover {display: inline;}
-.all-tiles p span {color: black;font: bold 18px/18px Helvetica, Sans-Serif;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 0.7);padding: 0px;line-height:1.4;}
+.all-tiles p span {color: black;font: bold 16px/16px Helvetica, Sans-Serif;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 0.7);padding: 0px;line-height:1.4;}
 .all-tiles p {margin-left:15px;margin-right:15px;}
 
 
