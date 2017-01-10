@@ -32,7 +32,8 @@ nav {float: right;padding: 20px;top:80px;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {float:left;width:45%;}
 .img-container img {display:block;}
-.img-displayed {width:100%;margin-top:20px;} 
+.img-displayed {width:100%;margin-top:20px;}
+.img-displayed-block {width:100%;margin-top:20px;display:block;}
 .content-text-1{float:left;width:40%;}
 .content-text-2{width:100%;}
 .objectrightMargin{margin-left:5%;}
