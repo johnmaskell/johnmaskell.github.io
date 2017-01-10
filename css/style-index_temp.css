@@ -20,7 +20,7 @@ img {max-width:100%;}
 a {text-decoration:none;color:black;}
 .tileContainer li {font-size:24px;}
 .floatingbutton {display:inline-block;text-align:center;color:#fff;background-color:#000;position:relative;overflow:hidden;z-index:1;padding:0;border-radius:50%;cursor:pointer;font-size:24px;}
-.floatingbuttoni {width: 50px;height: 50px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:36px;}
+.floatingbuttoni {width: 50px;height: 50px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:36px;overflow:hidden;}
 
 
 .mySlideshow a {cursor: pointer;line-height:40px;}
