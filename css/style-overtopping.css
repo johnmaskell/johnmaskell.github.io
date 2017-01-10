@@ -49,27 +49,28 @@ nav {float: right;padding: 20px;top:80px;}
 .weySlope{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/weymouthslope.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .weyWall{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/weymouthwall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
  
+.elemBorder{border: 1px solid black;height:160px;width:200px;}
 .testcontainer{float:left;width:30%;margin-top:20px;}
 #topBoximg{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolStill.jpg);background-size:100%;}
 #topBoximg:hover{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpooltour.gif);background-size:100% 195px;}
 
 .dragBoxblackpool{width:200px;margin-left:5px;height:160px;margin-bottom:6px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolStillnew.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .dragBoxblackpool:hover{width:200px;margin-left:5px;height:160px;margin-bottom:6px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolTournew.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.dragBoxdawlish{width:200px;margin-left:5px;height:160px;margin-bottom:6px;border: 1px solid black;background-image:url(http://gifyu.com/images/dawlishStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.dragBoxdawlish:hover{width:200px;margin-left:5px;height:160px;margin-bottom:6px;border: 1px solid black;background-image:url(http://gifyu.com/images/dawlishTour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dragBoxdawlish{width:200px;margin-left:5px;height:160px;margin-bottom:6px;background-image:url(http://gifyu.com/images/dawlishStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxdawlish:hover{width:200px;margin-left:5px;height:160px;margin-bottom:6px;background-image:url(http://gifyu.com/images/dawlishTour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .dragBoxweymouth{width:200px;margin-left:5px;height:160px;margin-bottom:6px;border: 1px solid black;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .dragBoxweymouth:hover{width:200px;margin-left:5px;height:160px;margin-bottom:6px;border: 1px solid black;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
  
 .tetrapodElem{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(https://1.bp.blogspot.com/-wOgYKsAFlPg/WD3UaA9wcDI/AAAAAAAAAVI/ft7fUR2QZ9ktrdPqMOQy21m---REX9_wQCLcB/s1600/out.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .tetrapodElem:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(https://1.bp.blogspot.com/-wOgYKsAFlPg/WD3UaA9wcDI/AAAAAAAAAVI/ft7fUR2QZ9ktrdPqMOQy21m---REX9_wQCLcB/s1600/out.gif);background-size:100% 100%;background-repeat:no-repeat;}  
-.slopeElem{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.slopeElem:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeElem{width:200px;margin-left:5px;height:160px;margin-bottom:5px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeElem:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .wallElem{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .wallElem:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
 .tetrapodResultblackpool{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
 .tetrapodResultblackpool:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
-.slopeResultblackpool{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.slopeResultblackpool:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultblackpool{width:200px;margin-left:5px;height:160px;margin-bottom:5px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultblackpool:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
 .wallResultblackpool{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
 .wallResultblackpool:hover{width:200px;margin-left:5px;height:160px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
  
