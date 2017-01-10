@@ -1,8 +1,7 @@
 html, body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, Helvetica, Arial;background: #F7FAF6;color: #555;width: 100%;height: auto;margin: 0px;padding: 0px;overflow-x: hidden;}
 .nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
 .nav-bar a:hover {color: #444;}
-header {background: #fff;width: 100%;height: 120px;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
-
+header {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
 nav {float: right;padding: 20px;top:80px;}
 #menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
 .nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
@@ -16,12 +15,10 @@ nav {float: right;padding: 20px;top:80px;}
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-img {max-width:100%;} 
 a {text-decoration:none;color:black;}
 .tileContainer li {font-size:24px;}
 .floatingbutton {display:inline-block;text-align:center;color:#fff;background-color:#000;position:relative;overflow:hidden;z-index:1;padding:0;border-radius:50%;cursor:pointer;font-size:24px;}
 .floatingbuttoni {width: 50px;height: 50px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:36px;}
-
 
 .mySlideshow a {cursor: pointer;line-height:40px;}
 .displayleft {position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
@@ -56,18 +53,10 @@ h3 {top: 200px;left: 25px;width: 100%;}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
 /* Styles */
-
  #logo{margin: 20px;float: left;width: 200px;height: 50px;top:100px;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 200px 50px;} 
  #logo {margin-left:16.5%;}
  nav {margin-right:15.5%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
-.myBanner {position:relative;width:100%;height:300px;}
-.imgcontainer{width:100%;margin: 0 auto;height:300px;}
-.myBanner img {height:300px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;} 
-.myBanner h2 {position: absolute;top: 200px;left:3%;width:100%;}
-.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
-.text-intro {width: 100%;margin: 0 auto;} 
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:inline:block;width:48%;margin-left:1%;margin-right:1%;} 
 .mySlideshow {position:relative;width:100%;height:200px;overflow:hidden;margin:0 auto;}  
 .mySlideshow img {height:200px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
@@ -76,8 +65,6 @@ h3 {top: 200px;left: 25px;width: 100%;}
 .p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
 .p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
-.content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.col {float:left;}
 h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
  
 .tile-1 {float: left;width: 31%;height: 400px;}
