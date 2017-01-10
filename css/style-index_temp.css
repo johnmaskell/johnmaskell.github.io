@@ -40,7 +40,7 @@ h3 {top: 200px;left: 25px;width: 100%;}
 .tile-news span {color: black;font: bold 16px/16px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 10px;}
 .tile-news li {margin-bottom:20px;}
 
-.tile-about ul{color:white;font: 16px/16px Helvetica, Sans-Serif;margin-left:1%;margin-right:1%;line-height:1.4;}
+.tile-about ul li{color:white;font: 16px/16px Helvetica, Sans-Serif;margin-left:1%;margin-right:1%;line-height:1.4;}
 .tile-about p {color:white;font: 16px/16px Helvetica, Sans-Serif;margin-left:1%;margin-right:1%;line-height:1.4;}  
 .tile-about a {color:white;} 
 .tile-about a:hover {color: #292c2f;}    
