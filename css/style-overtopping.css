@@ -54,12 +54,12 @@ nav {float: right;padding: 20px;top:80px;}
 #topBoximg{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolStill.jpg);background-size:100%;}
 #topBoximg:hover{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpooltour.gif);background-size:100% 195px;}
 
-.dragBoxblackpool{width:200px;margin-left:5px;height:160px;background-image:url(http://gifyu.com/images/blackpoolStillnew.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.dragBoxblackpool:hover{width:200px;margin-left:5px;height:160px;background-image:url(http://gifyu.com/images/blackpoolTournew.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dragBoxblackpool{width:200px;height:160px;background-image:url(http://gifyu.com/images/blackpoolStillnew.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxblackpool:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/blackpoolTournew.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .dragBoxdawlish{width:200px;height:160px;background-image:url(http://gifyu.com/images/dawlishStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .dragBoxdawlish:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/dawlishTour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.dragBoxweymouth{width:200px;margin-left:5px;height:160px;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.dragBoxweymouth:hover{width:200px;margin-left:5px;height:160px;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.dragBoxweymouth{width:200px;height:160px;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxweymouth:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
  
 .tetrapodElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .tetrapodElem:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;}  
