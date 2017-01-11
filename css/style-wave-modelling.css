@@ -43,7 +43,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 @media only screen and (max-width : 640px) 
 and (orientation: landscape)
 {
-.mainContainer{width:66%;margin-right: 0 auto;margin-left: 0 auto;}
+.mainContainer{width:66%;margin: 0 auto;}
 header {position: absolute;}
 #menu-icon {display:inline-block;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
