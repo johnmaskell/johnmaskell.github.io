@@ -141,5 +141,5 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .myContent{width:100%;display:block;position:relative;}
 .mySidebar{width:100%;height:100px;background-color:#008080;margin-top:20px;display:block;position:relative;}
 .myVid{width:100%;height:200px;margin-bottom:20px;display:block;position:relative;}
- .mainContainer{width:66%;margin: 0 auto;}
+ .mainContainer{width:66%;margin: 0 auto;display:block;position:relative;}
 }
