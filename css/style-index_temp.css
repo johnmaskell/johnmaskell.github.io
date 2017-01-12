@@ -27,7 +27,7 @@ h3 {top: 200px;left: 25px;width: 100%;}
 .all-tiles h3 span {color: white;font: bold 22px/40px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 
 
-.all-tiles {margin-left:1%;margin-right:1%;margin-top:20px;margin-bottom:20px;float:left;background-size: 100% 100%;border-radius:5%;background-repeat:no-repeat;}
+.all-tiles {border: 1px solid black;margin-left:1%;margin-right:1%;margin-top:20px;margin-bottom:20px;float:left;background-size: 100% 100%;border-radius:5%;background-repeat:no-repeat;}
 .tile-1 {background-image: url('http://gifyu.com/images/wavetilerescaled.jpg');}
 .tile-2 {background-image: url('http://gifyu.com/images/porttilerescaled.jpg');}
 .tile-3 {background-image: url('http://gifyu.com/images/breakwatertilerescaled.jpg');}
