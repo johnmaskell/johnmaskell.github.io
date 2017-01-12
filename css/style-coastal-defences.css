@@ -16,7 +16,7 @@ nav {float: right;padding: 20px;top:80px;}
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+.img-displayed{border: 1px solid #008080;border-radius:5%; }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
 /* Styles */
