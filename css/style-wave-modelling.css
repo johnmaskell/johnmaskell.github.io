@@ -128,7 +128,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .col {float:left;}
 }
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
+@media only screen  and (min-width : 1024.1px) {
 /* Styles */
  #logo {margin-left:15%;}
  nav {margin-right:15.5%;}
