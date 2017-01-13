@@ -46,7 +46,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 and (min-device-width: 640px) 
 and (max-device-width: 1024px) 
 and (orientation: portrait) {
-
+#logo{margin:20px;float: left;width: 200px;height: 50px;top:80px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;} 
 header {position: absolute;}
 #menu-icon {display:inline-block;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
@@ -76,7 +76,7 @@ and (min-device-width: 640px)
 and (max-device-width: 1024px)
 and (orientation: landscape) {
 /* Styles */
-#logo {margin-left:15%;}
+#logo{margin:20px;float: left;width: 200px;height: 50px;top:80px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;} 
 nav {float: right;top:1px;}
 nav {margin-right:1%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
