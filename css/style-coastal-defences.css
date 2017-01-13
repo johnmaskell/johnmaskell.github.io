@@ -2,7 +2,7 @@ html, body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, H
 .nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
 .nav-bar a:hover {color: #444;}
 header {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
-#logo{margin: 20px;float: left;width: 300px;height: 75px;background-size:100% 100%;background: url(https://cbivig-bn1306.files.1drv.com/y3m6p8Z-K0nP4xUjOqpXVlj8BsJwywSQeR3y1k_h-3aHMpVE7_glrcRv4pLi4Jt47tg4VGrthUQ6sB4Dw5OZcZvVJhXIGXVt0Hdd8013ckmFUHYWcHPZBIa_jotR4_ia-tApe-s9OQXl945bpwBQilMZCLXTF4wLU1MvfNJ7UPa75A?width=300&height=100&cropmode=none) no-repeat center;display: block;}
+
 nav {float: right;padding: 20px;top:80px;}
 #menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
 .nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
@@ -20,6 +20,7 @@ nav {float: right;padding: 20px;top:80px;}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
 /* Styles */
+#logo{margin: 20px;float: left;width: 300px;height: 75px;background-size:100% 100%;background: url(http://gifyu.com/images/logo300x75.png) no-repeat center;display: block;} 
  #logo {margin-left:15%;}
  nav {margin-right:15.5%;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
@@ -52,7 +53,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 and (min-device-width: 640px) 
 and (max-device-width: 1024px) 
 and (orientation: portrait) {
-
+#logo{margin: 20px;float: left;width: 200px;height: 50px;background-size:100% 100%;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;}
 header {position: absolute;}
 #menu-icon {display:inline-block;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
@@ -84,6 +85,7 @@ and (min-device-width: 640px)
 and (max-device-width: 1024px)
 and (orientation: landscape) {
 /* Styles */
+#logo{margin: 20px;float: left;width: 200px;height: 50px;background-size:100% 100%;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;} 
 #logo {margin-left:15%;}
 nav {float: right;top:1px;}
 nav {margin-right:1%;}
@@ -110,6 +112,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
+#logo{margin: 20px;float: left;width: 200px;height: 50px;background-size:100% 100%;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;} 
 header {position: absolute;}
 #menu-icon {display:inline-block;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
