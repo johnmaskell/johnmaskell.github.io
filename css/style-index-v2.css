@@ -216,7 +216,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 @media only screen and (max-width : 320px) {
 
 header {position: absolute;}
-#logo{float: left;width: 100px;height: 25px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin:0;border:0;} 
+#logo{float: left;width: 100px;height: 25px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin:20px;border:0;} 
 #menu-icon {display:inline-block;width:25px;height:25px;background-size:100% 100%;float:right;margin:0;border:0;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 5px solid #008080;right: 20px;top: 80px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
