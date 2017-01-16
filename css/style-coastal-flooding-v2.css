@@ -35,6 +35,8 @@ nav {margin-right:15.5%;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
 h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 #logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
