@@ -126,6 +126,17 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
 }
 
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+
+#logo {margin-left:16.5%;}
+nav {margin-right:15.5%;}
+.spacer {height:120px;}
+.mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
+
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 header {position: absolute;height:120px;}
@@ -143,18 +154,21 @@ nav {margin-right:0;}
 .myBanner {position:relative;width:100%;height:150px;margin-top:5px;} 
 .myBanner img {height:150px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 30px;left:10px; width: 100%;}
-h2 span {color: white;font: bold 16px/16px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
-.text-intro {width: 100%;margin: 0 auto;}
-.content-text-1{width: 100%;margin: 0 auto;} 
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
-.objectrightMargin{margin-left:0%;}
+.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;overflow:auto;}
+.content-2 {text-align:center;font-size:0;width:100%;margin: 0 auto;overflow: auto;}
+.text-intro {width: 100%;margin: 0 auto;} 
+.img-container {float:left;width:45%;}
+.img-container img {display:block;}
+.img-displayed {width:100%;margin-top:20px;} 
+.content-text-1{float:left;width:40%;}
+.objectrightMargin{margin-left:5%;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
 .p3 {color:#008080;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
+.content-2 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;} 
 .col {float:left;}
+h2 span {color: white;font: bold 16px/16px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 
 }
 
