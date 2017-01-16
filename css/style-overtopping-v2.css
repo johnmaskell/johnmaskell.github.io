@@ -1,0 +1,101 @@
+html, body {font-size: 1.05em;line-height: 1.25em;font-family: Helvetica Neue, Helvetica, Arial;background: #F7FAF6;color: #555;width: 100%;height: auto;margin: 0px;padding: 0px;overflow-x: hidden;}
+.nav-bar a {color: #008080;text-decoration: none;font-weight: bold;}
+.nav-bar a:hover {color: #444;}
+header {background: #fff;width: 100%;height: 120px;position: fixed;top: 0;left: 0;border-bottom: 4px solid #008080;z-index: 100;margin-bottom:5px;}
+#logo{margin: 20px;float: left;width: 300px;height: 75px;background: url(https://arivig-bn1306.files.1drv.com/y3m-grfz-LN7On3GqTfxZihG08ODZGF-X6VS_LBwi40Qe0R4i2mGh2PZckbaSCP1JHt_3EZHg8Tes6FxhWwiUd04R1kd_ZmfD3WnxWprHzJZDJq2ddlHqg46sLwhtQ0Lj7a8JUSesa-M89I4dT1jnj47qKmRNCq_F3vsJXNUFHgBFM?width=1800&height=448&cropmode=none) no-repeat center;display: block;background-size: 300px 75px;}
+nav {float: right;padding: 20px;top:80px;}
+#menu-icon {display: hidden;width: 40px;height: 40px;margin-top:20px;background:url(https://qpgzmw-bn1306.files.1drv.com/y3mq187NxKNmBFSaWK3XKXLlG-PCNbsTDGAovgclw6_jww4wjtvK6xzOKoi6mquG5UmhWNRsVGlcAy9xTsro8-bnSYjPx8fyQwyUdjw6F6glc2z1Si4LC80LsxwcvWJ_2KWB0b_iXCPjXiQglcmnb4iOmte1CIhM-C716PGua-9zgo?width=40&height=40&cropmode=none) center;background-color:#008080;}
+.nav-bar a:hover#menu-icon {background-color: #008080;border-radius: 4px 4px 0 0;}
+.nav-bar ul {list-style: none;}
+.nav-bar li {display: inline-block;float: left;padding: 10px;}
+.current {color: #008080;}
+.dropdown{font: 18px/18px Helvetica, Sans-Serif;}
+.dropdown {position: relative;display: inline-block;z-index:1000;}
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.dropdown-content a {color:#008080;padding: 12px 16px;text-decoration: none;display: block;}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 769px) {
+/* Styles */
+ header {position: absolute;}
+ #logo {margin-left:16.5%;}
+ nav {margin-right:15.5%;}
+.mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
+.myBanner {position:relative;width:100%;height:300px;background-image:url(https://cricaq.bn1304.livefilestore.com/y3mGAeX9oF9O55cGzu67atHV5zVS0n1ef7qjORI_6CaVCSxFbSd12vksjTSI3-r6s_g5p9Eyd1eBYYRpJ0aMx0FIoZoIUKd5X4xQL9j_UD4ec9dCnYGkA2MxWHhi2BrYKzXbcysx41QHKf60fdB7qBrd7yIywQkHiczEF-xbnOTn1Q?width=6250&height=1250&cropmode=none);background-size: 100% 100%; background-repeat:no-repeat;}
+.imgcontainer{width:100%;margin: 0 auto;height:300px;}
+.myBanner img {height:300px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;} 
+.myBanner h2 {position: absolute;top: 200px;left:3%;width:100%;}
+.instructionBox{width:100%;height:50px;border: 1px solid black;margin-top:20px;display:inline-block;}
+.visualisationText{font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;text-align: center;vertical-align: middle;line-height:500px;}
+.instructionText{font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;float:left;margin-left:5px;vertical-align: middle;line-height:20px;}
+.resetButton{float:right;margin-right:5px;font: 18px/18px Helvetica, Sans-Serif;margin-top:15px;}
+.wrapper{overflow:auto;width:100%}
+.container{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;overflow:auto;} 
+.newclassBpool{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/defefenceZone.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
+.bpoolTetrapods{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpooltetrapods.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.bpoolSlope{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpoolslope.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.bpoolWall{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/blackpoolwall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+
+.newclassDawl{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/defenceZonehighlightnewii.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
+.dawlTetrapods{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/dawlishtetrapods.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dawlSlope{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/dawlishslope.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dawlWall{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/dawlishwall.gif);background-size:100% 100%;background-repeat:no-repeat;}   
+
+.newclassWey{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/weymouthdefenceZone.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
+.weyTetrapods{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/weymouthtetrapods.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.weySlope{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/weymouthslope.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.weyWall{width:66%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/weymouthwall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+ 
+.elemBorder{border: 1px solid black;height:160px;width:200px;margin-left:5px;margin-bottom:6px;}
+.testcontainer{float:left;width:30%;margin-top:20px;}
+#topBoximg{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolStill.jpg);background-size:100%;}
+#topBoximg:hover{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpooltour.gif);background-size:100% 195px;}
+
+.dragBoxblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/blackpoolStillnew.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/blackpoolTournew.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dragBoxdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/dawlishStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/dawlishTour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dragBoxweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+ 
+.tetrapodElem{width:30%;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodElem:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeElem{width:30%;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeElem:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallElem{width:30%;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallElem:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.tetrapodResultblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeResultblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+ 
+.tetrapodResultdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeResultdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+ 
+.tetrapodResultweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeResultweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+ 
+.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
+.text-intro {width: 100%;margin: 0 auto;} 
+.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
+.img-displayed {display:inline:block;width:48%;margin-left:1%;margin-right:1%;} 
+.p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
+.p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;test-align:justify;}
+.p3 {color:#008080;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
+.content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
+.col {float:left;}
+h2 span {color: white;font: bold 18px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
+}
