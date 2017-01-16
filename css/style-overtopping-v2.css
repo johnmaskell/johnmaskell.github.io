@@ -54,48 +54,48 @@ nav {float: right;padding: 20px;top:80px;}
 #topBoximg{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpoolStill.jpg);background-size:100%;}
 #topBoximg:hover{width:100%;margin-left:3%;height:195px;margin-bottom:5px;border: 1px solid black;background-image:url(http://gifyu.com/images/blackpooltour.gif);background-size:100% 195px;}
 
-.dragBoxblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/blackpoolStillnew.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.dragBoxblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/blackpoolTournew.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.dragBoxdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/dawlishStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.dragBoxdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/dawlishTour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.dragBoxweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.dragBoxweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.dragBoxblackpool{width:200px;height:160px;background-image:url(http://gifyu.com/images/blackpoolStillnew.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxblackpool:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/blackpoolTournew.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dragBoxdawlish{width:200px;height:160px;background-image:url(http://gifyu.com/images/dawlishStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxdawlish:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/dawlishTour.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.dragBoxweymouth{width:200px;height:160px;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.dragBoxweymouth:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
  
-.tetrapodElem{width:30%;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.tetrapodElem:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;}  
-.slopeElem{width:30%;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.slopeElem:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallElem{width:30%;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallElem:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
-.tetrapodResultblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.tetrapodResultblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
-.slopeResultblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.slopeResultblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallResultblackpool{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallResultblackpool:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodElem:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeElem:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallElem:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.tetrapodResultblackpool{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultblackpool:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeResultblackpool{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultblackpool:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultblackpool{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultblackpool:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
  
-.tetrapodResultdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.tetrapodResultdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
-.slopeResultdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.slopeResultdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallResultdawlish{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallResultdawlish:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultdawlish{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultdawlish:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeResultdawlish{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultdawlish:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultdawlish{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultdawlish:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
  
-.tetrapodResultweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.tetrapodResultweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
-.slopeResultweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.slopeResultweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallResultweymouth{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
-.wallResultweymouth:hover{width:30%;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.tetrapodResultweymouth{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodResultweymouth:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
+.slopeResultweymouth{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.slopeResultweymouth:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultweymouth{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;} 
+.wallResultweymouth:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/normal_folder.png);background-size:100% 100%;background-repeat:no-repeat;}  
  
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:inline:block;width:48%;margin-left:1%;margin-right:1%;} 
-.p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
-.p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;test-align:justify;}
-.p3 {color:#008080;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
+.p1 {color:#008080;font: 18px/18px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
+.p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;test-align:justify;}
+.p3 {color:#008080;font: 18px/18px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
 .content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
-h2 span {color: white;font: bold 18px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
+h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 }
