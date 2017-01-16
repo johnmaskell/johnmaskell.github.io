@@ -162,7 +162,7 @@ nav {margin-right:1%;}
 .myBanner img {height:150px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;margin-top:5px;} 
 .myBanner h2 {position: absolute;top: 200px;left:3%;width:100%;}
 .img-displayed {display:inline:block;width:100%;margin-left:1%;margin-right:1%;} 
-.wrapContent{width:95%;display:block;margin:0 auto;overflow:auto;}
+.wrapContent{width:95%;display:block;margin:0 auto;overflow:hidden;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
 .myContent{width:75%;float:left;}
