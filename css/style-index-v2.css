@@ -221,6 +221,7 @@ header {position: absolute;height:75px;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 20px;top: 30px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
 nav:hover ul {display: block;}
+nav a{font: 12px/12px Helvetica, Sans-Serif;}
 .dropdown{font: 12px/12px Helvetica, Sans-Serif;}
 .spacer {height:75px;}
 .mainContainer{width:100%;background-color:#FFFFFF;margin: 0 auto;}
