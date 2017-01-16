@@ -84,7 +84,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 @media only screen and (max-width : 1200px) {
 
 #logo{float: left;width: 200px;height: 50px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
-#menu-icon {display:inline-block;width:40px;height:40px;background-size:100% 100%;float:right;margin:0;border:0;}
+
 #logo {margin-left:16.5%;}
 nav {margin-right:15.5%;}
 .spacer {height:120px;}
@@ -127,7 +127,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .tile-news a {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:5px;margin-right:5px;line-height:1.0;}    
 .tile-news span {color: black;font: bold 14px/14px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 5px;}
 .tile-news li {margin-bottom:5px;}
-.tile-about ul li{color:white;font: 14px/14px Helvetica, Sans-Serif;line-height:1.0;padding-left:0;margin: 0;}
+.tile-about ul li{color:white;font: 14px/14px Helvetica, Sans-Serif;line-height:1.0;padding-left:0;margin: 0;margin-right:10px;}
 .tile-about p {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:10px;margin-right:10px;line-height:1.0;}
 }
 
@@ -182,7 +182,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .tile-news a {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:5px;margin-right:5px;line-height:1.0;}    
 .tile-news span {color: black;font: bold 14px/14px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 5px;}
 .tile-news li {margin-bottom:5px;}
-.tile-about ul li{color:white;font: 14px/14px Helvetica, Sans-Serif;line-height:1.0;padding-left:0;margin: 0;}
+.tile-about ul li{color:white;font: 14px/14px Helvetica, Sans-Serif;line-height:1.0;padding-left:0;margin: 0;margin-right:10px;}
 .tile-about p {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:10px;margin-right:10px;line-height:1.0;}
 
 }
