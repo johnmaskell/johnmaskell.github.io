@@ -114,14 +114,14 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
 .tile-about ul li{color:white;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;padding:0;} 
-.tile-1 {float: left;width: 100%;height: 400px;}
-.tile-2{float: left;width: 100%;height: 400px;}
-.tile-3{float: left;width: 100%;height: 400px;}
-.tile-4 {float: left;width: 100%;height: 400px;}
-.tile-5{float: left;width: 100%;height: 400px;}
-.tile-6{float: left;width: 100%;height: 400px;} 
-.tile-news{float: left;width: 100%;height: 400px;}  
-.tile-about {width:100%;height:400px;background-color: #008080;}
+.tile-1 {float: left;width: 31%;height: 400px;}
+.tile-2{float: left;width: 31%;height: 400px;}
+.tile-3{float: left;width: 31%;height: 400px;}
+.tile-4 {float: left;width: 31%;height: 400px;}
+.tile-5{float: left;width: 31%;height: 400px;}
+.tile-6{float: left;width: 31%;height: 400px;} 
+.tile-news{float: left;width: 31%;height: 400px;}  
+.tile-about {width:31%;height:400px;background-color: #008080;}
 .tileContainer{width:96%;margin:0 auto;display:inline-block;}
 .subContainer{width:100%;display:inline-block;float:left;}
 .showonhover {display: inline;}
