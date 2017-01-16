@@ -263,7 +263,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .tile-news span {color: black;font: bold 12px/12px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 5px;}
 .tile-news li {margin-bottom:5px;}
 
-.tile-about ul li{color:white;font: 12px/12px Helvetica, Sans-Serif;line-height:1.1;padding-left:0;margin: 0;}
+.tile-about ul li{color:white;font: 12px/12px Helvetica, Sans-Serif;line-height:1.1;padding-left:0;margin: 0;text-align:left;}
 .tile-about p {color:white;font: 12px/12px Helvetica, Sans-Serif;margin-left:5px;margin-right:1%;line-height:1.1;}  
 
 }
