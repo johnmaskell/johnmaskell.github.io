@@ -148,8 +148,8 @@ h2 span {color: white;font: bold 14px/14px Helvetica, Sans-Serif;letter-spacing:
 .content-text-1{width: 100%;margin: 0 auto;}
 .content-1 {position:relative;width:90%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;}
-.p1 {color:#008080;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
-.p2 {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
+.p1 {color:#008080;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;text-align:initial;}
+.p2 {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;text-align:initial;}
 .content-1 ul {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}        
