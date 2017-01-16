@@ -18,8 +18,8 @@ nav {float: right;padding: 20px;top:80px;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 .spacer {height:120px;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
-.content-1 {position:relative;width:95%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;overflow:auto;}
-.content-2 {text-align:center;font-size:0;width:95%;margin: 0 auto;overflow:auto;}
+.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;overflow:auto;}
+.content-2 {text-align:center;font-size:0;width:100%;margin: 0 auto;overflow:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {float:left;width:48%;}
 .img-container img {display:block;}
@@ -43,8 +43,8 @@ nav {margin-right:15.5%;}
 nav {margin-right:15.5%;}
 .spacer {height:120px;}
 .mainContainer{width:66%;background-color:#FFFFFF;margin: 0 auto;}
-.content-1 {position:relative;width:95%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;overflow:auto;}
-.content-2 {text-align:center;font-size:0;width:95%;margin: 0 auto;overflow:auto;}
+.content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;overflow:auto;}
+.content-2 {text-align:center;font-size:0;width:100%;margin: 0 auto;overflow:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {float:left;width:48%;}
 .img-container img {display:block;}
