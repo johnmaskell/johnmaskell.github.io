@@ -84,7 +84,7 @@ h2 span {color: white;font: bold 24px/45px Helvetica, Sans-Serif;letter-spacing:
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 header {position: absolute;height:100px;}
-#logo{float: left;width: 200px;height: 50px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:2px;margin-right:0;border:0;} 
+#logo{float: left;width: 200px;height: 50px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
 #menu-icon {display:inline-block;width:40px;height:40px;background-size:100% 100%;float:right;margin:0;border:0;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 20px;top: 30px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
@@ -100,7 +100,7 @@ nav a{font: 14px/14px Helvetica, Sans-Serif;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
 .mySlideshow {position:relative;width:100%;height:100px;overflow:hidden}
 .mySlideshow img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
-.mySlideshow h2 {position: absolute;top: 50px;left: 1%;width: 100%;}
+.mySlideshow h2 {position:absolute;top: 50px;left: 1%;width: 100%;}
 .mySlideshow h2 span {color: white;font: bold 14px/18px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mySlideshow a {cursor: pointer;line-height:25px;}
 .floatingbuttoni {width: 25px;height: 25px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:18px;}
@@ -127,13 +127,13 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .showonhover {display: inline;}
 .alwaysshowme:hover .showonhover {display: inline;} 
 .all-tiles p span {color: black;font: bold 14px/14px Helvetica, Sans-Serif;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 0.7);padding: 0px;line-height:0.8;}
-.all-tiles p {margin-left:5px;margin-right:5px;}
+.all-tiles p {margin-left:10px;margin-right:10px;}
 .all-tiles h3 span {color: white;font: bold 16px/20px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}       
 .tile-news a {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:5px;margin-right:5px;line-height:1.0;}    
 .tile-news span {color: black;font: bold 14px/14px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 1);padding: 5px;}
 .tile-news li {margin-bottom:5px;}
 .tile-about ul li{color:white;font: 14px/14px Helvetica, Sans-Serif;line-height:1.0;padding-left:0;margin: 0;}
-.tile-about p {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:5px;margin-right:1%;line-height:1.0;} 
+.tile-about p {color:white;font: 14px/14px Helvetica, Sans-Serif;margin-left:10px;margin-right:10px;line-height:1.0;}
 }
 
 
