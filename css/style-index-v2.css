@@ -173,8 +173,8 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .tile-6{float: left;width: 31%;height: 400px;} 
 .tile-news{float: left;width: 31%;height: 400px;}  
 .tile-about {width:31%;height:400px;background-color: #008080;}
-.tileContainer{width:96%;margin:0 auto;display:inline-block;}
-.subContainer{width:100%;display:inline-block;float:left;}
+.tileContainer{width:100%;margin:0 auto;display:inline-block;}
+.subContainer{width:100%;display:inline-block;margin:0 auto;}
 .showonhover {display: inline;}
 .alwaysshowme:hover .showonhover {display: inline;} 
 .all-tiles p span {color: black;font: bold 14px/14px Helvetica, Sans-Serif;background: rgb(1, 1, 1); /* fallback color */background: rgba(255, 255, 255, 0.7);padding: 0px;line-height:0.8;}
