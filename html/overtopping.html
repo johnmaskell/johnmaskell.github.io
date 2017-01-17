@@ -53,7 +53,7 @@ if($(window).width() < 969) {
     window.location = "http://johnmaskell.github.io/html/coastal-defences.html#desktoponly";
 }
 	
-$("#dynamicinstructionBox").addClass("instructionBoxalert");
+
   var stage = 1;
   var bpwall = ""	
   var bpslope = ""
@@ -88,7 +88,7 @@ $("#dynamicinstructionBox").addClass("instructionBoxalert");
       $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");
-	      
+	$("#dynamicinstructionBox").addClass("instructionBoxalert");      
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
           $("#droppable").addClass("newclassBpool");	  
 	  $("#myInstruction").text("Blackpool added.")
