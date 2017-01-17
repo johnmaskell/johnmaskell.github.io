@@ -178,7 +178,7 @@ h3 {font-size:12px;}
 header {position: absolute;height:75px;}
 #logo{float: left;width: 100px;height: 25px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:5px;margin-right:0;border:0;} 
 #menu-icon {display:inline-block;width:25px;height:25px;background-size:100% 100%;float:right;margin:0;border:0;}
-nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 45px;top: 30px;width: 50%;border-radius: 4px 0 4px 4px;}
+nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 45px;top: 30px;width: 75%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
 nav:hover ul {display: block;}
 nav a{font: 12px/12px Helvetica, Sans-Serif;}
