@@ -37,11 +37,11 @@ nav {margin-right:15.5%;}
 .content-text-1{float:left;width:40%;}
 .content-text-2{width:100%;}
 .objectrightMargin{margin-left:5%;}
-.p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
-.p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
-.p3 {color:#008080;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
-.content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.content-2 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;} 
+.p1 {color:#008080;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
+.p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
+.p3 {color:#008080;font: 16px/16px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
+.content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
+.content-2 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;} 
 .col {float:left;}
 h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 
@@ -67,11 +67,11 @@ nav {margin-right:15.5%;}
 .content-text-1{float:left;width:40%;}
 .content-text-2{width:100%;}
 .objectrightMargin{margin-left:5%;}
-.p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
-.p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
-.p3 {color:#008080;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
-.content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.content-2 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;} 
+.p1 {color:#008080;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;text-align:justify;}
+.p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;}
+.p3 {color:#008080;font: 16px/16px Helvetica, Sans-Serif; line-height:1.4;font-weight:bold;margin-left:5%;margin-bottom:20px;}
+.content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
+.content-2 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;} 
 .col {float:left;}
 h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
 }
