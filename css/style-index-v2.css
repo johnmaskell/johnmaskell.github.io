@@ -68,7 +68,8 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .tile-3{float: left;width: 31%;height: 400px;}
 .tile-4 {float: left;width: 31%;height: 400px;}
 .tile-5{float: left;width: 31%;height: 400px;}
-.tile-6{float: left;width: 31%;height: 400px;} 
+.tile-6{float: left;width: 31%;height: 400px;}
+.tile-7{float: left;width: 31%;height: 400px;}
 .tile-news{float: left;width: 31%;height: 400px;}  
 .tile-about {width:31%;height:400px;background-color: #008080;}
 .tileContainer{width:100%;margin:0 auto;display:inline-block;}
