@@ -362,7 +362,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 .tile-about ul li{color:white;font: 12px/12px Helvetica, Sans-Serif;line-height:1.2;padding-left:0;margin: 0;}
 .tile-about p {color:white;font: 12px/12px Helvetica, Sans-Serif;margin-left:5px;margin-right:5px;line-height:1.2;} 
 .smallScreen{width:100px;height:25px;}
-.psmallScreen{font-size:10px;}
+.psmallScreen{font-size:12px;float:left;}
 
 }
 
