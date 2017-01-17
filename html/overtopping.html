@@ -88,7 +88,7 @@ if($(window).width() < 969) {
       $("#topBoxdiv").addClass("tetrapodElem");      
       $("#middleBoxdiv").addClass("slopeElem");
       $("#bottomBoxdiv").addClass("wallElem");
-	$("#dynamicinstructionBox").addClass("instructionBoxalert");      
+	     
       if((ui.draggable.is(".dragBoxblackpool"))&&(stage==1)){
           $("#droppable").addClass("newclassBpool");	  
 	  $("#myInstruction").text("Blackpool added.")
@@ -217,14 +217,14 @@ if($(window).width() < 969) {
 	  setTimeout(
 		  function(){
 			  if (nruns<3) {
-			      $("#myInstruction").text("Visualisation finished. Add another defence type or view results.")
+			      $("#myInstruction").text("Visualisation finished. Add another defence type or click view results.")
 			  } else {
 			      $("#myInstruction").text("Visualisation finished. View results.")  
 			  }
 			  $("#middleBoxdiv").removeClass("slopeElem")
 			  $("#middleBoxdiv").addClass("slopeResultblackpool")
 			  if (nruns==1){
-			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="View results" />');
+			      var $input = $('<input class=resetButton type="button" onClick="viewResults()" value="Click view results" />');
                                $input.appendTo($("#dynamicinstructionBox"));
 			  }
                           
