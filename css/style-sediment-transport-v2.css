@@ -171,6 +171,8 @@ h1 {line-height:1.2;font-size:14px;}
 .content-1 ul {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
 .img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
+.smallScreen{width:100px;height:25px;}
+.psmallScreen{font-size:8px;}
 
 }
 
