@@ -177,7 +177,7 @@ h1 {line-height:1.2;font-size:16px;}
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
 header {position: absolute;height:75px;}
-#logo{float: left;width: 100px;height: 25px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:5px;margin-right:0;border:0;} 
+#logo{float: left;width: 100px;height: 25px;background: url(http://gifyu.com/images/logo100x25.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:5px;margin-right:0;border:0;} 
 #menu-icon {display:inline-block;width:25px;height:25px;background-size:100% 100%;float:right;margin:0;border:0;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 45px;top: 30px;width: 75%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
