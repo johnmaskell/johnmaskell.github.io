@@ -42,7 +42,7 @@ h3 {font-size:12px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .img-container{width:100%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/exp_rc_01.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .graph-container{width:100%;height:500px;border: 1px; border-style:dashed;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/flooded_area_bar.png);background-size:100% 100%;background-repeat:no-repeat;}
-.bar1{position:absolute;width:110px;height:150px;background-color:red;top:295px;left:145px;}
+.bar1{position:absolute;width:110px;height:160px;background-color:red;top:295px;left:145px;}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
