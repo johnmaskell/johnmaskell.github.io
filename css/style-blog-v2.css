@@ -71,8 +71,8 @@ td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}
 .sim6Row tr:nth-child(8) {background-color: #dddddd;}
 
 .sim0Row tr:nth-child(2) {background-color: green;}
-.sim1Row tr:nth-child(3) {background-color: blue;}
-.sim6Row tr:nth-child(8) {background-color: red;}
+.sim0Row tr:nth-child(3) {background-color: blue;}
+.sim0Row tr:nth-child(8) {background-color: red;}
 hr {border: 0;clear:both;display:block;width: 100%;background-color:black;height: 1px;}
 
 /* Large Devices, Wide Screens */
