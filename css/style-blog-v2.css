@@ -60,7 +60,7 @@ h3 {font-size:12px;}
 
 .myTable {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;}
 td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}
-
+.myTable tr:nth-child(1) {background-color: #008080;color:white;}
 .sim0Row tr:nth-child(2) {background-color: #dddddd;}
 .sim1Row tr:nth-child(3) {background-color: #dddddd;}
 .sim2Row tr:nth-child(4) {background-color: #dddddd;}
