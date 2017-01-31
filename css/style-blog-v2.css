@@ -249,5 +249,5 @@ h3 {font-size:12px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;} 
  .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
-.myTable {font: 12px/12px Helvetica, sans-serif;border-collapse: collapse;width: 99%;overflow:auto;}
+.myTable {font: 12px/12px Helvetica, sans-serif;border-collapse: collapse;width: 99%;overflow:scroll;}
 }
