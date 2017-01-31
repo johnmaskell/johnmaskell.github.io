@@ -61,13 +61,13 @@ h3 {font-size:12px;}
 .myTable {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;}
 td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}
 
-.sim0Row tr:nth-child(1) {background-color: #dddddd;}
-.sim1Row tr:nth-child(2) {background-color: #dddddd;}
-.sim2Row tr:nth-child(3) {background-color: #dddddd;}
-.sim3Row tr:nth-child(4) {background-color: #dddddd;}
-.sim4Row tr:nth-child(5) {background-color: #dddddd;}
-.sim5Row tr:nth-child(6) {background-color: #dddddd;}
-.sim6Row tr:nth-child(7) {background-color: #dddddd;}
+.sim0Row tr:nth-child(2) {background-color: #dddddd;}
+.sim1Row tr:nth-child(3) {background-color: #dddddd;}
+.sim2Row tr:nth-child(4) {background-color: #dddddd;}
+.sim3Row tr:nth-child(5) {background-color: #dddddd;}
+.sim4Row tr:nth-child(6) {background-color: #dddddd;}
+.sim5Row tr:nth-child(7) {background-color: #dddddd;}
+.sim6Row tr:nth-child(8) {background-color: #dddddd;}
 
 
 
