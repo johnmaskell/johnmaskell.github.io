@@ -208,7 +208,7 @@ h3 {font-size:12px;}
 .mySidebar a:visited{color: white;font: 12px/12px Helvetica, Sans-Serif;margin-top:10px;margin-left:5%;margin-right:5%;line-height:1.4;text-decoration:none;}
 .dateStamp{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
-.myTable {font: 14px/14px Helvetica, sans-serif;border-collapse: collapse;width: 99%;}
+.myTable {font: 12px/12px Helvetica, sans-serif;border-collapse: collapse;width: 99%;}
 }
 
 /* Custom, iPhone Retina */ 
