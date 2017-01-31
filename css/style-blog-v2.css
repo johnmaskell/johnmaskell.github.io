@@ -71,7 +71,7 @@ td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}
 .sim6Row tr:nth-child(8) {background-color: #dddddd;}
 
 
-hr {border: 0;clear:both;display:block;width: 96%;background-color:#FFFF00;height: 1px;}
+hr {border: 0;clear:both;display:block;width: 100%;background-color:black;height: 1px;}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
