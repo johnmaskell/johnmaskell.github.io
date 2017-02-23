@@ -31,7 +31,7 @@ nav {margin-right:15.5%;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {float:left;width:45%;}
 .img-container img {display:block;}
-.img-displayed {width:100%;margin-top:20px;border: 1px solid black;border-radius:5%;} 
+.img-displayed {width:100%;margin-top:20px;} 
 .content-text-1{float:left;width:40%;}
 .objectrightMargin{margin-left:5%;}
 h1 {line-height:1.2;font-size:18px;}
