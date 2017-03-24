@@ -17,7 +17,7 @@ nav {float: right;padding: 20px;top:80px;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 .img-displayed{border: 1px solid black;border-radius:5%; }
-.text-border{border: 1px solid black;border-radius:5%;}
+.text-border{border: 1px solid black;border-radius:10%;width:95%;}
 #logo{float: left;width: 300px;height: 75px;margin-top:30px;background: url(http://gifyu.com/images/logo300x75.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 
 #logo {margin-left:17%;}
