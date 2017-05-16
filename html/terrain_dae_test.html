@@ -1,47 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>three.js webgl - collada</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				background:#00bfff;
-				padding:0;
-				margin:0;
-				font-weight: bold;
-				overflow:hidden;
-			}
-			#info {
-				position: absolute;
-				top: 0px;
-				width: 100%;
-				color: #ffffff;
-				padding: 5px;
-				font-family:Monospace;
-				font-size:13px;
-				text-align:center;
-			}
-			a {
-				color: #ffffff;
-			}
-		</style>
-	</head>
-	<body>
+<meta charset="utf-8">
 
-		<div id="container"></div>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-		<script src="http://cdn.rawgit.com/mrdoob/three.js/dev/build/three.js"></script>
+<style>
+    body { margin: 0; overflow: hidden; }
+</style>
 
-		<script src="http://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/loaders/ColladaLoader.js"></script>
-		<script src="http://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/controls/OrbitControls.js"></script>
-		<script src="http://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/Detector.js"></script>
-		<script src="http://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/libs/stats.min.js"></script>
-                <script src="../three.min.js"></script>
+</head>
+
+<body>
+
+<div id="webgl"></div>
+
+<script src="../three.min.js"></script>
 
 <script src="../TrackballControls.js"></script> 
 
 <script src="../TerrainLoader.js"></script> 
+	
+	
 
 <script>
     var width  = window.innerWidth,
@@ -84,11 +61,8 @@
         requestAnimationFrame(render);
         renderer.render(scene, camera);
     }
-
-	
-	
-	
 </script>
 
-	</body>
+</body>
+
 </html>
