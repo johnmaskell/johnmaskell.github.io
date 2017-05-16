@@ -33,10 +33,10 @@
 
 		<script src="https://github.com/mrdoob/three.js/edit/dev/build/three.js"></script>
 
-		<script src="js/ColladaLoader.js"></script>
-		<script src="js/OrbitControls.js"></script>
-		<script src="js/Detector.js"></script>
-		<script src="js/stats.min.js"></script>
+		<script src="https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/ColladaLoader.js"></script>
+		<script src="https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/OrbitControls.js"></script>
+		<script src="https://github.com/mrdoob/three.js/blob/dev/examples/js/Detector.js"></script>
+		<script src="https://github.com/mrdoob/three.js/blob/dev/examples/js/libs/stats.min.js"></script>
 
 		<script>
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
@@ -52,7 +52,7 @@
 				// collada
 				var loader = new THREE.ColladaLoader();
 				loader.options.convertUpAxis = true;
-				loader.load( 'file:///C:/ThreeD_Mapping/Freiburg/wind_turbine/base.dae', function ( collada ) {
+				loader.load( '../base.dae', function ( collada ) {
 					var object = collada.scene;
 					object.scale.set( 0.0025, 0.0025, 0.0025 );
 					object.position.set( - 2, 0.2, 0 );
