@@ -56,7 +56,7 @@
 
     var terrainLoader = new THREE.TerrainLoader();
 
-    terrainLoader.load('../north_lakes_reproj_clipped_lakesmoothed.bin', function(data) {
+    terrainLoader.load('../boston_estuary_recycplant_reduced.bin', function(data) {
 
         var geometry = new THREE.PlaneGeometry(60, 60, 299, 299);
 
@@ -68,7 +68,7 @@
 
         var material = new THREE.MeshPhongMaterial({
 
-           map: THREE.ImageUtils.loadTexture('../north_lakes_terrain_satimg.png')
+           map: THREE.ImageUtils.loadTexture('../boston_high_res.png')
 
            
 
