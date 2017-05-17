@@ -38,7 +38,7 @@
     terrainLoader.load('../north_lakes_reproj_clipped_lakesmoothed.bin', function(data) {
         var geometry = new THREE.PlaneGeometry(60, 60, 299, 299);
         for (var i = 0, l = geometry.vertices.length; i < l; i++) {
-            geometry.vertices[i].z = data[i] / 65535 * 1.5;
+            geometry.vertices[i].z = data[i] / 65535 * 10;
         }
         var material = new THREE.MeshPhongMaterial({
            map: THREE.ImageUtils.loadTexture('../north_lakes_terrain_satimg.png')
