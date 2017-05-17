@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - collada</title>
 
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<style>
+
+    body { margin: 0; overflow: hidden; }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="webgl"></div>
+
+<script src="../three.min.js"></script>
+
+<script src="../TrackballControls.js"></script> 
+
+<script src="../TerrainLoader.js"></script> 
+
+<script>
+
+    var width  = window.innerWidth,
+
+        height = window.innerHeight;
+
+    var scene = new THREE.Scene();
+
+    scene.add(new THREE.AmbientLight(0xeeeeee));
+
+    var axes = new THREE.AxisHelper(200);
+
+    
+
+    var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+
+    camera.position.set(0, -50, 50);
+
+    var renderer = new THREE.WebGLRenderer();
+
+    renderer.setSize(width, height);
+
+
+
+    var terrainLoader = new THREE.TerrainLoader();
+
+    terrainLoader.load('../boston_estuary_recycplant_reduced.bin', function(data) {
+
+        var geometry = new THREE.PlaneGeometry(60, 60, 299, 299);
+
+        for (var i = 0, l = geometry.vertices.length; i < l; i++) {
+
+            geometry.vertices[i].z = data[i] / 65535 * 10;
+
+        }
+
+        var material = new THREE.MeshPhongMaterial({
+
+           map: THREE.ImageUtils.loadTexture('../boston_high_res.png')
+
+           
+
+        });
+
+        var mesh_material = new THREE.MeshPhongMaterial({
+
+            color: 0xdddddd, 
+
+            wireframe: true
+
+        });
+
+    
+
+        var plane = new THREE.Mesh(geometry, material);
+
+        scene.add(plane);
+
+        
+
+        var plane2 = new THREE.Mesh(geometry, mesh_material);
+
+        
+
+         
+
+
+
+    });
+  
+    // collada
+				var loader = new THREE.ColladaLoader();
+				loader.options.convertUpAxis = false;
+				loader.load( '../base.dae', function ( collada ) {
+					var object = collada.scene;
+					object.scale.set( 0.00025, 0.00025, 0.00025 );
+					object.position.set(-14, -2, 5.5 );
+					scene.add( object );
+				} );
+				var loader = new THREE.ColladaLoader();
+				loader.options.convertUpAxis = false;
+				loader.load( '../blade.dae', function ( collada ) {
+					var object = collada.scene;
+					object.scale.set( 0.00025, 0.00025, 0.00025 );
+					object.position.set( -14, -2, 7 );
+					scene.add( object );
+				} );
+
+    var controls = new THREE.TrackballControls(camera); 
+
+    document.getElementById('webgl').appendChild(renderer.domElement);
+
+    render();
+
+    function render() {
+
+        controls.update();    
+
+        requestAnimationFrame(render);
+
+        renderer.render(scene, camera);
+
+    }
+
+</script>
+
+</body>
+
+</html>
