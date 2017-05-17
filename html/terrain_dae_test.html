@@ -24,57 +24,44 @@
 	
 
 <script>
-    var width  = window.innerWidth,
-    height = window.innerHeight;
-    var scene = new THREE.Scene();
-    scene.add(new THREE.AmbientLight(0xeeeeee));
-    var axes = new THREE.AxisHelper(200);
-    
-    var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-    camera.position.set(0, -50, 50);
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize(width, height);
-    var terrainLoader = new THREE.TerrainLoader();
-    terrainLoader.load('../north_lakes_reproj_clipped_lakesmoothed.bin', function(data) {
-        var geometry = new THREE.PlaneGeometry(60, 60, 299, 299);
-        for (var i = 0, l = geometry.vertices.length; i < l; i++) {
-            geometry.vertices[i].z = data[i] / 65535 * 10;
-        }
-        var material = new THREE.MeshPhongMaterial({
-           map: THREE.ImageUtils.loadTexture('../north_lakes_terrain_satimg.png')
-           
-        });
-        var mesh_material = new THREE.MeshPhongMaterial({
-            color: 0xdddddd, 
-            wireframe: true
-        });
-    
-        var plane = new THREE.Mesh(geometry, material);
-        scene.add(plane);
-        
-        var plane2 = new THREE.Mesh(geometry, mesh_material);
-        
-         
-    });
-    // collada
-    var loader = new THREE.ColladaLoader();
-    loader.options.convertUpAxis = true;
-    loader.load( '../base.dae', function ( collada ) {
-    var object = collada.scene;
-    object.scale.set( 0.0025, 0.0025, 0.0025 );
-    object.position.set( - 2, 0.2, 0 );
-    scene.add( object );
-     } );
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.set( 7, 5, 7 );
+scene = new THREE.Scene();
+// collada
+var loader = new THREE.ColladaLoader();
+loader.options.convertUpAxis = true;
+loader.load( '../base.dae', function ( collada ) {
+var object = collada.scene;
+object.scale.set( 0.0025, 0.0025, 0.0025 );
+object.position.set( - 2, 0.2, 0 );
+scene.add( object );
+} );
+var loader = new THREE.ColladaLoader();
+loader.options.convertUpAxis = true;
+loader.load( '../blade.dae', function ( collada ) {
+var object = collada.scene;
+object.scale.set( 0.0025, 0.0025, 0.0025 );
+object.position.set( - 2, 15, 0 );
+scene.add( object );
+} );
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+				//
+				controls = new THREE.OrbitControls( camera, renderer.domElement );
 	
-    var controls = new THREE.TrackballControls(camera); 
-    document.getElementById('webgl').appendChild(renderer.domElement);
-    render();
-    function render() {
-        controls.update();    
-        requestAnimationFrame(render);
-        renderer.render(scene, camera);
-	  
-    }
+				function onWindowResize() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			}
+	
+			function render() {
+				renderer.render( scene, camera );
+			}
+	
+
 
 </script>
 
