@@ -220,7 +220,7 @@
 
 				//
 
-				controls = new THREE.TrackballControls( camera, renderer.domElement );
+				controls = new THREE.TrackballControls( camera );
 
 				//
 
@@ -255,8 +255,9 @@
 			}
 
 			function render() {
-
+                                controls.update();
 				renderer.render( scene, camera );
+				
 
 			}
 
