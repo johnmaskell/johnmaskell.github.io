@@ -77,7 +77,8 @@
 
 <script>
 
-			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+	if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 			var container, stats;
 
@@ -130,6 +131,64 @@
 					scene.add( object );
 
 				} );
+				var terrainLoader = new THREE.TerrainLoader();
+
+
+
+    terrainLoader.load('../north_lakes_reproj_clipped_lakesmoothed.bin', function(data) {
+
+
+
+        var geometry = new THREE.PlaneGeometry(60, 60, 299, 299);
+
+
+
+        for (var i = 0, l = geometry.vertices.length; i < l; i++) {
+
+
+
+            geometry.vertices[i].z = data[i] / 65535 * 10;
+
+
+
+        }
+
+
+
+        var material = new THREE.MeshPhongMaterial({
+
+
+
+           map: THREE.ImageUtils.loadTexture('../north_lakes_terrain_satimg.png')
+
+
+
+           
+
+
+
+        });
+
+
+
+        var mesh_material = new THREE.MeshPhongMaterial({
+
+
+
+            color: 0xdddddd, 
+
+
+
+            wireframe: true
+
+
+
+        });
+
+        var plane = new THREE.Mesh(geometry, material);
+        scene.add(plane);
+
+
 
 				//
 
