@@ -35,13 +35,13 @@
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
     var terrainLoader = new THREE.TerrainLoader();
-    terrainLoader.load('../boston_estuary_recycplant_reduced.bin', function(data) {
-        var geometry = new THREE.PlaneGeometry(60, 60, 999, 999);
+    terrainLoader.load('../north_lakes_reproj_clipped_lakesmoothed.bin', function(data) {
+        var geometry = new THREE.PlaneGeometry(60, 60, 299, 299);
         for (var i = 0, l = geometry.vertices.length; i < l; i++) {
             geometry.vertices[i].z = data[i] / 65535 * 1.5;
         }
         var material = new THREE.MeshPhongMaterial({
-           map: THREE.ImageUtils.loadTexture('../boston_high_res.png')
+           map: THREE.ImageUtils.loadTexture('../north_lakes_terrain_satimg.png')
            
         });
         var mesh_material = new THREE.MeshPhongMaterial({
