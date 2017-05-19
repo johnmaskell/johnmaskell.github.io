@@ -109,14 +109,7 @@
 					object.position.set(-10, -10, 3 );
 					scene.add( object );
 				} );
-				var loader = new THREE.ColladaLoader();
-				loader.options.convertUpAxis = false;
-				loader.load( '../blade.dae', function ( collada ) {
-					var object = collada.scene;
-					object.scale.set( 0.00025, 0.00025, 0.00025 );
-					object.position.set( -14, -10, 6.5 );
-					scene.add( object );
-				} );
+				
 
     var controls = new THREE.TrackballControls(camera); 
 
