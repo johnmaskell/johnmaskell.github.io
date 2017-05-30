@@ -213,7 +213,8 @@
 <p class="p2">The first task in mesh building to extract the coastlines in the desired domain. The coast line extractor tool featured in the video uses a JavaScript library for displaying and manipulating maps (<a href="https://openlayers.org/">OpenLayers</a> ) for the front end user interface. The user extracts the desired coastal line by drawing a polygon and the coastline is then extracted from a GSHHG global shape file from <a href="https://ngdc.noaa.gov/mgg/shorelines/gshhs.html">NOAA</a> on the server side (using the Python <a href="http://www.gdal.org/">GDAL</a> bindings) for the user to download.</p>
 <p class="p2">The mesh is generated using <a href="http://www.nrc-cnrc.gc.ca/eng/solutions/advisory/blue_kenue_index.html">Blue Kenue</a>. This is fantastic open source software for developing meshes, initial conditions, boundary conditions and visualizing results for hydrodynamic models in Telemac. The software can fit a triangular finite element mesh to a particular domain geometry with a resolution specified by the user or based on the underlying bathymetry. The bathymetry featured in the video comes from the <a href="http://emodnet.eu/">EMODnet</a> bathymetry database.</p>
 <img class="img-displayed" src="https://gifyu.com/images/solway3Dv5.png">
-
+<p class="p2">The bathymetry can be visualized in 3D in a web browser using <a href="https://threejs.org/">threejs</a> a JavaScript library that facilitates displaying 3D graphics using WebGL. The bathymetry is combined with a DTM and satellite imagery from <a href="https://earthexplorer.usgs.gov/">EarthExplorer</a> provided by USGS to create the 3D model. The terrain viewer featured in the video can be used to view 3D visualizations in your browser. There is a basic demo version of this application <a href="http://johnmaskell.pythonanywhere.com/terrainviewer/">here</a>.</p>
+<img class="img-displayed" src="https://gifyu.com/images/freiburgv1.png">
 </div>
 	<br>
 	<hr>
