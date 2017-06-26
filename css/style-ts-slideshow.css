@@ -97,8 +97,8 @@ nav {margin-right:15.5%;}
 .myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 15px;left:10px; width: 100%;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.mySlideshow {position:relative;width:100%;height:300px;overflow:hidden}
-.mySlideshow img {height:300px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.mySlideshow {position:relative;width:100%;height:100%;overflow:hidden}
+.mySlideshow img {height:100%;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .mySlideshow h2 {position:absolute;top: 240px;left: 1%;width: 100%;}
 .mySlideshow h2 span {color: white;font: bold 20px/22px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mySlideshow a {cursor: pointer;line-height:35px;}
@@ -147,8 +147,8 @@ nav {margin-right:1%;}
 .myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 15px;left:10px; width: 100%;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.mySlideshow {position:relative;width:100%;height:200px;overflow:hidden}
-.mySlideshow img {height:200px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.mySlideshow {position:relative;width:100%;height:100%;overflow:hidden}
+.mySlideshow img {height:100%;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .mySlideshow h2 {position:absolute;top: 140px;left: 1%;width: 100%;}
 .mySlideshow h2 span {color: white;font: bold 18px/20px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mySlideshow a {cursor: pointer;line-height:35px;}
@@ -206,8 +206,8 @@ nav {margin-right:0;}
 .myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 15px;left:10px; width: 100%;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.mySlideshow {position:relative;width:100%;height:150px;overflow:hidden}
-.mySlideshow img {height:150px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.mySlideshow {position:relative;width:100%;height:100%;overflow:hidden}
+.mySlideshow img {height:100%;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .mySlideshow h2 {position:absolute;top: 90px;left: 1%;width: 100%;}
 .mySlideshow h2 span {color: white;font: bold 16px/20px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mySlideshow a {cursor: pointer;line-height:35px;}
@@ -266,8 +266,8 @@ nav {margin-right:0;}
 .myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 15px;left:10px; width: 100%;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.mySlideshow {position:relative;width:100%;height:120px;overflow:hidden}
-.mySlideshow img {height:120px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.mySlideshow {position:relative;width:100%;height:100%;overflow:hidden}
+.mySlideshow img {height:100%;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .mySlideshow h2 {position: absolute;top: 70px;left: 1%;width: 100%;}
 .mySlideshow h2 span {color: white;font: bold 14px/18px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mySlideshow a {cursor: pointer;line-height:35px;}
@@ -324,8 +324,8 @@ nav {margin-right:0;}
 .myBanner img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .myBanner h2 {position: absolute;top: 15px;left:10px; width: 100%;}
 h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;}
-.mySlideshow {position:relative;width:100%;height:100px;overflow:hidden}
-.mySlideshow img {height:100px;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
+.mySlideshow {position:relative;width:100%;height:100%;overflow:hidden}
+.mySlideshow img {height:100%;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 .mySlideshow h2 {position: absolute;top: 50px;left: 1%;width: 100%;}
 .mySlideshow h2 span {color: white;font: bold 14px/18px Helvetica, Sans-Serif;letter-spacing: -1px;background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 5px;} 
 .mySlideshow a {cursor: pointer;line-height:20px;}
