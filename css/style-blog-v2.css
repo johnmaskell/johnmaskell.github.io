@@ -43,7 +43,7 @@ h3 {font-size:12px;}
 .dateStamp{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .img-container{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/exp_rc_00.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.img-container-phone{width:99%;height:auto;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:100% 100%;background-repeat:no-repeat;}
+.img-container-phone{width:99%;height:400px;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:contain;background-repeat:no-repeat;}
 .floatingbuttoni {width: 40px;height: 40px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:22px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -111,7 +111,7 @@ h3 {font-size:12px;}
 .dateStamp{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .myTable {font: 16px/16px Helvetica, sans-serif;border-collapse: collapse;width: 99%;}
-.img-container-phone{width:99%;height:auto;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:100% 100%;background-repeat:no-repeat;}
+.img-container-phone{width:99%;height:400px;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:contain;background-repeat:no-repeat;}
 .floatingbuttoni {width: 40px;height: 40px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:22px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -146,7 +146,7 @@ h3 {font-size:12px;}
 .dateStamp{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .myTable {font: 14px/14px Helvetica, sans-serif;border-collapse: collapse;width: 99%;}
-.img-container-phone{width:99%;height:auto;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:100% 100%;background-repeat:no-repeat;}
+.img-container-phone{width:99%;height:300px;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:contain;background-repeat:no-repeat;}
 .floatingbuttoni {width: 40px;height: 40px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:22px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -188,7 +188,7 @@ h3 {font-size:12px;}
 .dateStamp{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .myTable {font: 12px/12px Helvetica, sans-serif;border-collapse: collapse;width: 99%;}
-.img-container-phone{width:99%;height:auto;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:100% 100%;background-repeat:no-repeat;}
+.img-container-phone{width:99%;height:200px;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:contain;background-repeat:no-repeat;}
 .floatingbuttoni {width: 40px;height: 40px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:22px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -232,7 +232,7 @@ h3 {font-size:12px;}
 .dateStamp{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .myTable {font: 12px/12px Helvetica, sans-serif;border-collapse: collapse;width: 99%;}
-.img-container-phone{width:99%;height:auto;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:100% 100%;background-repeat:no-repeat;}
+.img-container-phone{width:99%;height:200px;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:contain;background-repeat:no-repeat;}
 .floatingbuttoni {width: 40px;height: 40px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:22px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -277,7 +277,7 @@ h3 {font-size:12px;}
  .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
 .myTable {font: 12px/12px Helvetica, sans-serif;border-collapse: collapse;width: 99%;overflow:scroll;}
-.img-container-phone{width:99%;height:auto;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:100% 100%;background-repeat:no-repeat;}
+.img-container-phone{width:99%;height:200px;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/mobileframe.png);background-size:contain;background-repeat:no-repeat;}
 .floatingbuttoni {width: 25px;height: 25px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:18px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
