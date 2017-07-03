@@ -48,8 +48,8 @@ h3 {font-size:12px;}
 
 .mySlideshow {position:absolute;width:64%;height:40%;left:18.5%;top:17%;border:1px;border-style:solid;}
 .mySlideshow a {cursor: pointer;line-height:40px;}
-.displayleft {position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
-.displayright {position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
+.displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
+.displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
 .mySlideshow img {height:100%;width:100%;display:block;margin-left:auto;margin-right:auto;overflow: hidden;}
 
 
