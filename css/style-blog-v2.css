@@ -44,7 +44,7 @@ h3 {font-size:12px;}
 .myNote{font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;text-align:justify;font-style:italic;}
 .img-container{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(http://gifyu.com/images/exp_rc_00.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .img-container-phone{width:99%;margin-top:20px;float:left;position:relative;background: no-repeat url(https://gifyu.com/images/mobileframe.png) cover;}
-.spcacerimg{vertical-align:top;height:auto;width:100%;opacity:0;}
+.spcacerimg{vertical-align:top;height:auto;max-width:100%;opacity:0;}
 .floatingbuttoni {width: 40px;height: 40px;text-align:center;border-radius:50%;background-color:black;color:white;font-weight:bold;font-size:22px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
