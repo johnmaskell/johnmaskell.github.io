@@ -49,7 +49,7 @@ h3 {font-size:12px;}
 .displayleft {position:absolute;top:60%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
 
-my-test-container{background:url(https://gifyu.com/images/mobileframe.png) no-repeat center center fixed;
+.my-test-container{background:url(https://gifyu.com/images/mobileframe.png) no-repeat center center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
