@@ -284,8 +284,8 @@ $(window).resize(updatePointer);
 function updatePointer() {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-
-    // Get largest dimension increase
+    var newposx = windowWidth * 0.17;
+   /* // Get largest dimension increase
     var xScale = windowWidth / image.width;
     var yScale = windowHeight / image.height;
     var scale;
@@ -303,7 +303,9 @@ function updatePointer() {
     }
 
     slidediv.css('top', (target.y) * scale + yOffset);
-    slidediv.css('left', (target.x) * scale + xOffset);
+    slidediv.css('left', (target.x) * scale + xOffset);*/
+    slidediv.css('left', newposx);
+    
 }
 </script>	
 <script>
