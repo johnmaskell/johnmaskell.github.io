@@ -284,7 +284,7 @@ $(window).resize(updatePointer);
 function updatePointer() {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    if (windowWidth > 992 ) {
+    if (windowWidth > 1004 ) {
 	    var effWidth = windowWidth * 0.66;
 	    var realwidth = Math.min(windowWidth,1400.0)
 	    var newposx = 130 * (realwidth/1400.0);
@@ -293,8 +293,9 @@ function updatePointer() {
 	    console.log(newwidth);
 	    
     } else {
-	    var newposx = 150 * (windowWidth/1920.0);
-	    var newwidth = 645 * (windowWidth/1400.0);
+	    var realwidth = Math.min(windowWidth,1400.0)
+	    var newposx = 130 * (windowWidth/1004.0);
+	    var newwidth = 350 * (windowWidth/1004.0);
     }
    /* // Get largest dimension increase
     var xScale = windowWidth / image.width;
