@@ -50,7 +50,7 @@ h3 {font-size:12px;}
 .displayright {position:absolute;top:60%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-50%,-50%)}
 
 .my-test-container{position:relative;width:100%;}
-.spcacerimg{height:auto;max-width:100%;}
+.spcacerimg{max-width:100%;}
 .mySlideshow {position:absolute;width:64%;height:40%;left:18.5%;top:17%;}
 .mySlideshow a {cursor: pointer;line-height:40px;}
 
