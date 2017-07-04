@@ -287,9 +287,11 @@ function updatePointer() {
     if (windowWidth > 992 ) {
 	    var effWidth = windowWidth * 0.66;
 	    var newposx = 150 * (effWidth/1920.0);
+	    var newwidth = 645 * (effWidth/1920.0);
 	    
     } else {
 	    var newposx = 150 * (windowWidth/1920.0);
+	    var newwidth = 645 * (windowWidth/1920.0);
     }
    /* // Get largest dimension increase
     var xScale = windowWidth / image.width;
