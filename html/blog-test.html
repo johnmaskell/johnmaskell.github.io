@@ -273,6 +273,40 @@
 
 </div>
 <script>
+var image = { width: 1994, height: 1148 };
+var target = { x: 370, y: 199 };
+
+var slidediv = $('#slidediv');
+
+$(document).ready(updatePointer);
+$(window).resize(updatePointer);
+
+function updatePointer() {
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+
+    // Get largest dimension increase
+    var xScale = windowWidth / image.width;
+    var yScale = windowHeight / image.height;
+    var scale;
+    var yOffset = 0;
+    var xOffset = 0;
+
+    if (xScale > yScale) {
+        // The image fits perfectly in x axis, stretched in y
+        scale = xScale;
+        yOffset = (windowHeight - (image.height * scale)) / 2;
+    } else {
+        // The image fits perfectly in y axis, stretched in x
+        scale = yScale;
+        xOffset = (windowWidth - (image.width * scale)) / 2;
+    }
+
+    slidediv.css('top', (target.y) * scale + yOffset);
+    slidediv.css('left', (target.x) * scale + xOffset);
+}
+</script>	
+<script>
 var slideIndex = 1;
 showDivs(slideIndex);
 function plusDivs(n) {
