@@ -73,7 +73,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
 
   // change string (from CSV) into number format
   data.forEach(function(d) {
-    d["date"] = +d["date"];
+    d["date"] = d["date"];
     d["waterlevel"] = +d["waterlevel"];
     d["waveheight"] = +d["waveheight"];  
     d["rpwl"] = +d["rpwl"];
