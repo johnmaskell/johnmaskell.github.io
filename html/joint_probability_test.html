@@ -116,6 +116,11 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
     d["rpwl"] = +d["rpwl"];
     d["rphs"] = +d["rphs"];
     d["rpjp"] = +d["rpjp"];
+    if d["rpjp"] > 200. {
+      d["rpjp"] = ">200"
+    } else {
+      d["rpjp"] = d["rpjp"].toString();
+    }
     //console.log(d);
   });
   
