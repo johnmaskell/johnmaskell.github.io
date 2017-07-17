@@ -168,7 +168,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
   });
     svg.selectAll(".green.dot")
       .data(rpcontour)
-      .enter().append("circle")
+      .enter().append("line")
       .attr("class", "green dot")
       .attr("r", 3.5)
       .attr("cx", xMapc)
