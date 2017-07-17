@@ -118,6 +118,8 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, data) {
     d["rpjp"] = +d["rpjp"];
     if (d["rpjp"] > 200.) {
       d["rpjp"] = ">200"
+    } else if (d["rpjp"] <1.) {
+      d["rpjp"] = "<1"
     } else {
       d["rpjp"] = d["rpjp"].toString();
     }
