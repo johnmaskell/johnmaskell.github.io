@@ -69,11 +69,12 @@ var tooltip = d3.select("body").append("div")
     .style("opacity", 0);
 
 // load data
+parseDate = d3.time.format("%Y-%m-%d").parse
 d3.csv("liv_hshw_jps.csv", function(error, data) {
 
   // change string (from CSV) into number format
   data.forEach(function(d) {
-    d["date"] = d["date"];
+    d["date"] = parseDate(d["date"]);
     d["waterlevel"] = +d["waterlevel"];
     d["waveheight"] = +d["waveheight"];  
     d["rpwl"] = +d["rpwl"];
