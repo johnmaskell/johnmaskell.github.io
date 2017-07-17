@@ -133,9 +133,10 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
                .duration(500)
                .style("opacity", 0);
       });
-      .on("click",function(d) {
+      .on("click",click); 
+  function click(d) {
         console.log(d["waterlevel"]);
-      });
+      }
 
 
 });
