@@ -62,11 +62,11 @@ var yValue = function(d) { return d["waveheight"];}, // data -> value
   
 // setup x contour 
 var xValuec = function(dd) { return dd.rp50_wl;}, // data -> value    
-    xMapc = function(dd) { return xScale(xValuec(dd));}, // data -> display    
+    xMapc = function(dd) { return xScale(xValuec(dd));} // data -> display    
 
 // setup y contour
 var yValuec = function(dd) { return dd["rp50_hs"];}, // data -> value   
-    yMapc = function(dd) { return yScale(yValuec(dd));}, // data -> display 
+    yMapc = function(dd) { return yScale(yValuec(dd));} // data -> display 
   
   
 
