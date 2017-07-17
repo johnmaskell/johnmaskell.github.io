@@ -94,7 +94,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
     d["rpwl"] = +d["rpwl"];
     d["rphs"] = +d["rphs"];
     d["rpjp"] = +d["rpjp"];
-    console.log(d);
+    //console.log(d);
   });
   
 
@@ -163,7 +163,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
   rpcontour.forEach(function(dd) {
     
     dd["rp50_wl"] = +d["rp50_wl"];
-    dd["rp50_wl"] = +d["rp50_wl"]; 
+    dd["rp50_hs"] = +d["rp50_hs"]; 
     console.log(dd);    
   });
     svg.selectAll(".green.dot")
