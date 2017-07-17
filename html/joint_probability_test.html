@@ -162,7 +162,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
   // change string (from CSV) into number format
   rpcontour.forEach(function(dd) {
     
-    dd["rp50_wl"] = +dd["rp50_wl"];
+    dd["rp50_wl"] = +dd["rp50_wl"] + 4.93;
     dd["rp50_hs"] = +dd["rp50_hs"]; 
     console.log(dd);    
   });
