@@ -87,16 +87,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
     console.log(d);
   });
   
-  // load contour data
-  d3.csv("countours_1000yrs_rp50.csv", function(error, rpcontour) {
 
-  // change string (from CSV) into number format
-  rpcontour.forEach(function(dd) {
-    
-    dd["rp50_wl"] = +d["rp50_wl"];
-    dd["rp50_wl"] = +d["rp50_wl"]; 
-    console.log(dd);
-  });
 
   // don't want dots overlapping axis, so add in buffer to data domain
   xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
@@ -151,9 +142,21 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
       .on("click", function(d) { 
         console.log(d["waterlevel"]);
       });
-    // draw dots
+    // draw dots 
+
+});
   
-  svg.selectAll(".green.dot")
+  // load contour data
+  d3.csv("countours_1000yrs_rp50.csv", function(error, rpcontour) {
+
+  // change string (from CSV) into number format
+  rpcontour.forEach(function(dd) {
+    
+    dd["rp50_wl"] = +d["rp50_wl"];
+    dd["rp50_wl"] = +d["rp50_wl"]; 
+    console.log(dd);    
+  });
+    svg.selectAll(".green.dot")
       .data(rpcontour)
       .enter().append("circle")
       .attr("class", "green dot")
@@ -161,7 +164,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
       .attr("cx", xMap)
       .attr("cy", yMap)
       .style("fill", "green")
-});
+  });
 
 </script>
 </body>
