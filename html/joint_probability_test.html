@@ -59,6 +59,16 @@ var yValue = function(d) { return d["waveheight"];}, // data -> value
     yScale = d3.scale.linear().range([height, 0]), // value -> display
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left");
+  
+// setup x contour 
+var xValuec = function(dd) { return dd.rp50_wl;}, // data -> value    
+    xMapc = function(dd) { return xScale(xValuec(dd));}, // data -> display    
+
+// setup y contour
+var yValuec = function(dd) { return dd["rp50_hs"];}, // data -> value   
+    yMapc = function(dd) { return yScale(yValuec(dd));}, // data -> display 
+  
+  
 
 // add the graph canvas to the body of the webpage
 var svg = d3.select("body").append("svg")
@@ -161,8 +171,8 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
       .enter().append("circle")
       .attr("class", "green dot")
       .attr("r", 3.5)
-      .attr("cx", xMap)
-      .attr("cy", yMap)
+      .attr("cx", xMapc)
+      .attr("cy", yMapc)
       .style("fill", "green")
   });
 
