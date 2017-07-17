@@ -36,7 +36,7 @@ body {
   position: absolute;           
   text-align: center;           
   width: 150px;                  
-  height: 75px;                 
+  height: 100px;                 
   padding: 2px;             
   font: 12px sans-serif;        
   background: lightsteelblue;   
@@ -162,7 +162,7 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
           tooltip.transition()
                .duration(200)
                .style("opacity", .9);
-          tooltip.html(d["date"] + "<br/>" + "Water level - " + d["waterlevel"] + "m" + "<br/>" + "Sig. wave height - " + d["waveheight"] + "m" + "<br/>" + "WL RP - " + d["wlrp"] + " years"+ "<br/>" + "HS RP - " + d["hsrp"] + " years" + "<br/>" + "Joint RP - " + d["jprp"] + " years" )
+          tooltip.html(d["date"] + "<br/>" + "Water level - " + d["waterlevel"] + "m" + "<br/>" + "Sig. wave height - " + d["waveheight"] + "m" + "<br/>" + "WL RP - " + d["rpwl"] + " years"+ "<br/>" + "HS RP - " + d["rphs"] + " years" + "<br/>" + "Joint RP - " + d["rpjp"] + " years" )
                .style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
       })
