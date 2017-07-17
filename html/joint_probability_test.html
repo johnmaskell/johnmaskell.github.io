@@ -61,13 +61,13 @@ var yValue = function(d) { return d["waveheight"];}, // data -> value
     yAxis = d3.svg.axis().scale(yScale).orient("left");
   
 // setup x contour 
-/*var xValuec = function(dd) { return dd.rp50_wl;}, // data -> value    
+var xValuec = function(dd) { return dd.rp50_wl;}, // data -> value    
     xMapc = function(dd) { return xScale(xValuec(dd));} // data -> display    
 
 // setup y contour
 var yValuec = function(dd) { return dd["rp50_hs"];}, // data -> value   
-    yMapc = function(dd) { return yScale(yValuec(dd));} // data -> display */
-var x = d3.scaleTime()
+    yMapc = function(dd) { return yScale(yValuec(dd));} // data -> display 
+/*var x = d3.scaleTime()
     .rangeRound([0, width]);
 
 var y = d3.scaleLinear()
@@ -75,7 +75,7 @@ var y = d3.scaleLinear()
   
 var line = d3.line()
     .x(function(dd) { return x(dd.rp50_wl); })
-    .y(function(dd) { return y(dd.rp50_hs); }); 
+    .y(function(dd) { return y(dd.rp50_hs); });*/ 
   
 
 // add the graph canvas to the body of the webpage
@@ -175,22 +175,22 @@ d3.csv("liv_hshw_jps.csv", function(error, data) {
     console.log(dd);    
   });
     
-    g.append("path")
+    /*g.append("path")
       .datum(rpcontour)
       .attr("fill", "none")
       .attr("stroke", "steelblue")
       .attr("stroke-linejoin", "round")
       .attr("stroke-linecap", "round")
       .attr("stroke-width", 1.5)
-      .attr("dd", line);
-   /* svg.selectAll(".green.dot")
+      .attr("dd", line);*/
+    svg.selectAll(".green.dot")
       .data(rpcontour)
       .enter().append("line")
       .attr("class", "green dot")
       .attr("r", 3.5)
       .attr("cx", xMapc)
       .attr("cy", yMapc)
-      .style("fill", "green")*/
+      .style("fill", "green")
   });
 
 </script>
