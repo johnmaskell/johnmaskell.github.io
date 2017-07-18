@@ -50,12 +50,12 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       values: data.map(function(d) {
           return {wl: d[id]};
       })
-    };
+    }
     } else {
     return {
       id: id,      
       values: data.map(function(d) {
-          return {wl: d[id]};
+          return {hs: d[id]};
       })
     };
     }
