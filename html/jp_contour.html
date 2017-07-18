@@ -50,7 +50,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       values: data.map(function(d) {
           return {wl: d[id]};
       })
-    }
+    };
     } else {
     return {
       id: id,      
@@ -58,7 +58,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
           return {hs: d[id]};
       })
     }
-    }
+    };
     cntr += 1
   });
   console.log(cntr);
