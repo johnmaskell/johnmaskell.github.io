@@ -47,7 +47,9 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
     return {
       id: id,      
       values: data.map(function(d) {
-      if (cntr % 2 === 0) {     
+      if (cntr % 2 === 0) {
+          console.log(cntr);
+          console.log(id);
           return {wl: d[id]};
       } else {
           return {hs: d[id]};
@@ -59,7 +61,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   
   //x.domain(d3.extent(data, function(d) { return d.date; }));
   x.domain([
-    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { console.log(d.wl);return d.wl; }); }),
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
     d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
   ]);
   //x.domain(d3.extent(data, function(d) { return d.date; }));
