@@ -82,7 +82,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       .call(d3.axisBottom(x));
      .append("text")
       .attr("transform", "translate(0," + height + ")")
-      .attr("6", 6)
+      .attr("x", 6)
       .attr("dx", "0.71em")
       .attr("fill", "#000")
       .text("Water level (m)");
