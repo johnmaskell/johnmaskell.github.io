@@ -49,10 +49,11 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
   });
 
   //x.domain(d3.extent(data, function(d) { return d.date; }));
-  x.domain([
+  /*x.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
     d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
-  ]);
+  ]);*/
+  x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
@@ -88,7 +89,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
 
   city.append("text")
       .datum(function(d) { return {id: d.id, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.wl) + "," + y(d.value.hs) + ")"; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.hs) + ")"; })
       .attr("x", 3)
       .attr("dy", "0.35em")
       .style("font", "10px sans-serif")
@@ -97,6 +98,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
 
 function type(d, _, columns) {
   d.date = d.rp1wl;
+  console.log(d.date);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   //console.log(d.values);
   return d;
