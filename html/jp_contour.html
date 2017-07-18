@@ -99,7 +99,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
 function type(d, _, columns) {
   //d.date = d.rp1wl;
   //console.log(d.date);
-  for (var i = 0, n = columns.length, c, cnt = 1; i < n; ++i) console.log(c);
+  for (var i = 0, n = columns.length, c, cnt = 1; i < n; ++i) console.log(c = columns[i]);
 
   //console.log(d);
   return d;
