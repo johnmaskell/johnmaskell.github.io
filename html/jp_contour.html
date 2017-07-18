@@ -36,7 +36,7 @@ var line = d3.line()
 
 d3.tsv("allrpcontours.csv", type, function(error, data) {
   if (error) throw error;
-
+  console.log(data);
   var cities = data.columns.slice(1).map(function(id) {
     return {
       id: id,
@@ -92,7 +92,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
 function type(d, _, columns) {
   /*d.date = parseTime(d.date);*/
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
-  console.log(d.values);
+  //console.log(d.values);
   return d;
 }
 
