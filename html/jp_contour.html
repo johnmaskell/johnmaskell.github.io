@@ -36,11 +36,11 @@ var line = d3.line()
 
 d3.tsv("allrpcontours.csv", type, function(error, data) {
   if (error) throw error;
+  console.log(columns);
   //console.log(data);
   var cities = data.columns.slice(1).map(function(id) {
     return {
-      id: id,
-      console.log(id),
+      id: id,      
       values: data.map(function(d) {
         return {date: d.date, temperature: d[id]};
       })
