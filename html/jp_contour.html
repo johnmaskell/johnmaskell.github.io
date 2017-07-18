@@ -47,7 +47,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       })
     };
   });
-
+  console.log(wlhs);
   //x.domain(d3.extent(data, function(d) { return d.date; }));
   x.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
