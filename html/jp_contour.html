@@ -49,6 +49,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       id: id,
       values: data.map(function(d) {
         if (cntr % 2 === 0) {
+          console.log(id);
           return {wl: d[id]};
         } else {
           return {hs: d[id]};
