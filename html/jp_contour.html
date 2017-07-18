@@ -34,6 +34,7 @@ var line = d3.line()
     .x(function(d) { return x(d.wl); })
     .y(function(d) { return y(d.hs); });
 
+var cntr = 0;  
 d3.csv("allrpcontours.csv", type, function(error, data) {
   if (error) throw error;
   
@@ -42,8 +43,9 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
     return {
       id: id,      
       values: data.map(function(d) {
-        //console.log(d[id]);
-        console.log(d['wl']);
+      console.log(cntr);
+      cntr+=1
+
         return {wl: d['wl'], hs: d[id]};
       })
     };
