@@ -43,6 +43,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       id: id,      
       values: data.map(function(d) {
         //console.log(d[id]);
+        console.log(d['wl']);
         return {wl: d['wl'], hs: d[id]};
       })
     };
