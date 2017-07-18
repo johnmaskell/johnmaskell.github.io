@@ -92,7 +92,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
 function type(d, _, columns) {
   /*d.date = parseTime(d.date);*/
   for (var i = 0, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
-  console.log(d[c = columns[i]]);
+  console.log(d);
   return d;
 }
 
