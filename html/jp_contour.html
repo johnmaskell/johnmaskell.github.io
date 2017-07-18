@@ -101,14 +101,14 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
 function type(d, _, columns) {
   //d.date = d.rp1wl;
   //console.log(d.date);
-  for (var i = 0, n = columns.length, c, cnt = 1; i < n; i+=1) 
-      if (i % 2 === 0) {
+ for (var i = 0, n = columns.length, c; i < n; ++i) d[c=counter[i]] = +d[c];
+      /*if (i % 2 === 0) {
          d[c = columns[i]] = +d[c]
       } else {
          c = columns[i]
          d['wl'] =+d[c]
       }
-  //console.log(d);
+  //console.log(d);*/
   return d;
 }
 
