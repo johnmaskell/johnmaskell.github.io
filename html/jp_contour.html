@@ -52,6 +52,8 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       values: data.map(function(d) {
        wlcolid = id.slice(0,-2) + "wl";
        hscolid = id.slice(0,-2) + "hs";
+       console.log(wlcolid);
+       console.log(hscolid);
         //if (id.slice(-2) == 'wl') {
          //console.log(id.slice(-2));
           return {wl: d[wlcolid], hs: d[hscolid]};
