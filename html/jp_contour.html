@@ -36,12 +36,13 @@ var line = d3.line()
 
 d3.tsv("allrpcontours.csv", type, function(error, data) {
   if (error) throw error;
-  console.log(data);
+  
   //console.log(data);
   var wlhs = data.columns.slice(1).map(function(id) {
     return {
       id: id,      
       values: data.map(function(d) {
+        console.log(d[id]);
         return {wl: d[id], hs: d[id]};
       })
     };
