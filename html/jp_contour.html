@@ -52,6 +52,8 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
         if (id.slice(-2) == 'wl') {
           console.log(id.slice(-2));
           return {wl: d[id], hs: d['rp1hs']};
+        } else {
+          return {wl: d['rp1wl'], hs: d[id]};
         } 
       })
       
