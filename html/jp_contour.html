@@ -40,12 +40,11 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   
   //console.log(data);
   var wlhs = data.columns.slice(1).map(function(id) {
+    console.log(cntr);
+    cntr+=1
     return {
       id: id,      
       values: data.map(function(d) {
-      console.log(cntr);
-      cntr+=1
-
         return {wl: d['wl'], hs: d[id]};
       })
     };
