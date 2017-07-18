@@ -79,7 +79,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
 
   g.append("g")
       .attr("class", "axis axis--x")      
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x))
      .append("text")
       .attr("transform", "translate(0," + height + ")")
       .attr("x", 6)
