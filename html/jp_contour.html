@@ -47,10 +47,10 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
     
     return {
       id: id,
-      var vartype = id.slice(-2);,
+      
       values: data.map(function(d) {
         if (cntr % 2 === 0) {
-          console.log(vartype);
+          console.log(id.slice(-2););
           return {wl: d[id]};
         } else {
           return {hs: d[id]};
