@@ -31,10 +31,10 @@ var x = d3.scaleTime().range([0, width]),
 
 var line = d3.line()
     .curve(d3.curveBasis)
-    .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.temperature); });
+    .x(function(d) { return x(d.wl); })
+    .y(function(d) { return y(d.hs); });
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.tsv("allrpcontours.csv", type, function(error, data) {
   if (error) throw error;
 
   var cities = data.columns.slice(1).map(function(id) {
@@ -68,12 +68,12 @@ d3.tsv("data.tsv", type, function(error, data) {
       .attr("y", 6)
       .attr("dy", "0.71em")
       .attr("fill", "#000")
-      .text("Temperature, ºF");
+      .text("Sig. wave height, Hs (m)");
 
   var city = g.selectAll(".city")
     .data(cities)
     .enter().append("g")
-      .attr("class", "city");
+    .attr("class", "city");
 
   city.append("path")
       .attr("class", "line")
@@ -90,8 +90,9 @@ d3.tsv("data.tsv", type, function(error, data) {
 });
 
 function type(d, _, columns) {
-  d.date = parseTime(d.date);
-  for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
+  /*d.date = parseTime(d.date);*/
+  for (var 0 = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
+  console.log(d[c = columns[i]]);
   return d;
 }
 
