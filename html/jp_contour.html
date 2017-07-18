@@ -79,13 +79,13 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
 
   g.append("g")
       .attr("class", "axis axis--x")      
-      .call(d3.axisBottom(x))
      .append("text")
       .attr("transform", "translate(0," + height + ")")
       .attr("x", 6)
       .attr("dx", "0.71em")
       .attr("fill", "#000")
-      .text("Water level (m)");
+      .text("Water level (m)")
+      .call(d3.axisBottom(x));
 
   g.append("g")
       .attr("class", "axis axis--y")
