@@ -44,18 +44,21 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   var wlhs = data.columns.slice(1).map(function(id) {
     //console.log(cntr);
     //cntr+=1
+    if (cntr % 2 === 0) {
     return {
       id: id,      
       values: data.map(function(d) {
-      if (cntr % 2 === 0) {
-          console.log(cntr);
-          console.log(id);
           return {wl: d[id]};
-      } else {
-          return {hs: d[id]};
-      }
-      })   
+      })
     };
+    } else {
+    return {
+      id: id,      
+      values: data.map(function(d) {
+          return {wl: d[id]};
+      })
+    };
+    }
     cntr += 1
   });
   
