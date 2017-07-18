@@ -40,6 +40,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
   var cities = data.columns.slice(1).map(function(id) {
     return {
       id: id,
+      console.log(id);
       values: data.map(function(d) {
         return {date: d.date, temperature: d[id]};
       })
