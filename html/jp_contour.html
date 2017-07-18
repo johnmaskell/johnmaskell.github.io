@@ -43,7 +43,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
       id: id,      
       values: data.map(function(d) {
         console.log(d[id]);
-        return {wl: d[id], hs: d[id]};
+        return {wl: d.date, hs: d[id]};
       })
     };
   });
@@ -96,7 +96,7 @@ d3.tsv("allrpcontours.csv", type, function(error, data) {
 });
 
 function type(d, _, columns) {
-  /*d.date = parseTime(d.date);*/
+  d.date = d.rp1wl;
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   //console.log(d.values);
   return d;
