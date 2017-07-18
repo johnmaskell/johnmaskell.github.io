@@ -34,7 +34,9 @@ var line = d3.line()
     .x(function(d) { return x(d.wl); })
     .y(function(d) { return y(d.hs); });
 
-var cntr = 0;  
+var cntr = 0;
+var wlcolid = "";
+var hscolid = "";
 d3.csv("allrpcontours.csv", type, function(error, data) {
   //console.log(cntr);
   
@@ -47,14 +49,15 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
     
     return {
       id: id,
-      
       values: data.map(function(d) {
-        if (id.slice(-2) == 'wl') {
-          console.log(id.slice(-2));
-          return {wl: d[id], hs: d['rp1hs']};
-        } else {
-          return {wl: d['rp1wl'], hs: d[id]};
-        } 
+       wlcolid = id.slice(-2) + "wl";
+       hscolid = id.slice(-2) + "hs";
+        //if (id.slice(-2) == 'wl') {
+         //console.log(id.slice(-2));
+          return {wl: d[wlcolid], hs: d[hscolid]};
+        //} else {
+          //return {wl: d['rp1wl'], hs: d[id]};
+        //} 
       })
       
     };
