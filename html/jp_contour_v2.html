@@ -150,7 +150,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       .attr("stroke", "Teal")
   city.append("text")
       .datum(function(d) { return {id: d.id, value: d.values[d.values.length-5]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.wl) + "," + y(d.value.hs) + ")"; })
+      .attr("transform", function(d) { return "translate(" + "0.5" + "," + (parseFloat(y(d.value.hs))+0.2).toString() + ")"; })
       .attr("x", 3)
       .attr("dy", "0.35em")
       .style("font", "10px sans-serif")
