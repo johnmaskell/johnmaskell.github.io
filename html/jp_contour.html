@@ -59,9 +59,12 @@ var tooltip = d3.select("body").append("div")
 
 //var parseTime = d3.timeParse("%Y%m%d");
 
-var x = d3.scaleTime().range([0, width]),
+/*var x = d3.scaleTime().range([0, width]),
     y = d3.scaleLinear().range([height, 0]),
-    z = d3.scaleOrdinal(d3.schemeCategory10);
+    z = d3.scaleOrdinal(d3.schemeCategory10);*/
+var x = d3.scale.linear().range([0, width]),
+    y = d3.scale.linear().range([height, 0]);
+  
 
 var line = d3.line()
     .curve(d3.curveBasis)
