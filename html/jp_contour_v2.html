@@ -163,6 +163,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       .attr("fill", "#000")
       .text("Sig. wave height, Hs (m)")
       .attr("transform", function(d) { return "translate(" + x(-0.2) + "," + y(4.0) + ")"; })
+      .attr("transform", "rotate(-90)");
   var city = g.selectAll(".city")
     .data(wlhs)
     .enter().append("g")
