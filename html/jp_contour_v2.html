@@ -312,9 +312,10 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
         d3.select(this).style("cursor", "default"); /*and there*/
       }
     })
-      myPts.on("click", function(dp) { 
+      myPts.on("click", click);
+      function click(dp) { 
        alert("You clicked me!");
-      });
+      };
   });  
   
   
