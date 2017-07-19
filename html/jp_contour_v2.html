@@ -285,8 +285,8 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   // change string (from CSV) into number format
   otpts.forEach(function(dp) {
     
-    dp["otwl"] = +dp["otwl"];
-    dp["oths"] = +dp["oths"];       
+    dp["otwl"] = +dp["otwl"]+0.36;
+    dp["oths"] = +dp["oths"]-0.36;       
   });
     
     /*g.append("path")
