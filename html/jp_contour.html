@@ -38,12 +38,12 @@
 var xValue = function(dd) { return dd.waterlevel;}, // data -> value
     xScale = d3.scaleLinear().range([0, width]), // value -> display
     xMap = function(dd) { return xScale(xValue(dd));}, // data -> display
-    xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+    //xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 // setup y
 var yValue = function(dd) { return dd["waveheight"];}, // data -> value
     yScale = d3.scaleLinear().range([height, 0]), // value -> display
     yMap = function(dd) { return yScale(yValue(dd));}, // data -> display
-    yAxis = d3.svg.axis().scale(yScale).orient("left"); 
+    //yAxis = d3.svg.axis().scale(yScale).orient("left"); 
 //end scatter plot section
   
 var svg = d3.select("svg"),
@@ -203,7 +203,8 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(xAxis)
+      //.call(xAxis)
+      .call(d3.axisBottom(xScale))
     .append("text")
       .attr("class", "label")
       .attr("x", width)
@@ -213,7 +214,8 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   // y-axis
   svg.append("g")
       .attr("class", "y axis")
-      .call(yAxis)
+      //.call(yAxis)
+      .call(d3.axisLeft(yScale))
     .append("text")
       .attr("class", "label")
       .attr("transform", "rotate(-90)")
