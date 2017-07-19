@@ -43,6 +43,8 @@ var yValue = function(dd) { return dd["waveheight"];}, // data -> value
     yMap = function(dd) { return yScale(yValue(dd));}; // data -> display
     //yAxis = d3.svg.axis().scale(yScale).orient("left"); 
 //end scatter plot section*/
+var xValue = function(dd) { return dd.waterlevel;};  
+var yValue = function(dd) { return dd["waveheight"];};  
 var xMap = function(dd) { return x(xValue(dd));};
 var yMap = function(dd) { return y(yValue(dd));};
 var svg = d3.select("svg"),
