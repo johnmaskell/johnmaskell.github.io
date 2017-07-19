@@ -99,7 +99,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   //console.log("Hello!");
   //console.log(cntr);
   //x.domain(d3.extent(data, function(d) { return d.date; }));
-  xScale.domain([
+  /*xScale.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
     d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
   ]);
@@ -107,7 +107,11 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   yScale.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
     d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.hs; }); })
-  ]);
+  ]);*/
+  xScale.domain([d3.min(sdata, xValue), d3.max(sdata, xValue)]);
+  yScale.domain([d3.min(sdata, yValue), d3.max(sdata, yValue)]);
+  
+  
   //z.domain(wlhs.map(function(c) { return c.id; }));
   g.append("g")
       .attr("class", "x axis")
@@ -181,8 +185,7 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   });
   
   // don't want dots overlapping axis, so add in buffer to data domain
-  //xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
-  //yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+
   // x-axis
   svg.append("g")
       .attr("class", "x axis")
