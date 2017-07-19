@@ -19,6 +19,9 @@
 .red.dot {
   stroke: #000;
 }
+.green.dot {
+  stroke: green;
+ }
 .tooltip {
   position: absolute;           
   text-align: center;           
@@ -71,6 +74,12 @@ var xValue = function(dd) { return dd.waterlevel;};
 var yValue = function(dd) { return dd["waveheight"];};  
 var xMap = function(dd) { return x(xValue(dd));};
 var yMap = function(dd) { return y(yValue(dd));};
+  
+var xValuec = function(dp) { return dp.otwl;};  
+var yValuec = function(dp) { return dp["oths"];};  
+var xMapc = function(dp) { return x(xValuec(dp));};
+var yMapc = function(dp) { return y(yValuec(dp));};  
+  
 var svg = d3.select("svg"),
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
@@ -271,6 +280,37 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
       });
     // draw dots 
 });
+  // load overtopping points
+  d3.csv("rp50_overtoppts.csv", function(error, otpts) {
+  // change string (from CSV) into number format
+  otpts.forEach(function(dp) {
+    
+    dp["otwl"] = +dp["otwl"];
+    dp["oths"] = +dp["oths"];       
+  });
+    
+    /*g.append("path")
+      .datum(rpcontour)
+      .attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("stroke-width", 1.5)
+      .attr("dd", line);*/
+    svg.selectAll(".green.dot")
+      .data(otpts)
+      .enter().append("circle")
+      .attr("class", "green dot")
+      .attr("r", 7.0)
+      .attr("cx", xMapc)
+      .attr("cy", yMapc)
+      //.style("fill", "green")
+  });  
+  
+  
+  
+  
+  
 });
 </script>
 >
