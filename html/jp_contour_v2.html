@@ -28,9 +28,11 @@
   pointer-events: none;
  }
 </style>
+<body>
 <svg width="960" height="500"></svg>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script>
+$(document).ready(function(){
 //set up the values for the scatter plot
 // setup x 
 /*var xValue = function(dd) { return dd.waterlevel;}, // data -> value
@@ -244,5 +246,8 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
         //console.log(dd["waterlevel"]);
       });
     // draw dots 
-});  
+});
+});
 </script>
+</body>
+  
