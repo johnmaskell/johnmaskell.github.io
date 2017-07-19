@@ -83,8 +83,8 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       values: data.map(function(d) {
        wlcolid = id.slice(0,-2) + "wl";
        hscolid = id.slice(0,-2) + "hs";
-       console.log(wlcolid);
-       console.log(hscolid);
+       //console.log(wlcolid);
+       //console.log(hscolid);
         //if (id.slice(-2) == 'wl') {
          //console.log(id.slice(-2));
           return {wl: d[wlcolid], hs: d[hscolid]};
@@ -96,8 +96,8 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
     };
     cntr = cntr + 1;
   });
-  console.log("Hello!");
-  console.log(cntr);
+  //console.log("Hello!");
+  //console.log(cntr);
   //x.domain(d3.extent(data, function(d) { return d.date; }));
   xScale.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
@@ -230,7 +230,7 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
                .style("opacity", 0);
       })
       .on("click", function(dd) { 
-        console.log(dd["waterlevel"]);
+        //console.log(dd["waterlevel"]);
       });
     // draw dots 
 });  
