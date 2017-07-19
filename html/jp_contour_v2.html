@@ -122,9 +122,9 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   //z.domain(wlhs.map(function(c) { return c.id; }));
   g.append("g")
       .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x))
-     .append("text")
-      //.attr("transform", "translate(0," + height + ")")
+     .append("text")      
       .attr("x", 6)
       .attr("dx", "0.71em")
       .attr("fill", "#000")
@@ -138,6 +138,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       .attr("dy", "0.71em")
       .attr("fill", "#000")
       .text("Sig. wave height, Hs (m)");
+  
   var city = g.selectAll(".city")
     .data(wlhs)
     .enter().append("g")
