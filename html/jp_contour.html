@@ -105,7 +105,8 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
   city.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
-      .style("stroke", function(d) { return z(d.id); });
+      //.style("stroke", function(d) { return z(d.id); });
+      .attr("stroke", "Teal")
 
   city.append("text")
       .datum(function(d) { return {id: d.id, value: d.values[d.values[0]]}; })
