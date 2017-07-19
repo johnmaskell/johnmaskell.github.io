@@ -107,9 +107,13 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
     d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
   ]);
   //x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain([
+  /*y.domain([
     d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
     d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.hs; }); })
+  ]);*/
+  y.domain([
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
+    6.0
   ]);
   //x.domain([d3.min(sdata, xValue), d3.max(sdata, xValue)]);
   //y.domain([d3.min(sdata, yValue), d3.max(sdata, yValue)]);
