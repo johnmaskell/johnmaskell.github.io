@@ -67,7 +67,7 @@ var x = d3.scale.linear().range([0, width]),
   
 
 var line = d3.svg.line()
-    .curve(d3.curveBasis)
+    //.curve(d3.curveBasis)
     .x(function(d) { return x(d.wl); })
     .y(function(d) { return y(d.hs); });
 
