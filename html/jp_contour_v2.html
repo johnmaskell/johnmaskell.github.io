@@ -286,7 +286,7 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   otpts.forEach(function(dp) {
     
     dp["otwl"] = +dp["otwl"];
-    dp["oths"] = +dp["oths"];       
+    dp["oths"] = +dp["oths"]-0.36;       
   });
     
     /*g.append("path")
@@ -304,7 +304,7 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
       .attr("r", 7.0)
       .attr("cx", xMapc)
       .attr("cy", yMapc)
-      //.style("fill", "green")
+      .style("fill", "none")
   });  
   
   
