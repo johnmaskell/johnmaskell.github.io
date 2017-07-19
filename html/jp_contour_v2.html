@@ -149,7 +149,7 @@ d3.csv("allrpcontours.csv", type, function(error, data) {
       //.style("stroke", function(d) { return z(d.id); });
       .attr("stroke", "Teal")
   city.append("text")
-      .datum(function(d) { return {id: d.id, value: d.values[d.values[0]]}; })
+      .datum(function(d) { return {id: d.id, value: d.values[d.values.length-1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.wl) + "," + y(d.value.hs) + ")"; })
       .attr("x", 3)
       .attr("dy", "0.35em")
@@ -177,8 +177,8 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   // change string (from CSV) into number format
   sdata.forEach(function(dd) {
     dd["date"] = dd["date"];
-    dd["waterlevel"] = +dd["waterlevel"];
-    dd["waveheight"] = +dd["waveheight"];  
+    dd["waterlevel"] = +dd["waterlevel"] + 0.36;
+    dd["waveheight"] = +dd["waveheight"] - 0.36;  
     dd["rpwl"] = +dd["rpwl"];
     dd["rphs"] = +dd["rphs"];
     dd["rpjp"] = +dd["rpjp"];
