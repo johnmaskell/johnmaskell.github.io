@@ -63,8 +63,8 @@ var tooltip = d3.select("body").append("div")
   
 var line = d3.line()
     //.curve(d3.curveBasis)
-    .xScale(function(d) { return xScale(d.wl); })
-    .yScale(function(d) { return yScale(d.hs); });
+    .x(function(d) { return xScale(d.wl); })
+    .y(function(d) { return yScale(d.hs); });
 var cntr = 0;
 var wlcolid = "";
 var hscolid = "";
