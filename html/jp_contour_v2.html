@@ -231,7 +231,7 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
           tooltip.transition()
                .duration(200)
                .style("opacity", .9);
-          tooltip.html(dd["date"] + "<br/>" + "Water level - " + dd["waterlevel"] + "m" + "<br/>" + "Sig. wave height - " + dd["waveheight"] + "m" + "<br/>" + "WL RP - " + dd["rpwl"] + " years"+ "<br/>" + "HS RP - " + dd["rphs"] + " years" + "<br/>" + "Joint RP - " + dd["rpjp"] + " years" )
+          tooltip.html(dd["date"] + "<br/>" + "Water level - " + dd["waterlevel"]+0.36 + "m" + "<br/>" + "Sig. wave height - " + dd["waveheight"]-0.36 + "m" + "<br/>" + "WL RP - " + dd["rpwl"] + " years"+ "<br/>" + "HS RP - " + dd["rphs"] + " years" + "<br/>" + "Joint RP - " + dd["rpjp"] + " years" )
                .style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
       })
