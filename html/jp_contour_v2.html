@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.red.dot {
+  stroke: #000;
+}
+.tooltip {
+  position: absolute;           
+  text-align: center;           
+  width: 150px;                  
+  height: 100px;                 
+  padding: 2px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;
+ }
+</style>
+<svg width="960" height="500"></svg>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script>
+//set up the values for the scatter plot
+// setup x 
+var xValue = function(dd) { return dd.waterlevel;}, // data -> value
+    xScale = d3.scaleLinear().range([0, width]), // value -> display
+    xMap = function(dd) { return xScale(xValue(dd));}; // data -> display
+    //xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+// setup y
+var yValue = function(dd) { return dd["waveheight"];}, // data -> value
+    yScale = d3.scaleLinear().range([height, 0]), // value -> display
+    yMap = function(dd) { return yScale(yValue(dd));}; // data -> display
+    //yAxis = d3.svg.axis().scale(yScale).orient("left"); 
+//end scatter plot section
+  
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 80, bottom: 30, left: 50},
+    width = svg.attr("width") - margin.left - margin.right,
+    height = svg.attr("height") - margin.top - margin.bottom,
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  
+// add the tooltip area to the webpage
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+//var parseTime = d3.timeParse("%Y%m%d");
+/*var x = d3.scaleTime().range([0, width]),
+    y = d3.scaleLinear().range([height, 0]),
+    z = d3.scaleOrdinal(d3.schemeCategory10);*/
+var x = d3.scaleLinear().range([0, width]),
+    y = d3.scaleLinear().range([height, 0]);
+  
+var line = d3.line()
+    //.curve(d3.curveBasis)
+    .x(function(d) { return x(d.wl); })
+    .y(function(d) { return y(d.hs); });
+var cntr = 0;
+var wlcolid = "";
+var hscolid = "";
+d3.csv("allrpcontours.csv", type, function(error, data) {
+  //console.log(cntr);
+  
+  if (error) throw error;
+  
+  //console.log(data);
+  var wlhs = data.columns.slice(1).map(function(id) {
+    //console.log(cntr);
+    //cntr+=1
+    
+    return {
+      id: id,
+      values: data.map(function(d) {
+       wlcolid = id.slice(0,-2) + "wl";
+       hscolid = id.slice(0,-2) + "hs";
+       console.log(wlcolid);
+       console.log(hscolid);
+        //if (id.slice(-2) == 'wl') {
+         //console.log(id.slice(-2));
+          return {wl: d[wlcolid], hs: d[hscolid]};
+        //} else {
+          //return {wl: d['rp1wl'], hs: d[id]};
+        //} 
+      })
+      
+    };
+    cntr = cntr + 1;
+  });
+  console.log("Hello!");
+  console.log(cntr);
+  //x.domain(d3.extent(data, function(d) { return d.date; }));
+  x.domain([
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
+    d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
+  ]);
+  //x.domain(d3.extent(data, function(d) { return d.date; }));
+  y.domain([
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
+    d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.hs; }); })
+  ]);
+  //z.domain(wlhs.map(function(c) { return c.id; }));
+  g.append("g")
+      .attr("class", "axis axis--x")      
+     .append("text")
+      .attr("transform", "translate(0," + height + ")")
+      .attr("x", 6)
+      .attr("dx", "0.71em")
+      .attr("fill", "#000")
+      .text("Water level (m)")
+      .call(d3.axisBottom(x));
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("fill", "#000")
+      .text("Sig. wave height, Hs (m)");
+  var city = g.selectAll(".city")
+    .data(wlhs)
+    .enter().append("g")
+    .attr("class", "city");
+  city.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      //.style("stroke", function(d) { return z(d.id); });
+      .attr("stroke", "Teal")
+  city.append("text")
+      .datum(function(d) { return {id: d.id, value: d.values[d.values[0]]}; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.wl) + "," + y(d.value.hs) + ")"; })
+      .attr("x", 3)
+      .attr("dy", "0.35em")
+      .style("font", "10px sans-serif")
+      .text(function(d) { return d.id; });
+});
+function type(d, _, columns) {
+  //d.date = d.rp1wl;
+  //console.log(d.date);
+ for (var i = 0, n = columns.length, c; i < n; ++i) d[c=columns[i]] = +d[c];
+      /*if (i % 2 === 0) {
+         d[c = columns[i]] = +d[c]
+      } else {
+         c = columns[i]
+         d['wl'] =+d[c]
+      }*/
+  //console.log(d);
+  return d;
+}
+  
+//load the scatter data
+// load data
+/*parseDate = d3.time.format("%Y-%m-%d").parse*/
+d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
+  // change string (from CSV) into number format
+  sdata.forEach(function(dd) {
+    dd["date"] = dd["date"];
+    dd["waterlevel"] = +dd["waterlevel"];
+    dd["waveheight"] = +dd["waveheight"];  
+    dd["rpwl"] = +dd["rpwl"];
+    dd["rphs"] = +dd["rphs"];
+    dd["rpjp"] = +dd["rpjp"];
+    if (dd["rpjp"] > 200.) {
+      dd["rpjp"] = ">200"
+    } else if (dd["rpjp"] <1.) {
+      dd["rpjp"] = "<1"
+    } else {
+      dd["rpjp"] = dd["rpjp"].toString();
+    }
+    //console.log(d);
+  });
+  
+  // don't want dots overlapping axis, so add in buffer to data domain
+  //xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
+  //yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+  // x-axis
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      //.call(xAxis)
+      .call(d3.axisBottom(xScale))
+    .append("text")
+      .attr("class", "label")
+      .attr("x", width)
+      .attr("y", -6)
+      .style("text-anchor", "end")
+      .text("Peak water level (m ODN)");
+  // y-axis
+  svg.append("g")
+      .attr("class", "y axis")
+      //.call(yAxis)
+      .call(d3.axisLeft(yScale))
+    .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Sig. Wave Height, Hs (m)");
+  // draw dots
+  svg.selectAll(".red.dot")
+      .data(sdata)
+    .enter().append("circle")
+      .attr("class", "red dot")
+      .attr("r", 3.5)
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+      .style("fill", "red") 
+      .on("mouseover", function(dd) {
+          tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+          tooltip.html(dd["date"] + "<br/>" + "Water level - " + dd["waterlevel"] + "m" + "<br/>" + "Sig. wave height - " + dd["waveheight"] + "m" + "<br/>" + "WL RP - " + dd["rpwl"] + " years"+ "<br/>" + "HS RP - " + dd["rphs"] + " years" + "<br/>" + "Joint RP - " + dd["rpjp"] + " years" )
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+      })
+      .on("mouseout", function(dd) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+      })
+      .on("click", function(dd) { 
+        console.log(dd["waterlevel"]);
+      });
+    // draw dots 
+});  
+</script>
