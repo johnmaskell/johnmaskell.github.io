@@ -305,6 +305,9 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
       .attr("cx", xMapc)
       .attr("cy", yMapc)
       .style("fill", "none")
+      .on("click", function(dp) { 
+       alert("You clicked me!");
+      });
   });  
   
   
