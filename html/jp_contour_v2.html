@@ -305,6 +305,13 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
       .attr("cx", xMapc)
       .attr("cy", yMapc)
       .style("fill", "none")
+      .on({"mouseover": function(dp) {
+        d3.select(this).style("cursor", "pointer"); /*semicolon here*/
+      },
+      "mouseout": function(dp) {
+        d3.select(this).style("cursor", "default"); /*and there*/
+      }
+    });
       .on("click", function(dp) { 
        alert("You clicked me!");
       });
