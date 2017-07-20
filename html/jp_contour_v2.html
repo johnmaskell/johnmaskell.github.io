@@ -105,7 +105,7 @@ var line = d3.line()
 var cntr = 0;
 var wlcolid = "";
 var hscolid = "";
-d3.csv("allrpcontours.csv", type, function(error, data) {
+d3.csv("allrpcontoursv2.csv", type, function(error, data) {
   //console.log(cntr);
   
   if (error) throw error;
@@ -209,7 +209,7 @@ function type(d, _, columns) {
 //load the scatter data
 // load data
 /*parseDate = d3.time.format("%Y-%m-%d").parse*/
-d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
+d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
   // change string (from CSV) into number format
   sdata.forEach(function(dd) {
     dd["date"] = dd["date"];
@@ -282,7 +282,7 @@ d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
     // draw dots 
 });
   // load overtopping points
-  d3.csv("rp50_overtoppts.csv", function(error, otpts) {
+  d3.csv("rp100_overtoppts.csv", function(error, otpts) {
   // change string (from CSV) into number format
   otpts.forEach(function(dp) {
     
