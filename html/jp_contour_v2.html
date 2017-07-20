@@ -213,7 +213,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
   // change string (from CSV) into number format
   sdata.forEach(function(dd) {
     dd["date"] = dd["date"];
-    dd["waterlevel"] = +dd["waterlevel"] + 0.5;
+    dd["waterlevel"] = +dd["waterlevel"] + 0.65;
     dd["waveheight"] = +dd["waveheight"] - 0.36;  
     dd["rpwl"] = +dd["rpwl"];
     dd["rphs"] = +dd["rphs"];
@@ -286,7 +286,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
   // change string (from CSV) into number format
   otpts.forEach(function(dp) {
     
-    dp["otwl"] = +dp["otwl"]+0.65;
+    dp["otwl"] = +dp["otwl"]+0.5;
     dp["oths"] = +dp["oths"]-0.36;       
   });
     
