@@ -209,7 +209,7 @@ function type(d, _, columns) {
 //load the scatter data
 // load data
 /*parseDate = d3.time.format("%Y-%m-%d").parse*/
-d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
+d3.csv("liv_hshw_jps_1000yrs.csv", function(error, sdata) {
   // change string (from CSV) into number format
   sdata.forEach(function(dd) {
     dd["date"] = dd["date"];
