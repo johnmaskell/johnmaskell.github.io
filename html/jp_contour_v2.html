@@ -168,8 +168,7 @@ d3.csv("allrpcontoursv2.csv", type, function(error, data) {
       .call(d3.axisBottom(x))
      .append("text")      
       /*.attr("x", 6)*/
-      .attr("x", width/2)
-      .attr("y", height - 6)
+      .attr("x", width)      
       .attr("dx", "0.71em")
       .attr("fill", "#000")      
       /*.attr("transform","translate(" + (width/2) + " ," + (height + margin.top) + ")")
