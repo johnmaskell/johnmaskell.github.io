@@ -171,6 +171,7 @@ d3.csv("allrpcontoursv2.csv", type, function(error, data) {
       .attr("dx", "0.71em")
       .attr("fill", "#000")
       .text("Water level (m)")
+      .attr("text-anchor", "middle") 
       .attr("transform", "translate("+ x(3.5) +","+y(-0.5) +")");
   g.append("g")
       .attr("class", "y axis")
