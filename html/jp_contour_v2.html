@@ -213,7 +213,28 @@ function type(d, _, columns) {
   //console.log(d);
   return d;
 }
-  
+//load the scatter data
+// load data
+/*parseDate = d3.time.format("%Y-%m-%d").parse*/
+d3.csv("liv_hshw_no_tooltip.csv", function(error, ntdata) {
+  // change string (from CSV) into number format
+  ntdata.forEach(function(nt) {
+    nt["date"] = nt["date"];
+    nt["waterlevel"] = +nt["waterlevel"] + 0.50;
+    nt["waveheight"] = +nt["waveheight"] - 0.36;
+  });
+
+  // draw dots
+  svg.selectAll(".morered.dot")
+    .data(ntdata)
+    .enter().append("circle")
+      .attr("class", "morered dot")
+      .attr("r", 3.5)
+      .attr("cx", xMapnt)
+      .attr("cy", yMapnt)
+      .style("fill", "red");
+    // draw dots 
+});  
 //load the scatter data
 // load data
 /*parseDate = d3.time.format("%Y-%m-%d").parse*/
@@ -289,28 +310,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       });
     // draw dots 
 });
-//load the scatter data
-// load data
-/*parseDate = d3.time.format("%Y-%m-%d").parse*/
-d3.csv("liv_hshw_no_tooltip.csv", function(error, ntdata) {
-  // change string (from CSV) into number format
-  ntdata.forEach(function(nt) {
-    nt["date"] = nt["date"];
-    nt["waterlevel"] = +nt["waterlevel"] + 0.50;
-    nt["waveheight"] = +nt["waveheight"] - 0.36;
-  });
 
-  // draw dots
-  svg.selectAll(".morered.dot")
-    .data(ntdata)
-    .enter().append("circle")
-      .attr("class", "morered dot")
-      .attr("r", 3.5)
-      .attr("cx", xMapnt)
-      .attr("cy", yMapnt)
-      .style("fill", "red");
-    // draw dots 
-});
   // load overtopping points
   d3.csv("rp100_overtoppts.csv", function(error, otpts) {
   // change string (from CSV) into number format
