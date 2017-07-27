@@ -9,7 +9,8 @@
 <!-- Plotly chart will be drawn inside this DIV -->
 <div id="myDiv" style="width:480px; height:400px;"></div>
   <script>
-  Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/api_docs/mt_bruno_elevation.csv', function(err, rows){
+/*Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/api_docs/mt_bruno_elevation.csv', function(err, rows){*/
+Plotly.d3.csv('wlhsot.csv', function(err, rows){
 function unpack(rows, key) {
   return rows.map(function(row) { return row[key]; });
 }
