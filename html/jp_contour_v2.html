@@ -19,6 +19,9 @@
 .red.dot {
   stroke: #000;
 }
+.otherred.dot {
+  stroke: #000;
+}
 .green.dot {
   stroke: #000;
   cursor: pointer;
@@ -75,6 +78,11 @@ var xValue = function(dd) { return dd.waterlevel;};
 var yValue = function(dd) { return dd["waveheight"];};  
 var xMap = function(dd) { return x(xValue(dd));};
 var yMap = function(dd) { return y(yValue(dd));};
+  
+var xValuent = function(nt) { return nt.waterlevel;};  
+var yValuent = function(nt) { return nt["waveheight"];};  
+var xMapnt = function(nt) { return x(xValuent(nt));};
+var yMapnt = function(nt) { return y(yValuent(nt));};  
   
 var xValuec = function(dp) { return dp.otwl;};  
 var yValuec = function(dp) { return dp["oths"];};  
@@ -279,6 +287,28 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       .on("click", function(dd) { 
         //console.log(dd["waterlevel"]);
       });
+    // draw dots 
+});
+//load the scatter data
+// load data
+/*parseDate = d3.time.format("%Y-%m-%d").parse*/
+d3.csv("liv_hshw_no_tooltip.csv", function(error, ntdata) {
+  // change string (from CSV) into number format
+  ntdata.forEach(function(nt) {
+    nt["date"] = nt["date"];
+    nt["waterlevel"] = +nt["waterlevel"] + 0.50;
+    nt["waveheight"] = +nt["waveheight"] - 0.36;
+  });
+
+  // draw dots
+  svg.selectAll(".morered.dot")
+    .data(ntdata)
+    .enter().append("circle")
+      .attr("class", "morered dot")
+      .attr("r", 3.5)
+      .attr("cx", xMapnt)
+      .attr("cy", yMapnt)
+      .style("fill", "red");
     // draw dots 
 });
   // load overtopping points
