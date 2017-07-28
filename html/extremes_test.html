@@ -94,14 +94,14 @@ window.onmousemove = function (e) {
 .img-flood {max-width:100%;}
 .svg-element {max-width:100%;}
 .flood-container{width:48%;height:400px;border: 1px; border-style:solid;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim8-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim7-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp07Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim6-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp06Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim5-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp05Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim4-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp04Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim3-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp03Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim2-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp02Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
-.sim1-img{width:99%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp01Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim8-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim7-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp07Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim6-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp06Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim5-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp05Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim4-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp04Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim3-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp03Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim2-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp02Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
+.sim1-img{width:48%;height:400px;border: 1px; border-style:solid;margin-top:20px;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp01Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 	
 	
 </style>
@@ -493,10 +493,12 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
          if (dp["otwl"] < 2.0) {
 	    $("#imgBox").removeClass();
             $("#imgBox").addClass("sim8-img");
+	    console.log(dp["otwl"]);
 	  }
 	  if (dp["otwl"] > 6.7) {
 	    $("#imgBox").removeClass();
             $("#imgBox").addClass("sim1-img");
+	    console.log(dp["otwl"]);
 	  }
 
       };
