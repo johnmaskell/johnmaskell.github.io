@@ -27,7 +27,7 @@ nav {margin-right:15.5%;}
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
 .img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:inline:block;width:48%;margin-left:1%;margin-right:1%;} 
+.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
 h1 {line-height:1.2;font-size:18px;}
 .p1 {color:#008080;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
@@ -51,8 +51,7 @@ nav {margin-right:15.5%;}
 .myBanner h2 {position: absolute;top: 115px;left:1%;width:100%;}
 .content-1 {position:relative;width:100%;margin-top:20px;display:block;margin-left:auto;margin-right:auto;}
 .text-intro {width: 100%;margin: 0 auto;} 
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:inline:block;width:48%;margin-left:1%;margin-right:1%;} 
+
 h1 {line-height:1.2;font-size:18px;}
 .p1 {color:#008080;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-top:20px;margin-bottom:20px;}
 .p2 {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;}
@@ -84,8 +83,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
+
 }
 
 /* Small Devices, Tablets */
@@ -114,8 +112,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -144,8 +141,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
+
 }
 
 /* Custom, iPhone Retina */ 
@@ -174,8 +170,7 @@ h1 {line-height:1.2;font-size:14px;}
 .p1 {color:#008080;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.img-container {text-align:center;font-size:0;width:100%;margin: 0 auto;}
-.img-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}   
+ 
 .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
 }
