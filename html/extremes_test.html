@@ -51,6 +51,49 @@ window.onmousemove = function (e) {
     border-radius: 8px;
     padding: 2px;
 }
+.line {
+  fill: none;
+  stroke: Teal;
+  stroke-width: 1.5px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.red.dot {
+  stroke: #000;
+}
+.morered.dot {
+  stroke: #000;
+}
+.green.dot {
+  stroke: #000;
+  cursor: pointer;
+  }
+.tooltip {
+  position: absolute;           
+  text-align: center;           
+  width: 150px;                  
+  height: 80px;                 
+  padding: 2px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events:none;
+ }
+  
+
+.scene-container {text-align:center;font-size:0;width:90%;margin: 0 auto;}
+.scattered-displayed {float:left;width:48%;margin-left:1%;margin-right:1%;}
+.flood-displayed {width:48%;margin-left:1%;margin-right:1%;}
+.img-flood {max-width:100%;}
+.svg-element {max-width:100%;width="540";height="281";}
+	
+	
+	
 </style>
 
 </head>
@@ -119,6 +162,19 @@ window.onmousemove = function (e) {
 	<p class="p2">An offshore model system is used to simulate the development of the tide and storm surge in the Irish Sea (Telemac2D). A high resolution nearshore modelling system (Telemac2D coupled with Tomawac) that couples the tide and surge with the wave is then used to simulate water levels and wave heights right up to the defence line. Only waves propagating from the west were simulated in this experiment which is the dominant wave direction in the Eastern Irish Sea as shown by the wave rose. At the defence line overflow and wave overtopping rates were calculated using equations detailed in the Eurotop manual (#ref) and used as boundary conditions to an inundation model (Flood Modeller) using a 5 m resolution grid aggregated from 1m lidar data from the EA open survey data.</p>
 </div>
 </div>
+<div class="scene-container">
+<div class="scatter-displayed">  
+<svg class="svg-element"></svg>  
+</div>
+<div class="flood-displayed">
+<img  class="img-flood" src="http://gifyu.com/images/Hull_Surge_10m.gif" alt="Hull_Surge_10m.gif" border="0" /> 
+</div>
+</div> 
+
+
+
+
+
 <footer class="footer-distributed">
 
 
@@ -237,8 +293,198 @@ window.onmousemove = function (e) {
 
 
 		</footer>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script>
+$(document).ready(function(){
+//set up the values for the scatter plot
+// setup x
+var xValue = function(dd) { return dd.waterlevel;};  
+var yValue = function(dd) { return dd["waveheight"];};  
+var xMap = function(dd) { return x(xValue(dd));};
+var yMap = function(dd) { return y(yValue(dd));};
+  
+var xValuent = function(nt) { return nt.waterlevel;};  
+var yValuent = function(nt) { return nt["waveheight"];};  
+var xMapnt = function(nt) { return x(xValuent(nt));};
+var yMapnt = function(nt) { return y(yValuent(nt));};  
+  
+var xValuec = function(dp) { return dp.otwl;};  
+var yValuec = function(dp) { return dp["oths"];};  
+var xMapc = function(dp) { return x(xValuec(dp));};
+var yMapc = function(dp) { return y(yValuec(dp));};  
+  
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 80, bottom: 30, left: 50},
+    width = svg.attr("width") - margin.left - margin.right,
+    height = svg.attr("height") - margin.top - margin.bottom,
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  
+// add the tooltip area to the webpage
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+var x = d3.scaleLinear().range([0, width]),
+    y = d3.scaleLinear().range([height, 0]);
+  
+var line = d3.line()
+    .x(function(d) { return x(d.wl); })
+    .y(function(d) { return y(d.hs); });
+var cntr = 0;
+var wlcolid = "";
+var hscolid = "";
+d3.csv("allrpcontoursv2.csv", type, function(error, data) {
+  if (error) throw error;
+  var wlhs = data.columns.slice(1).map(function(id) {    
+    return {
+      id: id,
+      values: data.map(function(d) {
+       wlcolid = id.slice(0,-2) + "wl";
+       hscolid = id.slice(0,-2) + "hs";
+          return {wl: d[wlcolid], hs: d[hscolid]};
+      })
+      
+    };
+    cntr = cntr + 1;
+  });
+
+  x.domain([
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
+    d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
+  ]);
+  y.domain([
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
+    6.0
+  ]);
+  g.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+     .append("text")
+      .attr("x", width/2) 
+      .attr("y", 30)
+      .attr("dx", "0.71em")
+      .attr("fill", "#000")
+      .text("Water level (m)");
+
+  g.append("g")
+      .attr("class", "y axis")
+      .call(d3.axisLeft(y))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("fill", "#000")
+      .text("Sig. wave height, Hs (m)")   
+      .attr("text-anchor", "middle") 
+      .attr("transform", "translate("+ x(-0.5) +","+y(3.0) +")rotate(-90)");
+     
+  var city = g.selectAll(".city")
+    .data(wlhs)
+    .enter().append("g")
+    .attr("class", "city");
+  city.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      //.style("stroke", function(d) { return z(d.id); });
+      .attr("stroke", "Teal")
+  city.append("text")
+      .datum(function(d) { return {id: (d.id).slice(0,-2), value: d.values[d.values.length-5]}; })
+      .attr("transform", function(d) { return "translate(" + x(0.5) + "," + y(d.value.hs + 0.1) + ")"; })
+      .attr("x", 3)
+      .attr("dy", "0.35em")
+      .style("font", "10px sans-serif")
+      .text(function(d) { return d.id; });
+});
+function type(d, _, columns) {
+ for (var i = 0, n = columns.length, c; i < n; ++i) d[c=columns[i]] = +d[c];
+  return d;
+}
+//load the scatter data
+// load data
+d3.csv("liv_hshw_no_tooltip.csv", function(error, ntdata) {
+  // change string (from CSV) into number format
+  ntdata.forEach(function(nt) {
+    nt["date"] = nt["date"];
+    nt["waterlevel"] = +nt["waterlevel"] + 0.50;
+    nt["waveheight"] = +nt["waveheight"] - 0.36;
+  });
+
+  // draw dots
+  svg.selectAll(".morered.dot")
+    .data(ntdata)
+    .enter().append("circle")
+      .attr("class", "morered dot")
+      .attr("r", 3.5)
+      .attr("cx", xMapnt)
+      .attr("cy", yMapnt)
+      .style("fill", "red")
+      .style("opacity", .5);
+    // draw dots 
+});  
+//load the scatter data
+// load data
+d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
+  // change string (from CSV) into number format
+  sdata.forEach(function(dd) {
+    dd["date"] = dd["date"];
+    dd["waterlevel"] = +dd["waterlevel"] + 0.50;
+    dd["waveheight"] = +dd["waveheight"] - 0.36;  
+    dd["rpwl"] = +dd["rpwl"];
+    dd["rphs"] = +dd["rphs"];
+    dd["rpjp"] = +dd["rpjp"];
+    if (dd["rpjp"] > 200.) {
+      dd["rpjp"] = ">200"
+    } else if (dd["rpjp"] <1.) {
+      dd["rpjp"] = "<1"
+    } else {
+      dd["rpjp"] = dd["rpjp"].toString();
+    }  
+  }); 
+
+  svg.selectAll(".red.dot")
+      .data(sdata)
+    .enter().append("circle")
+      .attr("class", "red dot")
+      .attr("r", 3.5)
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+      .style("fill", "red") 
+      .on("mouseover", function(dd) {
+          tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+          tooltip.html(dd["date"] + "<br/>" + "Water level - " + (parseFloat(dd["waterlevel"])-0.50).toFixed(2) + "m" + "<br/>" + "Sig. wave height - " + (parseFloat(dd["waveheight"])+0.36).toFixed(2) + "m" + "<br/>" + "WL RP - " + dd["rpwl"] + " years"+ "<br/>" + "HS RP - " + dd["rphs"] + " years" + "<br/>" + "Joint RP - " + dd["rpjp"] + " years" )
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+      })
+      .on("mouseout", function(dd) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+      })
+    // draw dots 
+});
+  // load overtopping points
+  d3.csv("rp100_overtoppts.csv", function(error, otpts) {
+  // change string (from CSV) into number format
+  otpts.forEach(function(dp) {    
+    dp["otwl"] = +dp["otwl"]+0.5;
+    dp["oths"] = +dp["oths"]-0.36;       
+  });
+    var myPts = svg.selectAll(".green.dot")
+      .data(otpts)
+      .enter().append("circle")
+      .attr("class", "green dot")
+      .attr("r", 7.0)
+      .attr("cx", xMapc)
+      .attr("cy", yMapc)
+      .style("fill", "green")
+      myPts.on("click", click);
+      function click(dp) { 
+       alert("You clicked me!");
+      };
+  });  
+});
+</script>
 </body>
-
-
-
 </html>
