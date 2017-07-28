@@ -489,9 +489,16 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       .attr("cy", yMapc)
       .style("fill", "green")
       myPts.on("click", click);
-      function click(dp) { 
-       alert("You clicked me!")
-       console.log(dp);
+      function click(dp) {
+         if (dp[otwl] < 2.0) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim8-img");
+	  }
+	  if (dp[otwl] > 6.7) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim1-img");
+	  }
+
       };
   });  
 });
