@@ -490,7 +490,8 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       .style("fill", "green")
       myPts.on("click", click);
       function click(dp) { 
-       alert("You clicked me!");
+       alert("You clicked me!")
+       console.log(dp);
       };
   });  
 });
