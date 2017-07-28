@@ -492,15 +492,36 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       function click(dp) {
          if (dp["otwl"] < 2.0) {
 	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim8-img");
-	    console.log(dp["otwl"]);
+            $("#imgBox").addClass("sim8-img");	    
+	  }
+	  if (dp["otwl"] > 2.0 && dp["otwl"] < 4.0) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim7-img");	    
+	  }
+	  if (dp["otwl"] > 3.0 && dp["otwl"] < 5.0) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim6-img");	    
+	  }    
+	  if (dp["otwl"] > 5.0 && dp["otwl"] < 5.5) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim5-img");	    
+	  }
+	  if (dp["otwl"] > 5.5 && dp["otwl"] < 6.0) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim4-img");	    
+	  }
+	  if (dp["otwl"] > 6.0 && dp["otwl"] < 6.5) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim3-img");	    
+	  }
+	  if (dp["otwl"] > 6.6 && dp["otwl"] < 6.7) {
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim2-img");	    
 	  }
 	  if (dp["otwl"] > 6.7) {
 	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim1-img");
-	    console.log(dp["otwl"]);
+            $("#imgBox").addClass("sim1-img");	    
 	  }
-
       };
   });  
 });
