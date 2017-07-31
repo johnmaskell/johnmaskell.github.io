@@ -174,7 +174,7 @@
 <div class="scene-container">
 <div class="scatter-displayed">
 <div class="svg-container">
-<svg class="svg-element" width="768" height="400"></svg>
+	<div id="chartId"></div>
 </div>
 </div>
 
@@ -378,9 +378,11 @@ var yValuec = function(dp) { return dp["oths"];};
 var xMapc = function(dp) { return x(xValuec(dp));};
 var yMapc = function(dp) { return y(yValuec(dp));};  
   
-var svg = d3.select("svg"),  
+var svg = d3.select("div#chartId"),
+   .append("div") 
    .classed("svg-container", true), //container class to make it responsive   
    //responsive SVG needs these 2 attributes and no width and height attr
+   .append("svg")
    .attr("preserveAspectRatio", "xMinYMin meet")
    .attr("viewBox", "0 0 768 400")
    //class to make it responsive
