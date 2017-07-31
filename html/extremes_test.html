@@ -183,9 +183,7 @@
 </div>
 </div>
 <div class="scene-container">
-<div class="scatter-displayed">
-	<div id="container" class="svg-container"></div>
-
+<div class="scatter-displayed" id="myChart">
 </div>
 
 <div id="imgBox" class="flood-container">	
@@ -387,12 +385,20 @@ var xValuec = function(dp) { return dp.otwl;};
 var yValuec = function(dp) { return dp["oths"];};  
 var xMapc = function(dp) { return x(xValuec(dp));};
 var yMapc = function(dp) { return y(yValuec(dp));};  
-  
-var svg = d3.select("div#container")
-    .append("svg")
-    .attr("preserveAspectRatio", "xMinYMin meet")
+	
+var mychartDiv = document.getElementById("myChart");
+var svg = d3.select(mychartDiv).append("svg");
+        var width = chartDiv.clientWidth;
+        var height = chartDiv.clientHeight;
+     function redraw(){
+	svg
+          .attr("width", width)
+          .attr("height", height);
+ 
+    
+    /*.attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", "0 0 768 400")
-    .classed("svg-content", true)
+    .classed("svg-content", true)*/
     //.call(responsivefy)
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
@@ -603,7 +609,15 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       };
   });
     console.log(svg.attr("width"));
-    console.log(svg.attr("height")); 
+    console.log(svg.attr("height"));
+ }	     
+// Draw for the first time to initialize.
+      redraw();
+
+      // Redraw based on the new size whenever the browser window is resized.
+      window.addEventListener("resize", redraw);     
+	     
+	     
 });
 </script>
 
