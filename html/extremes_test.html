@@ -622,30 +622,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
     console.log(svg.attr("height")); 
 });
 </script>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("flood-scene");
-  slideIndex = n
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-<script>
-var tooltipSpan = document.getElementById('tooltip-span');
-
-window.onmousemove = function (e) {
-    var x = e.clientX,
-        y = e.clientY;
-    tooltipSpan.style.top = (y + 20) + 'px';
-    tooltipSpan.style.left = (x + 20) + 'px';
-};
-</script>
 
 </body>
 </html>
