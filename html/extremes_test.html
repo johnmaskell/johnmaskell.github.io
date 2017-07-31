@@ -61,17 +61,10 @@ function responsivefy(svg) {
     text-decoration:none;
     position:relative;
 }
-
-.reftooltip-one {
-    text-decoration:none;
-    position:relative;
-}
 .reftooltip span {
     display:none;
 }
-.reftooltip-one span {
-    display:none;
-}
+
 .reftooltip:hover span {
     display:block;
     position:fixed;
@@ -82,6 +75,16 @@ function responsivefy(svg) {
     border-radius: 8px;
     padding: 2px;
 }
+	
+.reftooltip-one {
+    text-decoration:none;
+    position:relative;
+}
+
+.reftooltip-one span {
+    display:none;
+}
+
 .reftooltip-one:hover span {
     display:block;
     position:fixed;
@@ -96,16 +99,11 @@ function responsivefy(svg) {
     text-decoration:none;
     position:relative;
 }
-.reftooltip-three {
-    text-decoration:none;
-    position:relative;
-}
+
 .reftooltip-two span {
     display:none;
 }
-.reftooltip-three span {
-    display:none;
-}
+
 .reftooltip-two:hover span {
     display:block;
     position:fixed;
@@ -115,7 +113,16 @@ function responsivefy(svg) {
     border: 1px solid black;
     border-radius: 8px;
     padding: 2px;
+}	
+.reftooltip-three {
+    text-decoration:none;
+    position:relative;
 }
+
+.reftooltip-three span {
+    display:none;
+}
+
 .reftooltip-three:hover span {
     display:block;
     position:fixed;
@@ -717,6 +724,7 @@ window.onmousemove = function (e) {
 <script>
 var tooltipSpan2 = document.getElementById('tooltip-span-two');
 window.onmousemove = function (e) {
+    console.log("Hello!");
     var x2 = e.clientX,
         y2 = e.clientY;
     tooltipSpan2.style.top = (y2 + 20) + 'px';
