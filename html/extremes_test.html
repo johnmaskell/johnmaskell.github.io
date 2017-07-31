@@ -388,8 +388,8 @@ var yMapc = function(dp) { return y(yValuec(dp));};
 	
 var mychartDiv = document.getElementById("myChart");
 var svg = d3.select(mychartDiv).append("svg");
-        var width = chartDiv.clientWidth;
-        var height = chartDiv.clientHeight;
+        var width = mychartDiv.clientWidth;
+        var height = mychartDiv.clientHeight;
      function redraw(){
 	svg
           .attr("width", width)
