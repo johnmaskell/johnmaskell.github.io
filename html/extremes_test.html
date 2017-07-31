@@ -414,7 +414,8 @@ var svg = d3.select("#myChart")
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-  
+    console.log(svg.attr("width");
+    console.log(svg.attr("height");  
 // add the tooltip area to the webpage
 var tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
