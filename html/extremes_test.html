@@ -173,8 +173,8 @@
 </div>
 <div class="scene-container">
 <div class="scatter-displayed">
-<div class="svg-container">
-<svg></svg>
+<div class="svg-container" id="myChart">
+
 </div>
 </div>
 
@@ -378,9 +378,10 @@ var yValuec = function(dp) { return dp["oths"];};
 var xMapc = function(dp) { return x(xValuec(dp));};
 var yMapc = function(dp) { return y(yValuec(dp));};  
   
-var svg = d3.select("svg")    
-    .attr("width",960)
-    .attr("height",500)
+var svg = d3.select("#myChart")
+    .append("svg")
+    .attr("width",768)
+    .attr("height",400)
     .call(responsivefy)
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
