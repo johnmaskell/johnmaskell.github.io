@@ -374,7 +374,8 @@ $(document).ready(function(){
 var mychartDiv = document.getElementById("myChart");
 var svg = d3.select(mychartDiv).append("svg");
         var width = mychartDiv.clientWidth;
-        var height = mychartDiv.clientHeight;
+	var aspectRatio = 400./768.;
+        var height = width * aspectRatio;
      function redraw(){
 	svg
           .attr("width", width)
