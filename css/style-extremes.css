@@ -87,7 +87,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 
-.scatter-displayed {text-align:center;font-size:0;width:90%;height:500px;margin: 0 auto;overflow:auto;}
+.scatter-displayed {text-align:center;font-size:0;width:90%;height:100%;margin: 0 auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:95%;margin: 0 auto;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
 
 
