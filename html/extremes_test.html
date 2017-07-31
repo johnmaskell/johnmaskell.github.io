@@ -173,9 +173,7 @@
 </div>
 <div class="scene-container">
 <div class="scatter-displayed">
-<div class="svg-container">
-	<svg class="svg-element"></svg>
-</div>
+	<svg class="svg-element" width="768" height="400" viewBox="0 0 960 500" preserveAspectRatio="xMidYMid meet"></svg>
 </div>
 
 <div id="imgBox" class="flood-container">	
@@ -379,14 +377,7 @@ var xMapc = function(dp) { return x(xValuec(dp));};
 var yMapc = function(dp) { return y(yValuec(dp));};  
   
 var svg = d3.select("svg"),  
-   .classed("svg-container", true), //container class to make it responsive   
-   //responsive SVG needs these 2 attributes and no width and height attr  
-   .attr("preserveAspectRatio", "xMinYMin meet")
-   .attr("viewBox", "0 0 768 400")
-   .attr("width", 768)
-   .attr("height", 400)
-   //class to make it responsive
-   .classed("svg-element", true)
+
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom,
