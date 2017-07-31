@@ -369,7 +369,18 @@ Plotly.newPlot('myDiv', data, layout);
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script>
 $(document).ready(function(){
-//set up the values for the scatter plot
+
+	
+var mychartDiv = document.getElementById("myChart");
+var svg = d3.select(mychartDiv).append("svg");
+        var width = mychartDiv.clientWidth;
+        var height = mychartDiv.clientHeight;
+     function redraw(){
+	svg
+          .attr("width", width)
+          .attr("height", height);
+ 
+    //set up the values for the scatter plot
 // setup x
 var xValue = function(dd) { return dd.waterlevel;};  
 var yValue = function(dd) { return dd["waveheight"];};  
@@ -385,17 +396,6 @@ var xValuec = function(dp) { return dp.otwl;};
 var yValuec = function(dp) { return dp["oths"];};  
 var xMapc = function(dp) { return x(xValuec(dp));};
 var yMapc = function(dp) { return y(yValuec(dp));};  
-	
-var mychartDiv = document.getElementById("myChart");
-var svg = d3.select(mychartDiv).append("svg");
-        var width = mychartDiv.clientWidth;
-        var height = mychartDiv.clientHeight;
-     function redraw(){
-	svg
-          .attr("width", width)
-          .attr("height", height);
- 
-    
     /*.attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", "0 0 768 400")
     .classed("svg-content", true)*/
