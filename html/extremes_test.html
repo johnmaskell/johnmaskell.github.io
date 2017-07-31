@@ -25,7 +25,36 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
+<script>
+function responsivefy(svg) {
+    // get container + svg aspect ratio
+    var container = d3.select(svg.node().parentNode),
+        width = parseInt(svg.style("width")),
+        height = parseInt(svg.style("height")),
+         aspect = width / height;
+ 
+     // add viewBox and preserveAspectRatio properties,
+     // and call resize so that svg resizes on inital page load
+     svg.attr("viewBox", "0 0 " + width + " " + height)
+         .attr("perserveAspectRatio", "xMinYMid")
+         .call(resize);
+ 
+     // to register multiple listeners for same event type, 
+     // you need to add namespace, i.e., 'click.foo'
+     // necessary if you call invoke this function for multiple svgs
+     // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+     d3.select(window).on("resize." + container.attr("id"), resize);
+ 
+     // get width of container and resize svg to fit it
+     function resize() {
+         var targetWidth = parseInt(container.style("width"));
+         svg.attr("width", targetWidth-3.);
+ 	
+         svg.attr("height", (Math.round(targetWidth / aspect))-3.);
+ 	
+     }
+ }
+ </script>
 
 <style>
 .reftooltip {
@@ -372,16 +401,15 @@ $(document).ready(function(){
 
 	
 var mychartDiv = document.getElementById("myChart");
-var svg = d3.select(mychartDiv).append("svg");
-        var width = mychartDiv.clientWidth;
-	var aspectRatio = 400./768.;
-        var height = width * aspectRatio;
-     function redraw(){
-	svg
-          .attr("width", width)
-          .attr("height", height);
- 
-    //set up the values for the scatter plot
+var width = mychartDiv.clientWidth;
+var aspectRatio = 400./768.;
+var height = width * aspectRatio;
+var svg = d3.select(mychartDiv).append("svg")
+.attr("width",768)
+.attr("height",400)
+.call(responsivefy);
+	
+//set up the values for the scatter plot
 // setup x
 var xValue = function(dd) { return dd.waterlevel;};  
 var yValue = function(dd) { return dd["waveheight"];};  
@@ -611,12 +639,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
   });
     console.log(svg.attr("width"));
     console.log(svg.attr("height"));
- }	     
-// Draw for the first time to initialize.
-      redraw();
-
-      // Redraw based on the new size whenever the browser window is resized.
-      window.addEventListener("resize", redraw);     
+    
 	     
 	     
 });
