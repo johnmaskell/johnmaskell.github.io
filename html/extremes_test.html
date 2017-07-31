@@ -174,15 +174,15 @@
 <div class="scatter-displayed">  
 <svg class="svg-element" width="768" height="400"></svg>
 </div>
-<div id="imgBox" class="flood-container">
-	<div class="flood-scene sim8-img"></div>
-	<div class="flood-scene sim7-img"></div> 
-	<div class="flood-scene sim6-img"></div> 
-	<div class="flood-scene sim5-img"></div> 
-	<div class="flood-scene sim4-img"></div> 
-	<div class="flood-scene sim3-img"></div> 
-	<div class="flood-scene sim2-img"></div>
-	<div class="flood-scene sim1-img"></div> 	
+<img src="https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp07Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp06Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp05Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp04Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp03Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp02Bndryrs.jpg" style="display:none;" alt="" />
+<img src="https://gifyu.com/images/flood_bndry_ll_exp01Bndryrs.jpg" style="display:none;" alt="" />
+<div id="imgBox" class="flood-container">	
 </div>
 </div>
 <div class="mainContainer">
@@ -551,44 +551,44 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       myPts.on("click", click);
       function click(dp) {
          if (dp["otwl"]-0.5 < 2.0) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim8-img");*/
-	    showDivs(1)	 
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim8-img");
+	    //showDivs(1)	 
 	  }
 	  if (dp["otwl"]-0.5 > 2.0 && dp["otwl"]-0.5 < 4.0) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim7-img");*/
-            showDivs(2)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim7-img");
+            //showDivs(2)
 	  }
 	  if (dp["otwl"]-0.5 > 4.0 && dp["otwl"]-0.5 < 5.0) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim6-img");*/
-	    showDivs(3)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim6-img");
+	    //showDivs(3)
 	  }    
 	  if (dp["otwl"]-0.5 > 5.0 && dp["otwl"]-0.5 < 5.5) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim5-img");*/
-	    showDivs(4)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim5-img");
+	    //showDivs(4)
 	  }
 	  if (dp["otwl"]-0.5 > 5.5 && dp["otwl"]-0.5 < 6.0) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim4-img");*/
-	    showDivs(5)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim4-img");
+	    //showDivs(5)
 	  }
 	  if (dp["otwl"]-0.5 > 6.0 && dp["otwl"]-0.5 < 6.5) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim3-img");*/
-	    showDivs(6)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim3-img");
+	    //showDivs(6)
 	  }
 	  if (dp["otwl"]-0.5 > 6.5 && dp["otwl"]-0.5 < 6.7) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim2-img");*/
-            showDivs(7)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim2-img");
+            //showDivs(7)
 	  }
 	  if (dp["otwl"]-0.5 > 6.7) {
-	    /*$("#imgBox").removeClass();
-            $("#imgBox").addClass("sim1-img");*/
-	    showDivs(8)
+	    $("#imgBox").removeClass();
+            $("#imgBox").addClass("sim1-img");
+	    /*showDivs(8)*/
 	  }
       };
   });  
