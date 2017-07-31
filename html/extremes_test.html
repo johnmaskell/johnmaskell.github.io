@@ -58,22 +58,29 @@ function responsivefy(svg) {
 
 <style>
 .reftooltip {
-    text-decoration:none;
-    position:relative;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
+
 .reftooltip span {
-    display:none;
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
 }
 
 .reftooltip:hover span {
-    display:block;
-    position:fixed;
-    overflow:hidden;
-    background-color: #E8E8E8;
-    color:black;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 2px;
+    visibility: visible;
 }
 	
 .reftooltip-one {
@@ -703,15 +710,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
 	     
 });
 </script>
-<script>
-var tooltipSpan = document.getElementById('tooltip-span');
-window.onmousemove = function (e) {
-    var x = e.clientX,
-        y = e.clientY;
-    tooltipSpan.style.top = (y + 20) + 'px';
-    tooltipSpan.style.left = (x + 20) + 'px';
-};
-</script>
+
 
 
 </body>
