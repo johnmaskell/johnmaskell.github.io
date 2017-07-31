@@ -68,7 +68,7 @@ h1 {line-height:1.2;font-size:18px;}
 .content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
 h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
-.scatter-displayed {text-align:center;font-size:0;width:90%;margin-left:5%;height:auto;overflow:auto;}
+.scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .sim8-img{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .sim7-img{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp07Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
@@ -103,7 +103,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 
-.scatter-displayed {text-align:center;font-size:0;width:90%;margin-left:5%;margin-right:auto 0;height:auto;margin: 0 auto;overflow:auto;}
+.scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;margin: 0 auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;margin-left:5%;margin-right:auto 0;margin: 0 auto;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
 
 
@@ -133,7 +133,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.scatter-displayed {text-align:center;font-size:0;width:90%;margin-left:5%;height:auto;overflow:auto;}
+.scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 
 }
@@ -164,7 +164,7 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.scatter-displayed {text-align:center;font-size:0;width:90%;margin-left:5%;height:auto;overflow:auto;}
+.scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;height:300px;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
   .sim8-img{height:300px;}
   .sim7-img{height:300px;}
@@ -202,7 +202,7 @@ h1 {line-height:1.2;font-size:14px;}
 .p1 {color:#008080;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-.scatter-displayed {text-align:center;font-size:0;width:90%;margin-left:5%;height:auto;overflow:auto;}
+.scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
