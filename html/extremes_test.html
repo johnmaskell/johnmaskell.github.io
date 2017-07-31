@@ -60,19 +60,18 @@ function responsivefy(svg) {
 .reftooltip {
     position: relative;
     display: inline-block;
-    text-decoration:none;
-   
+    border-bottom: 1px dotted black;
 }
 
 .reftooltip span {
-    display:block;    
-    overflow:hidden;
+    visibility: hidden;
+    width: 500px;
     background-color: #E8E8E8;
-    color:black;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
     border: 1px solid black;
-    border-radius: 8px;
-    padding: 2px;
-    width:500px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -80,9 +79,11 @@ function responsivefy(svg) {
     left: 105%;
 }
 
-.reftooltip:hover span {
+.tooltip:hover span {
     visibility: visible;
 }
+	
+	
 	
 .reftooltip-one {
     text-decoration:none;
