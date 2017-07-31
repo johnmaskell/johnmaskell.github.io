@@ -175,6 +175,14 @@
 <svg class="svg-element" width="768" height="400"></svg>
 </div>
 <div id="imgBox" class="flood-container">
+	<div class="flood-scene sim8-img"></div>
+	<div class="flood-scene sim7-img"></div> 
+	<div class="flood-scene sim6-img"></div> 
+	<div class="flood-scene sim5-img"></div> 
+	<div class="flood-scene sim4-img"></div> 
+	<div class="flood-scene sim3-img"></div> 
+	<div class="flood-scene sim2-img"></div>
+	<div class="flood-scene sim1-img"></div> 	
 </div>
 </div>
 <div class="mainContainer">
@@ -543,40 +551,62 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       myPts.on("click", click);
       function click(dp) {
          if (dp["otwl"]-0.5 < 2.0) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim8-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim8-img");*/
+	    showDivs(1)	 
 	  }
 	  if (dp["otwl"]-0.5 > 2.0 && dp["otwl"]-0.5 < 4.0) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim7-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim7-img");*/
+            showDivs(2)
 	  }
 	  if (dp["otwl"]-0.5 > 4.0 && dp["otwl"]-0.5 < 5.0) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim6-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim6-img");*/
+	    showDivs(3)
 	  }    
 	  if (dp["otwl"]-0.5 > 5.0 && dp["otwl"]-0.5 < 5.5) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim5-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim5-img");*/
+	    showDivs(4)
 	  }
 	  if (dp["otwl"]-0.5 > 5.5 && dp["otwl"]-0.5 < 6.0) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim4-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim4-img");*/
+	    showDivs(5)
 	  }
 	  if (dp["otwl"]-0.5 > 6.0 && dp["otwl"]-0.5 < 6.5) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim3-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim3-img");*/
+	    showDivs(6)
 	  }
 	  if (dp["otwl"]-0.5 > 6.5 && dp["otwl"]-0.5 < 6.7) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim2-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim2-img");*/
+            showDivs(7)
 	  }
 	  if (dp["otwl"]-0.5 > 6.7) {
-	    $("#imgBox").removeClass();
-            $("#imgBox").addClass("sim1-img");	    
+	    /*$("#imgBox").removeClass();
+            $("#imgBox").addClass("sim1-img");*/
+	    showDivs(8)
 	  }
       };
   });  
 });
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("flood-scene");
+  slideIndex = n
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
 </script>
 <script>
 var tooltipSpan = document.getElementById('tooltip-span');
@@ -588,16 +618,6 @@ window.onmousemove = function (e) {
     tooltipSpan.style.left = (x + 20) + 'px';
 };
 </script>
-<script>
-/*image preloader*/
-$("#imgBox").removeClass().addClass("sim1-img");
-$("#imgBox").removeClass().addClass("sim2-img");	
-$("#imgBox").removeClass().addClass("sim3-img");
-$("#imgBox").removeClass().addClass("sim4-img");	
-$("#imgBox").removeClass().addClass("sim5-img");
-$("#imgBox").removeClass().addClass("sim6-img");
-$("#imgBox").removeClass().addClass("sim7-img");
-$("#imgBox").removeClass().addClass("sim8-img");	
-</script>
+
 </body>
 </html>
