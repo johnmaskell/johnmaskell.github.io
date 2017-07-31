@@ -35,7 +35,8 @@ h1 {line-height:1.2;font-size:18px;}
 .content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
 h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
-
+.scatter-displayed {float:left;width:48%;margin-left:1%;margin-right:1%;}
+.flood-displayed {float:left;width:48%;margin-left:1%;margin-right:1%;}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -59,6 +60,8 @@ h1 {line-height:1.2;font-size:18px;}
 .content-1 ul {color:#292c2f;font: 16px/16px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
 .col {float:left;}
 h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing: -1px; background: rgb(0, 0, 0); /* fallback color */background: rgba(0, 0, 0, 0.7);padding: 10px;}
+.scatter-displayed {float:left;width:48%;margin-left:1%;margin-right:1%;}
+.flood-displayed {float:left;width:48%;margin-left:1%;margin-right:1%;}
 }
 
 
@@ -83,7 +86,8 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-
+.scatter-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
+.flood-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
 }
 
 /* Small Devices, Tablets */
@@ -143,7 +147,8 @@ h1 {line-height:1.2;font-size:16px;}
 .p1 {color:#008080;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 14px/14px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
-
+.scatter-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
+.flood-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
 }
 
 /* Custom, iPhone Retina */ 
@@ -172,7 +177,8 @@ h1 {line-height:1.2;font-size:14px;}
 .p1 {color:#008080;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;font-weight:bold;margin-left:5px;margin-top:20px;}
 .p2 {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif; line-height:1.4;margin-left:5px;margin-top:20px;}
 .content-1 ul {color:#292c2f;font: 12px/12px Helvetica, Sans-Serif;line-height:1.4;margin-top:20px;margin-bottom:20px;}
- 
+ .scatter-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;}
+.flood-displayed {display:block;width:100%;margin-left:auto 0;margin-right:auto 0;margin-top:1%;margin-bottom:1%;} 
 .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
 }
