@@ -112,9 +112,20 @@ function responsivefy(svg) {
 .scene-container {text-align:center;font-size:0;width:100%;margin: 0 auto;margin-bottom:20px;overflow:auto;}
 
 .img-flood {max-width:100%;}
-.svg-container-max {max-width:100%;}
-.svg-container {display: inline-block;position: relative;width: 100%;padding-bottom: 100%; vertical-align: middle;overflow: hidden;} 
-.svg-element {	display: inline-block;position: absolute;top: 0;left: 0;}
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .sim8-img{width:48%;height:400px;border: 1px; border-style:solid;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .sim7-img{width:48%;height:400px;border: 1px; border-style:solid;float:left;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp07Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
@@ -201,7 +212,8 @@ function responsivefy(svg) {
 </div>
 </div>
 <div class="scene-container">
-<div class="scatter-displayed" id="myChart">
+<div class="scatter-displayed">
+	<div id="container" class="svg-container"></div>
 
 </div>
 
@@ -405,11 +417,12 @@ var yValuec = function(dp) { return dp["oths"];};
 var xMapc = function(dp) { return x(xValuec(dp));};
 var yMapc = function(dp) { return y(yValuec(dp));};  
   
-var svg = d3.select("#myChart")
+var svg = d3.select("div#container")
     .append("svg")
-    .attr("width",768)
-    .attr("height",400)
-    .call(responsivefy)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 768 400")
+    .classed("svg-content", true)
+    //.call(responsivefy)
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom,
