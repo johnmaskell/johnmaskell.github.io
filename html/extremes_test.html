@@ -413,9 +413,7 @@ var svg = d3.select("#myChart")
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom,
-    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    console.log(svg.attr("width");
-    console.log(svg.attr("height");  
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
 // add the tooltip area to the webpage
 var tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -620,6 +618,8 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
 	  }
       };
   });
+    console.log(svg.attr("width"));
+    console.log(svg.attr("height")); 
 });
 </script>
 <script>
