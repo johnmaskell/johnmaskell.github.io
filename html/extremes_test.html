@@ -540,17 +540,21 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
     dd["rphs"] = +dd["rphs"];
     dd["rpjp"] = +dd["rpjp"];
     if (dd["rpjp"] > 200.) {
-      dd["rpjp"] = ">200"
+      dd["rpjp"] = ">200 years"
     } else if (dd["rpjp"] <1.) {
-      dd["rpjp"] = "<1"
+      dd["rpjp"] = "<1 year"
     } else {
-      dd["rpjp"] = dd["rpjp"].toString();
+      dd["rpjp"] = dd["rpjp"].toString() + " years;
     }
     if (dd["rpwl"] < 1.) {
-       dd["rpwl"] = "<1"
+       dd["rpwl"] = "<1 year"
+    } else {
+       dd["rpwl"] = dd["rpwl"].toString() + " years;
     }
     if (dd["rphs"] < 1.) {
-       dd["rphs"] = "<1"
+       dd["rphs"] = "<1 year"
+    } else {
+       dd["rphs"] = dd["rphs"].toString() + " years;
     } 
 	  
   }); 
@@ -567,7 +571,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
           tooltip.transition()
                .duration(200)
                .style("opacity", .9);
-          tooltip.html(dd["date"] + "<br/>" + "Water level - " + (parseFloat(dd["waterlevel"])-0.50).toFixed(2) + "m" + "<br/>" + "Sig. wave height - " + (parseFloat(dd["waveheight"])+0.36).toFixed(2) + "m" + "<br/>" + "WL RP - " + dd["rpwl"] + " years"+ "<br/>" + "HS RP - " + dd["rphs"] + " years" + "<br/>" + "Joint RP - " + dd["rpjp"] + " years" )
+          tooltip.html(dd["date"] + "<br/>" + "Water level - " + (parseFloat(dd["waterlevel"])-0.50).toFixed(2) + "m" + "<br/>" + "Sig. wave height - " + (parseFloat(dd["waveheight"])+0.36).toFixed(2) + "m" + "<br/>" + "WL RP - " + dd["rpwl"] +  "<br/>" + "HS RP - " + dd["rphs"] +  "<br/>" + "Joint RP - " + dd["rpjp"]  )
                .style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
       })
