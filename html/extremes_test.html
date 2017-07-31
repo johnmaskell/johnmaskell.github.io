@@ -64,7 +64,17 @@ function responsivefy(svg) {
 .reftooltip, .reftooltip-1 span {
     display:none;
 }
-.reftooltip , .reftooltip-1:hover span {
+.reftooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+    background-color: #E8E8E8;
+    color:black;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.reftooltip-1:hover span {
     display:block;
     position:fixed;
     overflow:hidden;
