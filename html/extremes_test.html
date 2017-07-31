@@ -677,11 +677,11 @@ window.onmousemove = function (e) {
 </script>
 <script>
 var tooltipSpan2 = document.getElementById('tooltip-span-2');
-window.onmousemove = function (e) {
-    var x = e.clientX,
-        y = e.clientY;
-    tooltipSpan2.style.top = (y + 20) + 'px';
-    tooltipSpan2.style.left = (x + 20) + 'px';
+window.onmousemove = function (e1) {
+    var x1 = e1.clientX,
+        y1 = e1.clientY;
+    tooltipSpan2.style.top = (y1 + 20) + 'px';
+    tooltipSpan2.style.left = (x1 + 20) + 'px';
 };
 </script>
 
