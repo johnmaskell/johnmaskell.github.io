@@ -269,7 +269,7 @@ function responsivefy(svg) {
 	<p class="p2">An offshore model system is used to simulate the development of the tide and storm surge in the Irish Sea (Telemac-2D). A high resolution nearshore modelling system (Telemac-2D coupled with Tomawac) that couples the tide and surge with the waves is then used to simulate water levels and wave heights right up to the defence line. Only waves propagating from the west were simulated in this experiment which is the dominant wave direction in the Eastern Irish Sea as shown by the wave rose in the figure above. At the defence line overflow and wave overtopping rates were calculated using equations detailed in the Eurotop manual <a class="reftooltip" href="http://www.overtopping-manual.com/docs/EurOtop%20II%202016%20Pre-release%20October%202016.pdf"><sup>5</sup><span id="tooltip-span">EurOtop - Manual on wave overtopping of sea defences and related structures.</span></a> and used as boundary conditions to an inundation model (Flood Modeller) using a 5 m resolution grid aggregated from 1m lidar data from the EA open survey data.</p>
 <div class="fig-info">
 	<p class="p1" style="margin-left:5px;">&#9432; Figure information</p>
-	<p class="p2" style="margin-left:5px;">1. The red dots show observed water levels and wave heights - hover on the larger events for more information.<br/>2. The black lines are contours of equal joint return period for the observed and simulated water levels and wave heights.<br/>3. The green dots are samples from the joint 100 year return period water level and wave height - click on the green dots to see the resultant flooding in the Google Earth image. Refresh the page if they are not visible.</p>
+	<p class="p2" style="margin-left:5px;">1. The red dots show observed water levels and wave heights - hover on the larger events for more information.<br/>2. The blue lines are contours of equal joint return period for the observed and simulated water levels and wave heights.<br/>3. The green dots are samples from the joint 100 year return period water level and wave height - click on the green dots to see the resultant flooding in the Google Earth image. Refresh the page if they are not visible.</p>
 </div>
 </div>
 </div>
@@ -610,7 +610,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
     dd["rpjp"] = +dd["rpjp"];
     if (dd["rpjp"] > 200.) {
       dd["rpjp"] = ">200 years"
-    } else if (dd["rpjp"] <1.) {
+    } else if (dd["rpjp"] <=1.) {
       dd["rpjp"] = "<1 year"
     } else {
       dd["rpjp"] = dd["rpjp"].toString() + " years";
