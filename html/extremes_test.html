@@ -590,7 +590,7 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
 	  }
       };
   });  
-});
+
 	
 function responsivefy(svg) {
     // get container + svg aspect ratio
@@ -618,6 +618,7 @@ function responsivefy(svg) {
         svg.attr("height", (Math.round(targetWidth / aspect))-3.);
     }
 }
+});
 </script>
 <script>
 var slideIndex = 1;
