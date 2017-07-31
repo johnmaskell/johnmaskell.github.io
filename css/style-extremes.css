@@ -176,6 +176,7 @@ h1 {line-height:1.2;font-size:16px;}
   .sim3-img{height:300px;}
   .sim2-img{height:300px;}
   .sim1-img{height:300px;}
+.threed-img {width:320px;height:267px;margin: 0 auto;}  
 }
 
 /* Custom, iPhone Retina */ 
@@ -214,7 +215,7 @@ h1 {line-height:1.2;font-size:14px;}
   .sim3-img{height:200px;}
   .sim2-img{height:200px;}
   .sim1-img{height:200px;}
-  .threed-img {width:320px;height:267px;margin: 0 auto;}
+  
   .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
 }
