@@ -25,36 +25,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script>
-function responsivefy(svg) {
-    // get container + svg aspect ratio
-    var container = d3.select(svg.node().parentNode),
-        width = parseInt(svg.style("width")),
-        height = parseInt(svg.style("height")),
-        aspect = width / height;
 
-    // add viewBox and preserveAspectRatio properties,
-    // and call resize so that svg resizes on inital page load
-    svg.attr("viewBox", "0 0 " + width + " " + height)
-        .attr("perserveAspectRatio", "xMinYMid")
-        .call(resize);
-
-    // to register multiple listeners for same event type, 
-    // you need to add namespace, i.e., 'click.foo'
-    // necessary if you call invoke this function for multiple svgs
-    // api docs: https://github.com/mbostock/d3/wiki/Selections#on
-    d3.select(window).on("resize." + container.attr("id"), resize);
-
-    // get width of container and resize svg to fit it
-    function resize() {
-        var targetWidth = parseInt(container.style("width"));
-        svg.attr("width", targetWidth-3.);
-	
-        svg.attr("height", (Math.round(targetWidth / aspect))-3.);
-	
-    }
-}
-</script>
 
 <style>
 .reftooltip {
@@ -421,7 +392,7 @@ var svg = d3.select("div#container")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", "0 0 768 400")
-    .classed("svg-content", true)
+    .classed("svg-content", true);
     //.call(responsivefy)
     margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = svg.attr("width") - margin.left - margin.right,
