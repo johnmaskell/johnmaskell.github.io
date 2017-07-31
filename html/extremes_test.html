@@ -545,7 +545,14 @@ d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
       dd["rpjp"] = "<1"
     } else {
       dd["rpjp"] = dd["rpjp"].toString();
-    }  
+    }
+    if (dd["rpwl"] < 1.) {
+       dd["rpwl"] = "<1"
+    }
+    if (dd["rphs"] < 1.) {
+       dd["rphs"] = "<1"
+    } 
+	  
   }); 
 
   svg.selectAll(".red.dot")
