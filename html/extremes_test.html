@@ -614,8 +614,8 @@ function responsivefy(svg) {
     // get width of container and resize svg to fit it
     function resize() {
         var targetWidth = parseInt(container.style("width"));
-        svg.attr("width", targetWidth);
-        svg.attr("height", (Math.round(targetWidth / aspect))-5.);
+        svg.attr("width", targetWidth-3.);
+        svg.attr("height", (Math.round(targetWidth / aspect))-3.);
     }
 }
 </script>
