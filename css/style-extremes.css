@@ -49,8 +49,10 @@ h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing:
 .threed-img {width:480px;height:400px;margin: 0 auto;}
 .reftooltip {position: relative;display: inline-block;text-decoration:none;}
 
-.reftooltip span {visibility: hidden;background-color: #E8E8E8;color: black;width:500px;overflow:auto;border-radius: 6px;padding: 5px 0;border: 1px solid black;/* Position the tooltip */position: absolute;z-index: 1;top: -5px;left: 105%;}
+.reftooltip span {visibility: hidden;background-color: #E8E8E8;color: black;width:500px;overflow:auto;border-radius: 6px;padding: 5px 0;border: 1px solid black;/* Position the tooltip */position: absolute;}
+
 .reftooltip:hover span {visibility: visible;}
+.righttooltip {z-index: 1;top: -5px;left: 105%;}
 .lefttooltip{top: -5px;right: 105%;}
 .bottomtooltip{width: 120px;top: 100%;left: 50%;margin-left: -250px;}
 
@@ -91,6 +93,7 @@ h2 span {color: white;font: bold 18px/18px Helvetica, Sans-Serif;letter-spacing:
 .sim2-img{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp02Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .sim1-img{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp01Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}  
   .reftooltip span {width:400px;}
+  .bottomtooltip{width: 120px;top: 100%;left: 50%;margin-left: -200px;}
 }
 
 
@@ -119,6 +122,7 @@ h1 {line-height:1.2;font-size:16px;}
 .scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;margin: 0 auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;} 
  .reftooltip span {width:300px;}
+ .bottomtooltip{width: 120px;top: 100%;left: 50%;margin-left: -150px;}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -149,6 +153,7 @@ h1 {line-height:1.2;font-size:16px;}
 .scatter-displayed {text-align:center;font-size:0;width:100%;height:auto;overflow:auto;}
 .flood-container{text-align:center;font-size:0;width:90%;margin-left:5%;border: 1px; border-style:solid;position:relative;background-image:url(https://gifyu.com/images/flood_bndry_ll_exp08Bndryrs.jpg);background-size:100% 100%;background-repeat:no-repeat;}
  .reftooltip span {width:200px;}
+ .bottomtooltip{width: 120px;top: 100%;left: 50%;margin-left: -100px;}
 }
 
 /* Extra Small Devices, Phones */ 
@@ -189,6 +194,7 @@ h1 {line-height:1.2;font-size:16px;}
   .sim1-img{height:300px;}
 .threed-img {width:320px;height:267px;margin: 0 auto;}
  .reftooltip span {width:150px;}
+ .bottomtooltip{width: 120px;top: 100%;left: 50%;margin-left: -75px;}
 }
 
 /* Custom, iPhone Retina */ 
@@ -231,4 +237,5 @@ h1 {line-height:1.2;font-size:14px;}
   .smallScreen{width:100px;height:25px;}
 .psmallScreen{font-size:8px;}
  .reftooltip span {width:150px;}
+ .bottomtooltip{width: 120px;top: 100%;left: 50%;margin-left: -75px;}
 }
