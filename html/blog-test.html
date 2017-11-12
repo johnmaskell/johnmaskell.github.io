@@ -99,6 +99,8 @@
 <a href="#blog-4">May 2017 (1) ></a>
 </br>
 <a href="#blog-5">July 2017 (1) ></a>
+</br>
+<a href="#blog-6">July 2017 (1) ></a>
 </div>
 <div class="myContent">
 <h1 id="blog-1">Modelling dike breaching using TELEMAC-2D - A December 2013 case study</h1>
@@ -298,7 +300,7 @@
 <img class="img-displayed" src="https://gifyu.com/images/dam_break.gif">
 <p class="p2">Even with small computational grids the speed up is significant. The dam break experiment (see above) described in <a href="http://www.tandfonline.com/doi/pdf/10.1080/19942060.2009.11015264">Ying et al</a> (~800 grid cells) takes 25 seconds on my laptops CPU (Intel Core i7-5500U CPU @ 2.40GHz) using an adaptive grid and 0.035 seconds on the laptops GPU (Nvidia GeForce GTX 850m) with a fixed grid. The classic Malpasset Dam break simulation (see GIF above) takes 500 seconds for 373,205 grid cells (12 m resolution). I would have given a comparison to running this test case on my CPU but I gave up as it was taking so long! The DTM and initial conditions for the test case can be downloaded <a href="http://www.flox-gpu.ch/?p=67">here</a>.</p>
 <iframe class="myVid" src="https://www.youtube.com/embed/1gClMy5vMXU" frameborder="0" allowfullscreen></iframe>
-<p class="p2">The <a href="http://www.opentelemac.org/index.php/presentation?id=17">Telemac2D</a> Malpasset Dam break case included in the examples (visualisation above) also takes about 500 seconds on the CPU with 104,000 computational cells. However, the main developers do report a time of 85 seconds when run in parallel on 8 CPU processors. It should be noted that the examples given are not stringent comparisons as the hardware and solutions differ and are more to give an idea about the type of speed up that can be achieved with little or no optimizations.</p>
+<p class="p2">The <a href="http://www.opentelemac.org/index.php/presentation?id=17">Telemac2D</a> Malpasset Dam break case included in the examples (visualisation above) also takes about 500 seconds on the CPU with 104,000 computational cells. However, the main developers do report a time of 85 seconds when run in parallel on 8 CPU processors. It should be noted that the examples given here are not stringent comparisons as the hardware and solutions differ and are more to give an idea about the type of speed up that can be achieved with little or no optimizations.</p>
 <h1>Further applications</h1>
 <img class="img-displayed" src="https://s1.gifyu.com/images/nargis_rainfall.jpg">
 <p class="p2">It is not all about dam breaks! The accelerated solutions can be applied to storm surges, tsunamis, river floods, rainfall run-off and pluvial events. To develop the application further I will generate a simulation of <a href="https://en.wikipedia.org/wiki/Cyclone_Nargis">Cyclone Nargis</a> that had devastating consequences in Myanmar. Due to the low lying land, significant storm surge and heavy rainfall (see image above - <a href="https://www.nasa.gov/images/content/226161main_nargis_myanmar_3may08.jpg">Hal Pierce, SSAI/NASA GSFC</a>) a very large area was flooded (see image below - <a href="https://www.nasa.gov/images/content/228387main_burma_20080520_HI.jpg">NASA/Robert Simmon</a>).</p>
