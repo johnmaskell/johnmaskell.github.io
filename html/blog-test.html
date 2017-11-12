@@ -276,6 +276,29 @@
 <hr>
 <br>
 
+	<br>
+	<hr>
+	<br>
+  
+<div class="myContent">
+<h1 id="blog-6">The need for speed - GPU power!</h1>
+<h3 class="dateStamp">Monday, 12th November 2017</h3>
+<p class="myNote">This blog was first published as a Linkedin article (see <a href="https://www.linkedin.com/pulse/running-tidal-simulation-john-maskell"> here</a>) but is republished here.</p2>
+<p class="p1">This article relates to the second part of a three part video series on developing a coastal model. The first <a href="https://youtu.be/il4iOCFYNf8">video</a> covered setting up a computational mesh and some apps I developed to simplify some of the tasks involved. The second video (below) focuses on setting up and running a tidal simulation using the previously generated mesh.</p>
+<div class="changeGifs">
+<div class="myGifs">
+<img src="https://s1.gifyu.com/images/Malpasset_colour.gif" />
+</div>
+<div class="myGifs">
+<img src="https://s1.gifyu.com/images/Malpasset.gif" />
+</div>
+	
+</div>
+
+
+</div>
+
+
 </div>
 <script>
 var image = { width: 1994, height: 1148 };
@@ -426,6 +449,21 @@ sim1.onclick = function() {
 };
 	
 	
+</script>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myGifs");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 17000); // Change image every 17 seconds
+}
 </script>
 <footer class="footer-distributed">
 
