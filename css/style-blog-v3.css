@@ -93,7 +93,7 @@ hr {border: 0;clear:both;display:block;width: 100%;background-color:black;height
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+#logo{float: left;width: 200px;height: 50px;margin-top:0px;background: url(https://s1.gifyu.com/images/logo200x50xmas.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 #logo {margin-left:17%;}
 nav {margin-right:15.5%;}
 .spacer {height:120px;}
@@ -127,7 +127,7 @@ h3 {font-size:12px;}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+#logo{float: left;width: 200px;height: 50px;margin-top:0px;background: url(https://s1.gifyu.com/images/logo200x50xmas.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 
 #logo {margin-left:1%;}
 nav {margin-right:1%;}
@@ -163,7 +163,7 @@ h3 {font-size:12px;}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 header {position: absolute;height:120px;}
-#logo{float: left;width: 200px;height: 50px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
+#logo{float: left;width: 200px;height: 50px;margin-top:0px;background: url(https://s1.gifyu.com/images/logo200x50xmas.png) no-repeat center;display: block;background-size: 100% 100%;margin-left:10px;margin-right:0;border:0;} 
 #menu-icon {display:inline-block;width:40px;height:40px;background-size:100% 100%;float:right;margin:0;border:0;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 20px;top: 30px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
@@ -206,7 +206,7 @@ h3 {font-size:12px;}
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 header {position: absolute;height:100px;}
-#logo{float: left;width: 200px;height: 50px;background: url(http://gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
+#logo{float: left;width: 200px;height: 50px;margin-top:0px;background: url(https://s1.gifyu.com/images/logo200x50xmas.png) no-repeat center;display: block;background-size: 100% 100%;margin-left:10px;margin-right:0;border:0;} 
 #menu-icon {display:inline-block;width:40px;height:40px;background-size:100% 100%;float:right;margin:0;border:0;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 20px;top: 30px;width: 50%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
@@ -249,7 +249,7 @@ h3 {font-size:12px;}
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
 header {position: absolute;height:75px;}
-#logo{float: left;width: 100px;height: 25px;background: url(http://gifyu.com/images/logo100x25.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:5px;margin-right:0;border:0;} 
+#logo{float: left;width: 100px;height: 25px;margin-top:0px;background: url(https://s1.gifyu.com/images/logo100x25xmas.png) no-repeat center;display: block;background-size: 100% 100%;margin-left:5px;margin-right:0;border:0;} 
 #menu-icon {display:inline-block;width:25px;height:25px;background-size:100% 100%;float:right;margin:0;border:0;}
 nav ul, nav:active ul {display: none;position: absolute;padding: 20px;background: #fff;border: 1px solid #008080;right: 45px;top: 30px;width: 75%;border-radius: 4px 0 4px 4px;}
 nav li {text-align: center;width: 100%;padding: 10px 0;margin: 0;}
