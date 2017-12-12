@@ -93,7 +93,7 @@ hr {border: 0;clear:both;display:block;width: 100%;background-color:black;height
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-#logo{float: left;width: 200px;height: 50px;margin-top:10px;background: url(https://s1.gifyu.com/images/logo200x50xmas.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+#logo{float: left;width: 200px;height: 75px;margin-top:10px;background: url(https://s1.gifyu.com/images/logo200x50xmas.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 #logo {margin-left:17%;}
 nav {margin-right:15.5%;}
 .spacer {height:120px;}
