@@ -1,0 +1,639 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+        <meta name="description" content="blog by JM Coastal LTD">
+	<meta name="keywords" content="Coastal Modelling,Flooding,Storm surge,breaching,Tides,Waves,Sediment Transport,Ports,Coastal Defences,Overtopping,Consulting,Consultants,Consultant">
+	<meta name="author" content="John Maskell">
+	<title>Blog | JM Coastal</title>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+
+		<link rel="stylesheet" href="/css/style-blog-v2.css">
+	        <!--<link rel="stylesheet" href="/css/logo-style.css">-->
+		<link rel="stylesheet" href="/css/style-footer.css">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90532775-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body>
+
+	<header>
+<div class="nav-bar">
+		<div style="position:relative">
+		<!--<img class="snow" src="https://s1.gifyu.com/images/snow.gif"/>-->
+		<a href="http://johnmaskell.github.io/" id="logo" ></a>
+	        </div>
+
+		<nav>
+
+			<a href="#" id="menu-icon"></a>
+
+			<ul>
+
+				<li><a href="https://johnmaskell.github.io/" class="current">Home</a></li>
+				<li><a href="http://johnmaskell.github.io/html/about.html">About</a></li>
+				<li>
+				<div class="dropdown">	
+				<a href="#">Expertise</a>
+				<div class="dropdown-content">
+
+    <a href="http://johnmaskell.github.io/html/tidal-modelling.html">Tidal modelling</a>
+
+    <a href="http://johnmaskell.github.io/html/wave-modelling.html">Wave modelling</a>
+
+    <a href="http://johnmaskell.github.io/html/sediment-transport.html">Sediment transport</a>
+
+    <a href="http://johnmaskell.github.io/html/coastal-flooding.html">Coastal flooding</a>
+
+    <a href="http://johnmaskell.github.io/html/coastal-defences.html">Coastal defences</a>
+<a href="http://johnmaskell.github.io/html/harbour-modelling.html">Port modelling</a>
+    <a href="http://johnmaskell.github.io/html/in-house-solutions.html">In-house solutions</a>
+					</div>
+</div>
+				</li>
+				
+				<li><a href="http://johnmaskell.github.io/html/news.html">News</a></li>
+        <li><a href="http://johnmaskell.github.io/html/blog.html">Blog</a></li>
+			</ul>
+
+		</nav>
+		</div>
+	</header>
+	
+	<div class="spacer"></div>
+<div class="mainContainer">
+	<div class="myBanner">
+<div class="imgcontainer">
+<img src="http://gifyu.com/images/myBanner_v2.png"/>
+		</div>
+		
+	<h2><span>Blog</span></h2>
+</div>
+
+<div class="wrapContent">
+<div class="mySidebar">
+<a href="#blog-1">January 2017 (1) ></a>
+<br>
+<a href="#blog-2">February 2017 (1) ></a>
+<br>
+<a href="#blog-3">March 2017 (1) ></a>
+<br>
+<a href="#blog-4">May 2017 (1) ></a>
+</br>
+<a href="#blog-5">July 2017 (1) ></a>
+</br>
+<a href="#blog-6">November 2017 (1) ></a>
+</br>
+<a href="#blog-7">April 2018 (1) ></a>
+</div>
+<div class="myContent">
+<h1 id="blog-1">Modelling dike breaching using TELEMAC-2D - A December 2013 case study</h1>
+<h3 class="dateStamp">Monday, 16th January 2017</h3>
+<p class="myNote">This blog was first published as a Linkedin article (see <a href="https://www.linkedin.com/pulse/modelling-dike-breaching-using-telemac-2d-december-2013-maskell?trk=prof-post"> here</a>) but is republished here.</p2>
+<p class="p1">On December 5th-6th 2013, Cyclone Xaver generated storm surge levels along the coastal regions of the southern North Sea that were the highest on record at some tide gauge locations on the UK East Coast, exceeding those of the disastrous 1953 event. However, this time the UK was better protected by coastal defences and flood warnings gave people more time to be prepared. At the time I was working at Risk Management Solutions and we went to visit some of the sites affected by the surge to survey the damage. We found that the defences had generally performed well and had prevented more serious flooding (more info <a href="http://forms2.rms.com/rs/729-DJX-565/images/ws_2013_2014_europe_winter_storms.pdf">here</a>). However, it was apparent that in some cases the existing defences had only just prevented serious flooding for an event of this magnitude or were breached, causing flooding.</p>
+<img class="img-displayed" src="https://gifyu.com/images/Simulating_dike_breaching.png">
+<p class="p2"> In Boston, Lincolnshire, the River Haven burst its banks as the storm surge propagated up the estuary flooding many homes, businesses and the historic church. Just outside Boston dike failure led to the inundation of a waste recycling plant, a number of warehouses, business units and the surrounding crop fields. The site and approximate breach location (shown in red) can be seen in the image below.</p>
+<img class="img-displayed" src="https://gifyu.com/images/GEstudysitebreachloc.jpg"/>
+<p class="p2">Predicting breaches, such as this one, is hard to do as they often occur due to very specific local water levels and/or wave conditions and differences in the dike level or structural integrity. However, it may be useful to model breaching scenarios at various locations to investigate the potential impact and make more informed decisions on allocating resources to defence construction and maintenance.</p>
+<p class="p2"><a href="http://www.opentelemac.org/index.php/presentation?id=17">TELEMAC-2D</a> allows you to simulate dike breaching for a range of scenarios and breach growth mechanisms. Data such as the <a href="https://data.gov.uk/dataset/spatial-flood-defences-including-standardised-attributes">Spatial Flood Defences</a> dataset and <a href="http://environment.data.gov.uk/ds/survey/index.jsp#/survey">LIDAR digital surface models</a> at 1 m resolution are now publicly available and allow you to identify defence assets that could be liable to breaching and resolve features such as dikes in hydrodynamic simulations.</p>	
+<img class="img-displayed" src="https://gifyu.com/images/Boston_dike_breach_mesh.jpg"/>
+<p class="p2">To simulate the dike breach at the recycling plant near Boston in December 2013, a mesh was created in <a href="http://www.nrc-cnrc.gc.ca/eng/solutions/advisory/blue_kenue_index.html">Blue Kenue</a> using publicly available data. The mesh extends offshore from the study site to simulate the surge propagation into the region resolving the River Haven and region of inundation at increased resolution.</p>	
+<p class="p2">The 1 m LIDAR data and high density of mesh elements allows the dike to be well resolved and can be seen in light blue in the image below.</p>
+<img class="img-displayed" src="https://gifyu.com/images/Meshjpg.jpg"/>
+<p class="p2">This event can be accurately simulated based on knowledge of the breach location and the approximate region of inundation and visualized in 3D using Blue Kenue (see below). The method can be extended to simulate other such historic events or breach scenarios and is a useful tool for investigating the impacts of dike breaching. However, simulating multiple events/breach scenarios is computationally expensive due to the small time-step and element size needed to resolve dikes in the hydrodynamic simulation, but could be partially resolved through the use of CPU clusters and parallel processing.</p>
+<iframe class = "myVid" src="https://www.youtube.com/embed/yAy1sayD8l8" frameborder="0" allowfullscreen></iframe>
+</div>
+	<br>
+	<hr>
+	<br>
+<div class="myContent">
+<h1 id="blog-2">Visualising uncertainty in coastal flood predictions</h1>
+<h3 class="dateStamp">Wednesday, 1st February 2017</h3>
+<p class="p1">Predicting coastal flooding at a particular return period has a degree of uncertainty associated with it. Some of the uncertainty may be safely ignored and will make little difference to the final simulated flood footprint. However, some of the uncertainty lies in such a range that it can make a significant difference to the predicted flood extent and cannot be ignored when considering the possible consequences for a given return level. Some sources of uncertainty in coastal flood modelling include:</p>
+<ul>
+<li>The surge level at the coast</li>
+<li>The height/strength of the defences</li>
+<li>The DTM and the interpolation method if reinterpolated</li>
+<li>The roughness coefficient possibly derived from land use land cover data</li>
+<li>The overtopping volume due to waves</li>
+</ul>
+<p class="p2">At longer return periods the uncertainty increases and becomes harder to quantify, as does the consequence this uncertainty poses. Another challenge resides in relating this uncertainty in a meaningful way to decision/policy makers that may have implications for coastal planning. If the uncertainty in the 100 year return period surge level is +/- 0.4 metres, what does that really mean or look like for a given location?</p>
+<p class="p2">This blog post aims to visualise the range in the predicted flood extent due to the most significant sources of uncertainty, focusing on Hornsea on the UK East Coast. Hornsea has suffered from significant coastal erosion where sand transported by longshore drift (read more <a href="http://jmcoastal.co.uk/html/sediment-transport.html">here</a>), and subsequent cliff erosion, has lead to a need to manage the region's natural defences to wave attack and flooding. Hornsea has also been flooded twice in recent times when storm surge  and waves have overtopped the town's coastal defences. Significant flooding occurred in December 2013 and more recently on January 13th 2017, where predicted storm surge levels lead to an evacuation of part of the town as homes and businesses suffered flooding. Hornsea is susceptible to coastal flooding by surge and wave levels that exceed the coastal defence elevation as it has a region of low-lying land (seen <a href="http://maps.environment-agency.gov.uk/wiyby/wiybyController?x=520500.0&y=447500.0&topic=fwa&ep=map&scale=9&location=Hornsea,%20East%20Riding%20of%20Yorkshire&lang=_e&layerGroups=default&distance=&textonly=off">here</a>) where flood warnings are issued by the Environment Agency. The Environment Agency also publish extreme sea levels in a <a href="http://environment.data.gov.uk/ds/catalogue/#/6e856bda-0ca9-404f-93d7-566a2378a7a8">coastal design sea levels database</a> (about to be updated) derived from extreme value analysis, joint probability and numerical modelling. The database includes a range of uncertainty based on the methods used to derive each return period sea level.</p>
+<p class="p2">In the following example the flood footprint is simulated (using <a href="https://www.floodmodeller.com/en-us/">flood modeller</a>) at Hornsea due to the range of uncertainty in the 100 year return period coastal water elevation and the overtopping due to 3 m waves at the defences. The wave overtopping is dependent on the water level that determines the freeboard at the defences. The range of uncertainty for the 100 year return period water level at Hornsea is +/- 0.4 m. The range of uncertainty in the overtopping volume for the given wave condition can be examined by subtracting or adding one standard deviation to the coefficients in the equations that determine the mean overtopping discharge in the <a href="http://www.overtopping-manual.com/docs/EurOtop%20II%202016%20Pre-release%20October%202016.pdf">Eurotop manual</a>. The manual recommends that you should increase overtopping discharge by one standard deviation from the mean for determining design heights as a safety measure. The default footprint (Simulation 0) is determined by the mean 100 year return period water level and the mean overtopping discharge. The other footprints are determined by combining the different uncertainties and are summarised in the following table.</p>
+
+<table class="myTable sim0Row" id="simTable">
+<tr>
+	<th></th><th>Surge (m)</th><th>Wave overtopping, Q (m^3/s)</th><th>Flooded area (m^2)</th><th>% change</th>
+	</tr>
+<tr>
+	<th>Sim 0</th><th>+/- 0</th><th>Mean</th><th>149550</th><th>0</th>
+	</tr>
+	<tr>
+	<th>Sim 1</th><th>-0.4</th><th>-1 Std dev</th><th>63100</th><th>-58</th>
+	</tr>
+	<tr>
+	<th>Sim 2</th><th>-0.4</th><th>Mean</th><th>98550</th><th>-34</th>
+	</tr>
+	<tr>
+	<th>Sim 3</th><th>+/- 0</th><th>-1 Std dev</th><th>103375</th><th>-31</th>
+	</tr>
+	<tr>
+	<th>Sim 4</th><th>+/- 0</th><th>+1 Std dev</th><th>206450</th><th>+38</th>
+	</tr>
+	<tr>
+	<th>Sim 5</th><th>+0.4</th><th>Mean</th><th>254325</th><th>+71</th>
+	</tr>
+	<tr>
+	<th>Sim 6</th><th>+0.4</th><th>+1 Std dev</th><th>271875</th><th>+82</th>
+	</tr>
+	</table>
+
+<p class="p1">The bar chart below shows the percentage change in flooded area from the default for each simulation. Click on the bars to see the resultant flood footprint for each simulation or click on the image area to go back to the default.</p>
+
+<div id="imgBox" class="img-container"></div>
+<div class="graph-container">
+
+<div id="sim6" class="bar1"></div>
+<div id="sim5" class="bar2"></div>
+<div id="sim4" class="bar3"></div>
+<div id="sim3" class="bar4"></div>
+<div id="sim2" class="bar5"></div>
+<div id="sim1" class="bar6"></div>
+	
+	
+</div>
+	<p class="p2">Visualising the simulated flood footprint in the range of some of the uncertainties shows that there is a significant variation in its extent. This uncertainty should be taken into consideration when planning coastal flood protection schemes. Whilst it would be ideal to protect against the worst case scenario for a given return period, cost and aesthetics are likely to result in a compromise. Coastal flood modelling is a useful tool to examine the range of uncertainty, its consequences and to aid the planning of coastal flood protection measures so that critical infrastructure is safeguarded. Read more <a href="http://jmcoastal.co.uk/html/coastal-flooding.html">here</a>.</p>	
+</div>	
+	
+	<br>
+	<hr>
+	<br>
+</div>	
+
+<div class="myContent">
+<h1 id="blog-3">Infrastucture and flooding: an impact study</h1>
+<h3 class="dateStamp">Friday, 3rd March 2017</h3>
+<img class="img-displayed" src="https://gifyu.com/images/viaduct_ii.jpg">
+<p class="p1">Development of new infrastructure, including new road bypasses or train lines such as <a href="https://www.gov.uk/government/organisations/high-speed-two-limited">HS2</a>, often has some interaction with, and implications for, the floodplain. Bridges over rivers may constrict the flow at certain river stages. Embankments may interrupt normal flood extents increasing flood depths at certain locations. Whilst viaducts seek to minimize the interaction between the floodplain and roads and rail, there will always be some associated loss in flood storage and change in the overland flow due to the piers. A particular infrastructure scheme may alter all components of the source-pathway-receptor model (SPR). For example, it may increase surface run-off providing a new or increased source of flooding and it may alter the flood pathways; both of which may lead to a new receptor of potential flooding. Of course, the opposite is true and a proposed scheme may actually reduce the risk of flooding to a particular receptor. However, a reduction in flood extent is only beneficial if it does not increase flood depths in other areas particularly if this affects businesses, property or other critical infrastructure. In any case, it is essential to carry out a flood risk assessment (FRA) to analyse any change in flood risk associated with the scheme.</p>
+<p class="p2">Hydraulic modelling is a useful tool to investigate any changes in flood regime caused by new infrastructure. River modelling using 1D/2D models such as <a href="https://www.floodmodeller.com/en-gb">Flood Modeller</a> can be used to simulate the current flood extents for a given return period hydrograph as a baseline. Proposed developments can then be included in the model to see how they affect the extent and areas that flood and take into account increased precipitation and peak flows due to climate change. Further uses of the model include testing the efficacy of flood mitigation measures that seek to reduce flood risk to current receptors or to the actual scheme itself (e.g. raised tracks or replacing lost flood storage).</p>
+<p class="p2">In the following sensitivity study, a design hydrograph is created that generates significant flooding either side of the River Trent between Pipe Ridware and Kings Bromley. Flood Modeller (formerly ISIS) was used to simulate the 1D channel flow with river cross-sections take from the Environment Agency's <a href="http://environment.data.gov.uk/ds/survey/index.jsp#/survey">LIDAR composite digital terrain model (DTM)</a>. In the absence of survey data, this gives a reasonable representation of the channel shape and slope. However, the true channel depth and capacity is under estimated and a proper study should include a basic survey. In this instance, a Python script was used to smooth the channel and increase the channel depth slightly. However, the sensitivity of the results to this procedure was not examined. The out of bank floodplain inundation was simulated using a 2D model linked to the 1D river model. The following image shows the flood extent due to the design hydrograph and a key showing components of a hypothetical infrastructure scheme that includes a bridge and a viaduct with piers in the region of the current flood extent.</p>
+
+<img class="img-displayed" src="https://gifyu.com/images/default_flood_map.png">
+
+<p class="p2">In the first sensitivity test, a bridge is included in the 1D river model to simulate the effect on the channel flow and subsequent flooding. Bridges constrict the river flow and increase the upstream water levels. Flood Modeller offers two methods for modelling bridges (read more <a href="http://help.floodmodeller.com/elearning/riverhydraulics/Web_Pages/Bridge.htm">here</a>).</p>
+<img class="img-displayed" src="https://gifyu.com/images/bridge_difference.png">
+<p class="p2">The image above shows the change in flood extent/depth due to the bridge. It can be seen that upstream of the bridge there are some increases in flood depths by up to 13 cm. The red areas also show that areas that were not flooded before are now flooded due to the presence of the bridge.</p>
+<img class="img-displayed" src="https://gifyu.com/images/viaduct_difference.png">
+<p class="p2">The image above shows the change in flood extent/depth due to the viaduct piers. It can be seen that the viaduct has little impact on the flood extent with a small number of newly flooded areas and an increase in flood depths localised to the piers due to pooling of the water.</p>
+<p class="p2">Hydraulic modelling is useful for investigating the impact of infrastructure projects on rivers and floodplains, both now and in the future. After the initial time-cost associated with setting up the model, different structures and flood mitigation strategies can be implemented in the model reasonably quickly to examine their impact. This makes modelling a powerful tool for aiding flood risk assessments.</p>
+
+</div>
+	<br>
+	<hr>
+	<br>
+
+<div class="myContent">
+<h1 id="blog-4">Mesh building and visualization</h1>
+<h3 class="dateStamp">Tuesday, 30th May 2017</h3>
+<p class="myNote">This blog was first published as a Linkedin article (see <a href="https://www.linkedin.com/pulse/mesh-building-visualization-john-maskell"> here</a>) but is republished here.</p2>
+<p class="p1">This article relates to the first part of a three part video series on developing a coastal model. The first video (below) gives an overview on developing a computational mesh and this article aims to go into more detail about some of the tools and techniques used.</p>
+<iframe class = "myVid" src="https://www.youtube.com/embed/il4iOCFYNf8" frameborder="0" allowfullscreen></iframe>
+<p class="p2">The video features various tools that I am developing at JM Coastal to make the whole process of developing a model and visualizing the output easier. I have used <a href="https://www.djangoproject.com/">Django</a>, a web development framework written in <a href="https://www.python.org/">Python</a>, to develop the tools. This means that the tools and model runs can be run on a local or remote server, provided the dependencies are installed at that location. As the video series will feature <a href="http://www.opentelemac.org/">Telemac</a> to run the coastal model, using Django is advantageous. This is because Telemac has a full suite of Python tools for parsing and manipulating the binary geometry and results files and managing the model runs thanks to the developers such as Sebastien Bourban.</p>
+<p class="p2">The first task in mesh building to extract the coastlines in the desired domain. The coast line extractor tool featured in the video uses a JavaScript library for displaying and manipulating maps (<a href="https://openlayers.org/">OpenLayers</a>) for the front end user interface. The user extracts the desired coastal line by drawing a polygon and the coastline is then extracted from a GSHHG global shape file from <a href="https://ngdc.noaa.gov/mgg/shorelines/gshhs.html">NOAA</a> on the server side (using the Python <a href="http://www.gdal.org/">GDAL</a> bindings) for the user to download.</p>
+<p class="p2">The mesh is generated using <a href="http://www.nrc-cnrc.gc.ca/eng/solutions/advisory/blue_kenue_index.html">Blue Kenue</a>. This is fantastic open source software for developing meshes, initial conditions, boundary conditions and visualizing results for hydrodynamic models in Telemac. The software can fit a triangular finite element mesh to a particular domain geometry with a resolution specified by the user or based on the underlying bathymetry. The bathymetry featured in the video comes from the <a href="http://emodnet.eu/">EMODnet</a> bathymetry database.</p>
+<img class="img-displayed" src="https://gifyu.com/images/solway3Dv5.png">
+<p class="p2">The bathymetry can be visualized in 3D in a web browser using <a href="https://threejs.org/">threejs</a> a JavaScript library that facilitates displaying 3D graphics using WebGL. The bathymetry is combined with a DTM and satellite imagery from <a href="https://earthexplorer.usgs.gov/">EarthExplorer</a> provided by USGS to create the 3D model. The terrain viewer featured in the video can be used to view 3D visualizations in your browser. There is a basic demo version of this application <a href="http://johnmaskell.pythonanywhere.com/terrainviewer/">here</a>.</p>
+<a href="http://jmcoastal.co.uk/html/freiburg.html"><img class="img-displayed" src="https://gifyu.com/images/freiburgv1.png"></a>
+<p class="p2">The example above is a 3D visualization of the Black Forest in Germany with a red line showing a GPS track of a hike from Freiburg to the top of Shauinsland, a nearby mountain. If you are a Python user and are interested in visualizing tracks from your GPS or applications such as Strava in Google Earth you can clone a gpx file parser I wrote (https://github.com/johnmaskell/gps_tools.git). The tool is useful for visualizing GPS surveys of coasts and rivers, such as dike inspections. It is worth noting that GIS software such as <a href="http://www.qgis.org/en/site/">QGIS</a> will also read gpx files from GPS.</p>
+<img class="img-displayed" src="https://gifyu.com/images/wind_turbine.png">
+<p class="p2">3D models in other formats (e.g. <a href="https://en.wikipedia.org/wiki/COLLADA">Collada</a>) can be included for buildings or structures such as the wind turbine shown above. In low-lying regions such as the Ayeyarwady Delta region in Myanmar (shown below), relatively low resolution DTMs derived from satellites may appear spikey as the noise is relatively large in relation to the gradients in the relief.</p>
+<a href="http://jmcoastal.co.uk/html/myanmar.html"><img class="img-displayed" src="https://gifyu.com/images/myanmar.png"></a>
+<p class="p2">The 3D terrain viewer will be further developed to visualize flood maps, beach profile changes and scour around structures in three dimensions. A great resource I came across for learning about visualization of geospatial data, is the <a href="http://blog.mastermaps.com/">Master Maps blog</a> from <a href="https://plus.google.com/u/0/+Bj%C3%B8rnSandvik">Bjørn Sandvik</a>.</p>
+<img class="img-displayed" src="https://gifyu.com/images/MeshViewer.png">
+<p class="p2">As with the coastline extractor tool, the mesh viewer tool (shown above), uses OpenLayers for the front end user interface where Python takes care of all the processing on the server side. The user can upload their mesh which is converted to kml. After the user has downloaded the kml file, they can drag and drop it onto the map in the browser or view it in Google Earth.</p>
+<p class="p2">Look out for the next video in the series which will focus on carrying out a tidal simulation using the <a href="http://volkov.oce.orst.edu/tides/global.html">TPXO tidal database</a> which is partially derived from satellite altimetry.</p>
+</div>
+	<br>
+	<hr>
+	<br>
+  
+<div class="myContent">
+<h1 id="blog-5">Running a tidal simulation</h1>
+<h3 class="dateStamp">Tuesday, 04th July 2017</h3>
+<p class="myNote">This blog was first published as a Linkedin article (see <a href="https://www.linkedin.com/pulse/running-tidal-simulation-john-maskell"> here</a>) but is republished here.</p2>
+<p class="p1">This article relates to the second part of a three part video series on developing a coastal model. The first <a href="https://youtu.be/il4iOCFYNf8">video</a> covered setting up a computational mesh and some apps I developed to simplify some of the tasks involved. The second video (below) focuses on setting up and running a tidal simulation using the previously generated mesh.</p>
+<iframe class="myVid" src="https://www.youtube.com/embed/KVNY4nnRIZ0" frameborder="0" allowfullscreen></iframe>
+<p class="p2">The video features an app I developed that provides a user-friendly interface for setting up a tidal simulation in <a href="http://www.opentelemac.org/index.php/presentation?id=17">Telemac-2D</a> using a global tidal constituent database. The app is developed in <a href="https://www.python.org/">Python</a> using the <a href="https://www.djangoproject.com/">Django</a> framework to connect the back end code to the user views. As a web-based application it can be used as a GUI on the user's computer or allow them to run a simulation on a local or remote server provided all the dependencies are installed at that location. The example here is only for a specific tidal simulation and does not provide all the options available in Telemac. A more complete version should be able to access the full Telemac dictionary in a database (e.g. <a href="https://www.mysql.com/">MySQL</a>) and a schema for rendering the web page with the correct forms based on the type of simulation the user would like to carry out.</p>
+<p class="p1">Click on the image below to go to a demo version of the app.</p>
+<a href = "http://johnmaskell.pythonanywhere.com/runtide/"><img class="img-displayed" src = "https://gifyu.com/images/guiimage.png"></a>	
+<p class="p2">The user uploads a previously generated mesh which is parsed on the server side and reprojected to display in <a href="https://openlayers.org/">OpenLayers</a>, a JavaScript library for displaying dynamic maps on web pages. The mesh is converted to GeoJSON to pass it from the server to the client side and added as a vector layer to the map. This is a nice way to visualize the mesh but very large meshes may make the map slow to load and unresponsive. The open boundaries are also passed as a GeoJSON and change from red to green once a valid open boundary option is chosen (see image above). The model set up is split into drop down menus to simplify the process and prevent the page from becoming too clustered. The example in the video shows the set up of a tidal simulation in the North Sea using the <a href="http://volkov.oce.orst.edu/tides/global.html">TPXO global tidal database</a>.</p>
+<img class="img-displayed" src="https://gifyu.com/images/northseaoverlaycrop.jpg">
+<p class="p2">Read more about the North Sea tidal model <a href="http://jmcoastal.co.uk/html/tidal-modelling.html">here</a>.</p>
+<p class="p2">Additional options in the application allow the user to carry out an automatic calibration of the model and receive a text message when the model run is complete. For auto-calibration the user must upload a zip file containing tide gauge observations that fall within the model domain and cover the period of the simulation. Currently the application is set up to read <a href="https://www.bodc.ac.uk/data/hosted_data_systems/sea_level/uk_tide_gauge_network/">UK tide gauge observations</a> but should allow the user to enter the data format from other regions taking care to ensure the data has been cleaned. The current procedure looks at the RMSE in the high waters and tries to minimize the global error by altering the bed friction coefficient and the tidal range at the open boundaries. Future, options could include the wind drag coefficient for storm surge and waves and weighting factors for the observations to penalize observations in under resolved regions or outside the area of interest. The current procedure is sequential and therefore leads to long simulation times but this could be improved on a cluster by submitting at least two simulations at either end of a parameter range to try and close in on the best parameters.</p>
+<p class="p1">Click on the image below to view the slideshow.</p>
+<div class="mySlideshow">
+<div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobileaberdeents.png" /></a>
+  </div>
+  <div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobilewhitbyts.png" /></a>
+  </div>
+  <div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobiledoverts.png" /></a>
+  </div>
+  <div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobileimminghamts.png" /></a>
+  </div>
+  <div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobileleithts.png" /></a>
+</div>
+  <div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobilecromerts.png" /></a>
+</div>
+ <div class="mySlides">
+  <a onclick="plusDivs(-1)"><img src="https://gifyu.com/images/mobilesheernessts.png" /></a>
+</div>
+</div>
+
+<p class="p2">The user can also choose to have a text message sent to them after the model run is complete using the <a href="https://www.twilio.com/">Twilio API</a>. This can also contain a link to a web page with a slideshow of the observed vs. modelled time-series from the best auto-calibration run. This is probably of novelty value in this instance but could be useful in operational systems to distribute warnings and be combined with a mobile app that uses location services to warn users if their location falls within an area of predicted flooding.</p>
+<p class="p2">Look out for the third and final video that will focus on extracting the model output and data visualization. Please get in touch if your organistaion would like a bespoke modelling platform developed for model testing and evaluation or operational purposes.</p>
+</div>
+<br>
+<hr>
+<br>
+
+
+  
+<div class="myContent">
+<h1 id="blog-6">The need for speed - GPU power!</h1>
+<h3 class="dateStamp">Monday, 13th November 2017</h3>
+<p class="myNote">This blog was first published as a Linkedin article (see <a href="https://www.linkedin.com/pulse/need-speed-gpu-power-john-maskell/"> here</a>) but is republished here.</p2>
+<p class="p1"><span style="color:#696969">Embarrassingly parallel</span> (also called perfectly parallel or pleasingly parallel) - a computational workload or problem where little or no effort is needed to separate the problem into a number or parallel tasks (see <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">Wikipedia</a>). Flood simulations can be a good example of this. Once a grid is defined on which to calculate the shallow water equations, the solution cannot propagate more than one grid cell in a given time-step if the solution is bound by the <a href="https://en.wikipedia.org/wiki/Courant%E2%80%93Friedrichs%E2%80%93Lewy_condition">CFL condition</a>. In a regular grid the inter-cell fluxes are constrained to the ith cell and the four cells surrounding it. Therefore, at each time-step the exchange of mass and momentum at each cell can be computed in parallel, independently from the other cell groups. Simple right? Well there may be "little or no effort" in splitting the problem but the computational implementation may not be so simple and may take an embarrassingly long time! This is where the <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">graphics processing unit (GPU)</a> comes in.</p>
+<h1>GPUs</h1>
+<p class="p2">Originally designed to handle the rendering of computer graphics, GPUs are now used for a range or computational applications that can take advantage of their ability to accelerate certain applications. Whereas CPUs are optimized to carry out serial operations across one or multiple cores, GPUs are designed to carry out parallel computations across 1000s of cores. Artificial intelligence, robots, drones, self driving cars, molecular dynamics and flood modelling have all taken advantage of the speed up offered by GPUs.</p>
+<h1>Flood modelling</h1>
+<div class="changeGifs">
+<div class="myGifs">
+<img src="https://s1.gifyu.com/images/Malpasset_colour.gif" />
+</div>
+<div class="myGifs">
+<img src="https://gifyu.com/images/Malpasset.gif" />
+</div>	
+</div>
+
+<p class="p2">Users of flood models increasingly demand higher resolution. The availability of high resolution DTMs (<=1m) from Lidar allows users to simulate flooding at street/property level resolution. Users such as local planning authorities or the Cat Modelling/(re)insurance industry can take advantage of this increase in resolution to define flood risk zones, improve planning within them and in the latter case to put a more accurate price on risk or determine risk accumulations when it comes to potential flood losses. However, simulating large scale flood events is computationally demanding (e.g. the rainfall associated with Hurricane Harvey affected an area of nearly 75,000 km^2), particularly if you want to simulate numerous scenarios and/or the uncertainties around a given scenario. If you want to take advantage of the speed up offered by GPUs for flood modelling there is commercial software available (e.g. <a href="https://www.tuflow.com/Tuflow.aspx">Tuflow</a>, <a href="https://www.mikepoweredbydhi.com/products/mike-21/mike-21-gpu">MIKE 21</a> or <a href="http://www.flox-gpu.ch/">Flox-GPU</a>). There are also opensource codes available such as from the Technical University of Munich who have a teaching code repository on <a href="https://github.com/TUM-I5/SWE">GitHub</a>. There are also numerous open source shallow water CPU codes (e.g. <a href="http://www.clawpack.org/geoclaw">GeoClaw</a>, <a href="http://www.univ-orleans.fr/mapmo/soft/FullSWOF/">FullSWOF</a> or <a href="http://doc.nektar.info/doxygen/4.0.0/dir_7ee8e6d4997ec5d3f48618668997f9e7.html">Nektar++</a>) which you can adapt to run on a GPU and build your own code. I took advantage of FullSWOF and <a href="https://mathema.tician.de/software/pycuda/">PyCuda</a> to develop some code to speed up my own flood simulations. If you like <a href="https://www.python.org/">Python</a>, PyCuda is a great way to get into GPU programming through <a href="https://developer.nvidia.com/cuda-toolkit">Cuda</a> (NVIDIAs programming interface to their GPUs). Python can take care of all the input/output with the array handling capabilities of Numpy and the PyCuda library can be used to execute the GPU kernels (C++) within the same code. After an initial learning curve you can expect huge speed ups with little or no optimization. A good way to learn about parallel computing with libraries such as PyCuda is to attend one of the great free courses from <a href="http://www.prace-ri.eu/">PRACE</a>. The training course "<a href="https://events.prace-ri.eu/event/656/overview">Parallel and GPU programming in Python</a>" is coming up soon in Amsterdam (6th-7th December '17) for those who are interested. Some notes from a previous course can be found <a href="http://jmcoastal.co.uk/html/CUDA_for_Python.html">here</a>.</p> 
+<img class="img-displayed" src="https://gifyu.com/images/dam_break.gif">
+<p class="p2">Even with small computational grids the speed up is significant. The dam break experiment (see above) described in <a href="http://www.tandfonline.com/doi/pdf/10.1080/19942060.2009.11015264">Ying et al</a> (~800 grid cells) takes 25 seconds on my laptops CPU (Intel Core i7-5500U CPU @ 2.40GHz) using an adaptive grid and 0.035 seconds on the laptops GPU (Nvidia GeForce GTX 850m) with a fixed grid. The classic Malpasset Dam break simulation (see GIF above) takes 500 seconds for 373,205 grid cells (12 m resolution). I would have given a comparison to running this test case on my CPU but I gave up as it was taking so long! The DTM and initial conditions for the test case can be downloaded <a href="http://www.flox-gpu.ch/?p=67">here</a>.</p>
+<iframe class="myVid" src="https://www.youtube.com/embed/1gClMy5vMXU" frameborder="0" allowfullscreen></iframe>
+<p class="p2">The <a href="http://www.opentelemac.org/index.php/presentation?id=17">Telemac2D</a> Malpasset Dam break case included in the examples (visualisation above) also takes about 500 seconds on the CPU with 104,000 computational cells. However, the main developers do report a time of 85 seconds when run in parallel on 8 CPU processors. It should be noted that the examples given here are not stringent comparisons as the hardware and solutions differ and are more to give an idea about the type of speed up that can be achieved with little or no optimizations.</p>
+<h1>Further applications</h1>
+<img class="img-displayed" src="https://s1.gifyu.com/images/nargis_rainfall.jpg">
+<p class="p2">It is not all about dam breaks! The accelerated solutions can be applied to storm surges, tsunamis, river floods, rainfall run-off and pluvial events. To develop the application further I will generate a simulation of <a href="https://en.wikipedia.org/wiki/Cyclone_Nargis">Cyclone Nargis</a> that had devastating consequences in Myanmar. Due to the low lying land, significant storm surge and heavy rainfall (see image above - <a href="https://www.nasa.gov/images/content/226161main_nargis_myanmar_3may08.jpg">Hal Pierce, SSAI/NASA GSFC</a>) a very large area was flooded (see image below - <a href="https://www.nasa.gov/images/content/228387main_burma_20080520_HI.jpg">NASA/Robert Simmon</a>).</p>
+<img class="img-displayed" src="https://s1.gifyu.com/images/228388main_burmalabeled_20080520.jpg">
+<p class="p2">A combined solution to the storm surge, rainfall fall run-off and accumulation and river flooding can take advantage of GPU acceleration to simulate the flood extents in a way that is computationally viable and allows sensitivity tests and uncertainty to be investigated.</p>
+<p class="p2">For further articles and posts follow JM Coastal on <a href="https://www.linkedin.com/company/17924409/">LinkedIn</a>.</p>
+</div>
+	<br>
+	<hr>
+	<br>
+<div class="myContent">
+<h1 id="blog-7">Modelling Coastal Flood Risk - an e-learning course</h1>
+<h3 class="dateStamp">Monday, 22nd April 2018</h3>
+<p class="myNote">This blog was first published as a Linkedin article (see <a href="https://www.linkedin.com/pulse/need-speed-gpu-power-john-maskell/"> here</a>) but is republished here.</p2>
+<p class="p1">Currently, 40% of the world’s population live within 100 kilometres of the coast. As population density, economic activity and development of new infrastructure continues to increase, our exposure to the risk of coastal flooding also increases. The risk of flooding is also likely to change in a future climate. Factors such as sea level rise, land subsidence and coastal erosion will increase the risk of coastal flooding even if the frequency of events that cause coastal flooding (e.g. tropical and extratropical cyclones) were to remain the same. Whilst it remains uncertain whether the frequency of extreme events such as tropical cyclones is likely to increase it is likely that they will become more intense. Therefore, it is important that we try and gain a quantifiable understanding of coastal flood risk to aid or restrict coastal development, mitigate the risk with coastal defence schemes and make informed, evidence-based planning decisions. Coastal flood risk studies can be used to quantify the probability of the main drivers of coastal flood risk. Used in combination with numerical modelling studies to investigate potential consequences, it is possible to map areas at risk from potential flooding and aid mitigation plans.</p>
+<iframe class="myVid" src="https://www.youtube.com/embed/E7Zl4tycPeY" frameborder="0" allowfullscreen></iframe>
+
+<h1>What are we developing?</h1>
+<p class="p2">At JM Coastal, we are developing an e-learning course that will teach the user to carry out a full coastal flood risk study using the available data. The course will have a theoretical component but with a strong emphasis on practical application. The user will gain some background knowledge in each component, a complete walkthrough the implementation of each component and be left at the end with a complete set of tools and open source software to use in further studies. Also, by gaining skill in coding languages such a Python and GIS software such as QGIS, the user could gain transferable skills in in demand topics such as data analysis and visualisation.</p>
+<img class="img-displayed" src="https://s1.gifyu.com/images/frame_07.jpg">
+
+<h1>Why are we developing this course?</h1>
+
+<p class="p2">The course will address a knowledge gap in quantifying the risk of a coastal flooding due to the joint probability of the main drivers of risk, and propagating this through numerical modelling studies. Published standards on model methodology and quality will also increase the need for knowledge in all aspects of quantifying coastal flood risk to meet new requirements. We also aim to make such studies more accessible by giving an insight into the specialist components involved, and by providing the user with open source software.</p> 
+
+<img class="img-displayed" src="https://s1.gifyu.com/images/tools.png">
+
+<h1>How will the course work</h1>
+
+<p class="p2">E-learning is a rapidly growing field of educational technology. It breaks down many of the barriers of traditional training and education and allows the user to learn from any location, at their own pace and in a cost-effective way. The Modelling Coastal Flood Risk course will be hosted on a specialist online learning management system (LMS). This will allow the user to access a range of audio and visual materials, gain access to the tools and software required and track their progress all in one place. The user will also benefit from a support forum to ask questions and overcome any issues that arise. The course will come at a fixed subscription cost which will then allow the learner to have access to all the course and the materials for an unlimited amount of time.</p> 
+
+<img class="img-displayed" src="https://s1.gifyu.com/images/thinkific.png">
+
+<p class="p2">You can view or download the full course notes <a href="https://drive.google.com/file/d/1AjMWsRT6jcNgBI0pjhrkbSh1fb-_tVJW/view?usp=sharing">here</a>. If you would like more information and want to stay up to date with the course release date please add you email to the mailing list <a href="http://eepurl.com/dpYnvb">here</a></p> 
+
+</div>
+	<br>
+	<hr>
+	<br>
+
+</div>
+<script>
+var image = { width: 1994, height: 1148 };
+var target = { x: 370, y: 199 };
+
+var slidediv = $('#slidediv');
+
+$(document).ready(updatePointer);
+$(window).resize(updatePointer);
+
+function updatePointer() {
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    if (windowWidth > 980 ) {
+	    var effWidth = windowWidth * 0.66;
+	    var realwidth = Math.min(windowWidth,1400.0)
+	    var newposx = 130 * (realwidth/1400.0);
+	    var newwidth = 445 * (realwidth/1400.0);
+	    console.log(realwidth);
+	    console.log(newwidth);
+	    
+    } else {
+	    var realwidth = Math.min(windowWidth,1400.0)
+	    var newposx = 130 * (windowWidth/1004.0);
+	    var newwidth = 455 * (windowWidth/980.0);
+	    console.log(windowWidth);
+    }
+   /* // Get largest dimension increase
+    var xScale = windowWidth / image.width;
+    var yScale = windowHeight / image.height;
+    var scale;
+    var yOffset = 0;
+    var xOffset = 0;
+
+    if (xScale > yScale) {
+        // The image fits perfectly in x axis, stretched in y
+        scale = xScale;
+        yOffset = (windowHeight - (image.height * scale)) / 2;
+    } else {
+        // The image fits perfectly in y axis, stretched in x
+        scale = yScale;
+        xOffset = (windowWidth - (image.width * scale)) / 2;
+    }
+
+    slidediv.css('top', (target.y) * scale + yOffset);
+    slidediv.css('left', (target.x) * scale + xOffset);*/
+    slidediv.css('left', newposx);
+    slidediv.css('width',newwidth);
+    
+}
+</script>	
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+	
+<script type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  
+    window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+};
+	</script>
+	
+<script>
+var sim0 = document.getElementById('imgBox');
+var sim6 = document.getElementById('sim6');
+var sim5 = document.getElementById('sim5');
+var sim4 = document.getElementById('sim4');
+var sim3 = document.getElementById('sim3');
+var sim2 = document.getElementById('sim2');
+var sim1 = document.getElementById('sim1');
+
+sim0.style.cursor = 'pointer';
+sim0.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("img-container");
+    $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim0Row");
+};
+	
+	
+sim6.style.cursor = 'pointer';
+sim6.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("sim6-img");
+    $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim1Row");
+};
+	
+sim5.style.cursor = 'pointer';
+sim5.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("sim5-img");
+    $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim2Row");
+};
+sim4.style.cursor = 'pointer';
+sim4.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("sim4-img");
+    $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim3Row");
+};
+sim3.style.cursor = 'pointer';
+sim3.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("sim3-img");
+    $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim4Row");
+};
+sim2.style.cursor = 'pointer';
+sim2.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("sim2-img");
+     $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim5Row");
+};
+sim1.style.cursor = 'pointer';
+sim1.onclick = function() {
+    $("#imgBox").removeClass();
+    $("#imgBox").addClass("sim1-img");
+    $("#simTable").removeClass();
+    $("#simTable").addClass("myTable");
+    $("#simTable").addClass("sim6Row");
+};
+	
+	
+</script>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myGifs");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 16000); // Change image every 16 seconds
+}
+</script>
+<footer class="footer-distributed">
+
+
+
+			<div class="footer-left">
+
+
+
+				<img class="smallScreen" src="http://gifyu.com/images/logo200x50.png" width="200px" height="50px" />
+
+
+
+				<p class="footer-links">
+					.
+
+					<a href="http://johnmaskell.github.io/">Home</a>
+
+					·
+
+					<a href="http://johnmaskell.github.io/html/about.html">About</a>
+
+					·
+
+					<a href="http://johnmaskell.github.io/html/news.html">News</a>
+
+					·
+
+					<a href="http://johnmaskell.github.io/html/blog.html">Blog</a>
+
+					·
+
+					<a href="mailto:john.maskell@jmcoastal.co.uk">Contact</a>
+					
+					.
+
+				</p>
+
+
+
+				<p class="footer-company-name">JMCoastal &copy; 2016</p>
+
+			</div>
+
+
+
+			<div class="footer-center">
+
+
+
+				<div>
+
+					<i class="fa fa-map-marker"></i>
+
+					<p><span></span>10 Station Road, </br>Wrea Green,</br>Preston,</br>Lancashire, UK </br>PR4 2PH</p>
+
+				</div>
+
+
+
+				<div>
+
+					<i class="fa fa-phone"></i>
+
+					<p>+447808299637</p>
+
+				</div>
+
+
+
+				<div>
+
+					<i class="fa fa-envelope"></i>
+
+					<p class="psmallScreen"><a href="mailto:john.maskell@jmcoastal.co.uk">john.maskell@jmcoastal.co.uk</a></p>
+
+				</div>
+
+
+
+			</div>
+
+
+
+			<div class="footer-right">
+
+
+
+				<p class="footer-company-about">
+
+					<span>About the company</span>
+
+					We specialise in coastal modelling projects.
+
+				</p>
+
+
+
+				<div class="footer-icons">
+
+
+
+				
+				
+					<a href="https://www.linkedin.com/company/jm-coastal?trk=biz-companies-cym"><i class="fa fa-linkedin"></i></a>
+
+					
+
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+		</footer>
+</body>
+
+
+
+</html>
