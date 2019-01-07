@@ -58,8 +58,8 @@ nav {float: right;padding: 20px;top:80px;}
 .dragBoxweymouth{width:200px;height:160px;background-image:url(http://gifyu.com/images/weymouthStill.jpg);background-size:100% 100%;background-repeat:no-repeat;}
 .dragBoxweymouth:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/weymouthTour.gif);background-size:100% 100%;background-repeat:no-repeat;}  
  
-.tetrapodElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;} 
-.tetrapodElem:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;}  
+.tetrapodElem{width:200px;height:160px;background-image:url(https://s2.gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;} 
+.tetrapodElem:hover{width:200px;height:160px;background-image:url(https://s2.gifyu.com/images/tetra.gif);background-size:100% 100%;background-repeat:no-repeat;}  
 .slopeElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .slopeElem:hover{width:200px;height:160px;background-image:url(http://gifyu.com/images/dike_trans.gif);background-size:100% 100%;background-repeat:no-repeat;} 
 .wallElem{width:200px;height:160px;background-image:url(http://gifyu.com/images/seawall.gif);background-size:100% 100%;background-repeat:no-repeat;} 
