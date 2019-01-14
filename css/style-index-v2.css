@@ -56,19 +56,19 @@ h3 {top: 200px;left: 25px;width: 100%;}
 
 .all-tiles {border: 1px solid black;margin-left:1%;margin-right:1%;margin-top:20px;margin-bottom:20px;float:left;background-size: 100% 100%;border-radius:5%;background-repeat:no-repeat;}
 
-.tile-1 {background-image: url('https//s0.gifyu.com/images/wavetilerescaled.jpg');}
+.tile-1 {background-image: url('https://s0.gifyu.com/images/wavetilerescaled.jpg');}
 
-.tile-2 {background-image: url('https//s0.gifyu.com/images/porttilerescaled.jpg');}
+.tile-2 {background-image: url('https://s0.gifyu.com/images/porttilerescaled.jpg');}
 
-.tile-3 {background-image: url('https//s0.gifyu.com/images/breakwatertilerescaled.jpg');}
+.tile-3 {background-image: url('https://s0.gifyu.com/images/breakwatertilerescaled.jpg');}
 
-.tile-4 {background-image: url('https//s0.gifyu.com/images/sedimenttilerescaled.jpg');}
+.tile-4 {background-image: url('https://s0.gifyu.com/images/sedimenttilerescaled.jpg');}
 
-.tile-5 {background-image: url('https//s0.gifyu.com/images/floodingtilerescaled.jpg');}
+.tile-5 {background-image: url('https://s0.gifyu.com/images/floodingtilerescaled.jpg');}
 
-.tile-6 {background-image: url('https//s0.gifyu.com/images/tidetilerescaled.jpg');}
+.tile-6 {background-image: url('https://s0.gifyu.com/images/tidetilerescaled.jpg');}
 
-.tile-7 {background-image: url('https//s0.gifyu.com/images/office_crop_rescale.jpg');}
+.tile-7 {background-image: url('https://s0.gifyu.com/images/office_crop_rescale.jpg');}
 
 .tile-news {background-color: #008080;}
 
@@ -98,7 +98,7 @@ h3 {top: 200px;left: 25px;width: 100%;}
 
 .all-tiles p {margin-left:15px;margin-right:15px;}
 
-#logo{float: left;width: 300px;height: 75px;margin-top:30px;background: url(https//s0.gifyu.com/images/logo300x75.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+#logo{float: left;width: 300px;height: 75px;margin-top:30px;background: url(https://s0.gifyu.com/images/logo300x75.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 
 
 
@@ -176,7 +176,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 
 
-#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(https//s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(https://s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 
 
 
@@ -278,7 +278,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 @media only screen and (max-width : 992px) {
 
-#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(https//s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
+#logo{float: left;width: 200px;height: 50px;margin-top:30px;background: url(https://s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;border:0;} 
 
 #logo {margin-left:1%;}
 
@@ -384,7 +384,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 header {position: absolute;height:120px;}
 
-#logo{float: left;width: 200px;height: 50px;background: url(https//s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
+#logo{float: left;width: 200px;height: 50px;background: url(https://s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
 
 #menu-icon {display:inline-block;width:40px;height:40px;background-size:100% 100%;float:right;margin:0;border:0;}
 
@@ -504,7 +504,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 header {position: absolute;height:100px;}
 
-#logo{float: left;width: 200px;height: 50px;background: url(https//s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
+#logo{float: left;width: 200px;height: 50px;background: url(https://s0.gifyu.com/images/logo200x50.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:10px;margin-right:0;border:0;} 
 
 #menu-icon {display:inline-block;width:40px;height:40px;background-size:100% 100%;float:right;margin:0;border:0;}
 
@@ -620,7 +620,7 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 header {position: absolute;height:75px;}
 
-#logo{float: left;width: 100px;height: 25px;background: url(https//s0.gifyu.com/images/logo100x25.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:5px;margin-right:0;border:0;} 
+#logo{float: left;width: 100px;height: 25px;background: url(https://s0.gifyu.com/images/logo100x25.png) no-repeat center;display: block;background-size: 100% 100%;margin-top:20px;margin-left:5px;margin-right:0;border:0;} 
 
 #menu-icon {display:inline-block;width:25px;height:25px;background-size:100% 100%;float:right;margin:0;border:0;}
 
@@ -731,6 +731,8 @@ h2 span {color: white;font: bold 18px/36px Helvetica, Sans-Serif;letter-spacing:
 
 
 }
+
+
 
 
 
