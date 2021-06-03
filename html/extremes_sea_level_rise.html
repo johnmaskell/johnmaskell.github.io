@@ -1,0 +1,1375 @@
+<!doctype html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+	<meta charset="utf-8">
+
+        <meta name="description" content="Extremes">
+
+	<meta name="keywords" content="Extremes,Monte Carlo,Coastal Modelling,Flooding,Storm Surge,Tides,Waves,Coastal Defences,Overtopping,Consulting,Consultants,Consultant">
+
+	<meta name="author" content="John Maskell">
+
+	<title>Extremes | coastal risk</title>
+
+
+
+
+
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+
+
+
+		<link rel="stylesheet" href="/css/style-extremes.css">
+
+	        <!--<link rel="stylesheet" href="/css/logo-style.css">-->
+
+		<link rel="stylesheet" href="/css/style-footer.css">
+
+
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script>
+
+function responsivefy(svg) {
+
+    // get container + svg aspect ratio
+
+    var container = d3.select(svg.node().parentNode),
+
+        width = parseInt(svg.style("width")),
+
+        height = parseInt(svg.style("height")),
+
+         aspect = width / height;
+
+ 
+
+     // add viewBox and preserveAspectRatio properties,
+
+     // and call resize so that svg resizes on inital page load
+
+     svg.attr("viewBox", "0 0 " + width + " " + height)
+
+         .attr("perserveAspectRatio", "xMinYMid")
+
+         .call(resize);
+
+ 
+
+     // to register multiple listeners for same event type, 
+
+     // you need to add namespace, i.e., 'click.foo'
+
+     // necessary if you call invoke this function for multiple svgs
+
+     // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+
+     d3.select(window).on("resize." + container.attr("id"), resize);
+
+ 
+
+     // get width of container and resize svg to fit it
+
+     function resize() {
+
+         var targetWidth = parseInt(container.style("width"));
+
+         svg.attr("width", targetWidth-3.);
+
+ 	
+
+         svg.attr("height", (Math.round(targetWidth / aspect))-3.);
+
+ 	
+
+     }
+
+ }
+
+ </script>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90532775-1', 'auto');
+
+  ga('send', 'pageview');
+
+</script>
+
+<style>
+
+	
+
+	
+
+	
+
+.reftooltip-one {
+
+    text-decoration:none;
+
+    position:relative;
+
+}
+
+.reftooltip-one span {
+
+    display:none;
+
+}
+
+.reftooltip-one:hover span {
+
+    display:block;
+
+    position:fixed;
+
+    overflow:hidden;
+
+    background-color: #E8E8E8;
+
+    color:black;
+
+    border: 1px solid black;
+
+    border-radius: 8px;
+
+    padding: 2px;
+
+}
+
+.reftooltip-two {
+
+    text-decoration:none;
+
+    position:relative;
+
+}
+
+.reftooltip-two span {
+
+    display:none;
+
+}
+
+.reftooltip-two:hover span {
+
+    display:block;
+
+    position:fixed;
+
+    overflow:hidden;
+
+    background-color: #E8E8E8;
+
+    color:black;
+
+    border: 1px solid black;
+
+    border-radius: 8px;
+
+    padding: 2px;
+
+}	
+
+.reftooltip-three {
+
+    text-decoration:none;
+
+    position:relative;
+
+}
+
+.reftooltip-three span {
+
+    display:none;
+
+}
+
+.reftooltip-three:hover span {
+
+    display:block;
+
+    position:fixed;
+
+    overflow:hidden;
+
+    background-color: #E8E8E8;
+
+    color:black;
+
+    border: 1px solid black;
+
+    border-radius: 8px;
+
+    padding: 2px;
+
+}	
+
+.line {
+
+  fill: none;
+
+  stroke: Teal;
+
+  stroke-width: 1.5px;
+
+}
+
+.axis path,
+
+.axis line {
+
+  fill: none;
+
+  stroke: #000;
+
+  shape-rendering: crispEdges;
+
+}
+
+.red.dot {
+
+  stroke: #000;
+
+}
+
+.morered.dot {
+
+  stroke: #000;
+
+}
+
+.green.dot {
+
+  stroke: #000;
+
+  cursor: pointer;
+
+  }
+
+.tooltip {
+
+  position: absolute;           
+
+  text-align: center;           
+
+  width: 150px;                  
+
+  height: 100px;                 
+
+  padding: 2px;             
+
+  font: 12px sans-serif;        
+
+  background: lightsteelblue;   
+
+  border: 0px;      
+
+  border-radius: 8px;           
+
+  pointer-events:none;
+
+ }
+
+  
+
+.scene-container {text-align:center;font-size:0;width:100%;margin: 0 auto;margin-bottom:20px;overflow:auto;}
+
+.img-flood {max-width:100%;}
+
+.svg-container {
+
+    display: inline-block;
+
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 100%;
+
+    vertical-align: top;
+
+    overflow: hidden;
+
+}
+
+.svg-content {
+
+    display: inline-block;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+}
+
+.fig-info{border: 1px solid black;border-radius:25px;margin-bottom:20px;}
+
+.threed-div {text-align:center;width:100%;margin: 0 auto;height:500px;}	
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+	<header>
+
+<div class="nav-bar">
+
+		<div style="position:relative">
+
+		<!--<img class="snow" src="https://s1.gifyu.com/images/snow.gif"/>-->
+
+		<a href="http://johnmaskell.github.io/" id="logo" ></a>
+
+	        </div>
+
+
+
+		<nav>
+
+
+
+			<a href="#" id="menu-icon"></a>
+
+
+
+			<ul>
+
+
+
+				<li><a href="https://johnmaskell.github.io/" class="current">Home</a></li>
+
+				<li><a href="http://johnmaskell.github.io/html/about.html">About</a></li>
+
+				<li>
+
+				<div class="dropdown">	
+
+				<a href="#">Expertise</a>
+
+				<div class="dropdown-content">
+
+
+
+    <a href="http://johnmaskell.github.io/html/tidal-modelling.html">Tidal modelling</a>
+
+
+
+    <a href="http://johnmaskell.github.io/html/wave-modelling.html">Wave Modelling</a>
+
+
+
+    <a href="http://johnmaskell.github.io/html/sediment-transport.html">Sediment transport</a>
+
+
+
+    <a href="http://johnmaskell.github.io/html/coastal-flooding.html">Coastal flooding</a>
+
+
+
+    <a href="http://johnmaskell.github.io/html/coastal-defences.html">Coastal defences</a>
+
+	<a href="http://johnmaskell.github.io/html/harbour-modelling.html">Port modelling</a>				
+
+
+
+    <a href="http://johnmaskell.github.io/html/in-house-solutions.html">In-house solutions</a>
+
+					</div>
+
+</div>
+
+				</li>
+
+				
+
+				<li><a href="http://johnmaskell.github.io/html/news.html">News</a></li>
+
+        <li><a href="http://johnmaskell.github.io/html/blog.html">Blog</a></li>
+
+			</ul>
+
+
+
+		</nav>
+
+		</div>
+
+	</header>
+
+	
+
+	<div class="spacer"></div>
+
+<div class="mainContainer">
+
+	<div class="myBanner">
+
+<div class="imgcontainer">
+
+<img src="https://s0.gifyu.com/images/full_banner_noborder.png"/>
+
+		</div>
+
+	<h2><span>Extremes</span></h2>
+
+</div>
+
+<div class="content-1">
+
+	<div class="text-intro">
+
+		<h1>JM Coastal can carry out extreme value analysis of observed and hindcast water level and wave data. This can be combined with Monte Carlo simulations to create thousands of years of data that can be input into coastal flood simulations to provide in-depth flood risk analysis and input in to coastal defence design.</h1>
+
+		<p class="p1">The expected frequency of a coastal flood is often described by the return period (e.g. 1 in 100 years). Coastal defences are also often designed to prevent significant flooding for a certain return period that relates to the nearshore water level and/or wave conditions. However, different combinations of water levels and wave heights can combine to give the same return period but lead to different levels of coastal flooding. Therefore, to carry out a rigorous coastal flood risk assessment along a particular stretch of coast, the joint probability of particular water levels occurring at the same time as certain wave heights should be investigated. Extreme water levels and wave heights also usually exhibit a partial dependence (both are driven by the same storm) and therefore their correlation must also be taken into account.</p>
+
+		<p class="p1">Case study - Coastal flooding in New Brighton</p>
+
+		<p class="p2">Due to its location in the Eastern Irish Sea, New Brighton is affected by a large tidal range with potential storm surges and large waves. Although the town is protected by coastal defences such as the King's Parade Sea wall and breakwaters, the combination of high water levels and waves has led to significant coastal flooding, most notably in December 2013 <a class="reftooltip" href="#"><sup>1</sup><span id="tooltip-span">Wadey M., Brown J., Haigh I. & Dolphin T. Assessment and comparison of extreme sea levels and waves during the 2013/2014 storm season in two UK coastal regions. Nat. Hazards Earth Syst. Sci. 15, 2209–2225 (2015).</span></a>. On 5th December 2013 flooding caused significant disruption and the council carried out a flood investigation report <a class="reftooltip" href="https://www.wirral.gov.uk/sites/default/files/all/communities%20and%20neighbouhoods/Emergencies/Flooding/Flood%20Investigation%20Report%20Dec%205%202013.pdf"><sup>2</sup><span id="tooltip-span">Flood investigation report for December 5th 2013.</span></a>. In this case study an investigation of flood risk due to the combination of high water levels and waves was carried out using water level data from the tide gauge at Liverpool and the Liverpool bay WaveNet buoy. Return periods for extreme sea level were determined using the Skew Surge Joint Probability Method <a class="reftooltip" href="#"><sup>3</sup><span id="tooltip-span">Batstone C. et al. A UK best-practice approach for extreme sea-level analysis along complex topographic coastlines. Ocean Eng. 71, 28–39 (2013).</span></a>. Generalised Pareto distributions (GPD) were fitted to a subset of the most extreme wave heights and skew surges using a maximum likelihood estimator (MLE) to determine the extreme tails of their distributions. A long term Monte-Carlo simulation (2000 years) that randomly samples the marginal and empirical or fitted (Weibull) distributions of water levels and wave heights taking into account their correlation was then carried out <a class="reftooltip" href="#"><sup>4</sup><span id="tooltip-span">Hawkes P.J. et al. The joint probability of waves and water levels in coastal engineering design.<br/>Journal of Hydraulic Research. 40, 241-251 (2002).</span></a>. The return period of the various combinations of water levels and wave heights could then be determined. Coastal flood simulations were then carried out for 8 samples of combined water levels and wave heights with a joint probability return period of 100 years.</p>
+
+	</div>
+
+<div class="img-container">
+
+      <img class="img-displayed" src="https://s0.gifyu.com/images/fullmodelrsv2.jpg" alt="fullmodelrs.jpg" border="0" />		
+
+</div>
+
+	<p class="p2">An offshore model system is used to simulate the development of the tide and storm surge in the Irish Sea (Telemac-2D). A high resolution nearshore modelling system (Telemac-2D coupled with Tomawac) that couples the tide and surge with the waves is then used to simulate water levels and wave heights right up to the defence line. Only waves propagating from the west were simulated in this experiment which is the dominant wave direction in the Eastern Irish Sea as shown by the wave rose in the figure above. At the defence line overflow and wave overtopping rates were calculated using equations detailed in the Eurotop manual <a class="reftooltip" href="http://www.overtopping-manual.com/docs/EurOtop%20II%202016%20Pre-release%20October%202016.pdf"><sup>5</sup><span id="tooltip-span">EurOtop - Manual on wave overtopping of sea defences and related structures.</span></a> and used as boundary conditions to an inundation model (Flood Modeller) using a 5 m resolution grid aggregated from 1m lidar data from the EA open survey data.</p>
+
+<div class="fig-info">
+
+	<p class="p1" style="margin-left:5px;">&#9432; Figure information</p>
+
+	<p class="p2" style="margin-left:5px;">1. The red dots show observed water levels and wave heights - hover on the larger events for more information.<br/>2. The blue lines are contours of equal joint return period for the observed and simulated water levels and wave heights.<br/>3. The green dots are samples from the joint 100 year return period water level and wave height - click on the green dots to see the resultant flooding in the Google Earth image. Refresh the page if they are not visible.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="scene-container">
+
+<div class="scatter-displayed" id="myChart">
+
+</div>
+
+
+
+<div id="imgBox" class="flood-container">	
+
+</div>
+
+</div>
+
+<div class="mainContainer">
+
+<div class="content-1">
+
+	<div class="text-intro">
+
+	<p class="p2">By clicking on the green markers and looking at the resultant simulated flooding for the combined water levels and wave heights it can be seen that there is a significant variation in the flood extent for a joint return period of 100 years. For the largest waves, the combined water level at the 100 year return period is relatively low. Therefore, there is little or no water at the toe of the coastal defences and, whilst the offshore waves are large, they break before reaching the defences and do not pose an overtopping risk. The decrease in wave height is initially gradual as the joint 100 year return period water level increases. Therefore, at some point although the water level is not high enough to overflow the defences it is deep enough to allow offshore waves to reach the defences and cause overtopping, increasing the flood extent. The largest flood extent, as observed by other authors <a class="reftooltip" href="#"><sup>6</sup><span id="tooltip-span">Prime, Thomas; Brown, Jennifer M.; Plater, Andrew J.. 2016 Flood inundation uncertainty: the case of a 0.5% annual probability flood event. Environmental Science & Policy, 59. 1-9.</span></a>, occurs when the joint 100 year return period water level becomes high enough to overflow some of the defence crests. The largest flood extent occurs during the second highest water level sample. The decrease in water level from the highest is insignificant. Overflow of the defences still occurs whilst the presence of waves increases the flooding due to overtopping where the freeboard is negligible.</p>
+
+	<p class="p2">Taken in isolation, the wave heights and water levels are not associated with long return periods. However, in combination they become much rarer events. For example, the water level of 6.22m and wave height of 4.55m observed on 5th December 2013 have estimated return periods of 13 years and 4 years respectively. However, taken together they have an estimated joint return period of 200 years or more as observed in another study <a class="reftooltip" href="#"><sup>1</sup><span id="tooltip-span">Wadey M., Brown J., Haigh I. & Dolphin T. Assessment and comparison of extreme sea levels and waves during the 2013/2014 storm season in two UK coastal regions. Nat. Hazards Earth Syst. Sci. 15, 2209–2225 (2015).</span></a>. Therefore, it is important to consider the joint probability of the main drivers of coastal flooding to fully ascertain the bounds of the potential risk.</p>
+
+	</div>
+
+</div>
+
+<p class="p1">Overtopping</p>
+
+<div class="threed-div">
+
+<div id="myDiv" class="threed-img" ></div>
+
+</div>
+
+<p class="p2">Overtopping discharges for a range of combined extreme water levels and wave heights derived from a Monte Carlo simulation can be predicted for a particular coastal defence. Simple wave transformation equations that derive a breaker index for the wave height based on the offshore wave steepness, the water depth local to the defence and the foreshore slope can be used to predict the wave height at the defence and the subsequent overtopping.</p>
+
+<p class="p1">To find out how JM Coastal can assist with coastal flood risk assements please get in touch: john.maskell@jmcoastal.co.uk</p>
+
+</div>
+
+  <script>
+
+/*Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/api_docs/mt_bruno_elevation.csv', function(err, rows){*/
+
+Plotly.d3.csv('wlhsot.csv', function(err, rows){
+
+function unpack(rows, key) {
+
+  return rows.map(function(row) { return row[key]; });
+
+}
+
+  
+
+var z_data=[ ]
+
+for(i=0;i<49;i++)
+
+{
+
+  z_data.push(unpack(rows,i));
+
+}
+
+var data = [{
+
+           x: [3.0,3.08163265306,3.16326530612,3.24489795918,3.32653061224,3.40816326531,3.48979591837,3.57142857143,3.65306122449,3.73469387755,3.81632653061,3.89795918367,3.97959183673,4.0612244898,4.14285714286,4.22448979592,4.30612244898,4.38775510204,4.4693877551,4.55102040816,4.63265306122,4.71428571429,4.79591836735,4.87755102041,4.95918367347,5.04081632653,5.12244897959,5.20408163265,5.28571428571,5.36734693878,5.44897959184,5.5306122449,5.61224489796,5.69387755102,5.77551020408,5.85714285714,5.9387755102,6.02040816327,6.10204081633,6.18367346939,6.26530612245,6.34693877551,6.42857142857,6.51020408163,6.59183673469,6.67346938776,6.75510204082,6.83673469388,6.91836734694,7.0],
+
+           y: [3.0,3.08163265306,3.16326530612,3.24489795918,3.32653061224,3.40816326531,3.48979591837,3.57142857143,3.65306122449,3.73469387755,3.81632653061,3.89795918367,3.97959183673,4.0612244898,4.14285714286,4.22448979592,4.30612244898,4.38775510204,4.4693877551,4.55102040816,4.63265306122,4.71428571429,4.79591836735,4.87755102041,4.95918367347,5.04081632653,5.12244897959,5.20408163265,5.28571428571,5.36734693878,5.44897959184,5.5306122449,5.61224489796,5.69387755102,5.77551020408,5.85714285714,5.9387755102,6.02040816327,6.10204081633,6.18367346939,6.26530612245,6.34693877551,6.42857142857,6.51020408163,6.59183673469,6.67346938776,6.75510204082,6.83673469388,6.91836734694,7.0],
+
+           z: z_data,
+
+           type: 'surface'
+
+        }];
+
+  
+
+var layout = {
+
+  title: 'Overtopping Rates, Q (m^3/s/m)',
+
+  scene: {
+
+		xaxis:{title: 'WL (m)'},
+
+		yaxis:{title: 'Hs (m)'},
+
+		zaxis:{title: 'Q'},
+
+		},
+
+  autosize: false,
+
+  width: 550,
+
+  height: 500,
+
+  margin: {
+
+    l: 65,
+
+    r: 50,
+
+    b: 65,
+
+    t: 90,
+
+    pad: 4,
+
+  }
+
+};
+
+Plotly.newPlot('myDiv', data, layout);
+
+});
+
+</script>
+
+<div style="clear:both;"></div>
+
+
+
+
+
+
+
+
+
+<footer class="footer-distributed">
+
+
+
+
+
+
+
+			<div class="footer-left">
+
+
+
+
+
+
+
+				<img class="smallScreen" src="https://s0.gifyu.com/images/logo200x50.png" width="200px" height="50px" />
+
+
+
+
+
+
+
+				<p class="footer-links">
+
+					.
+
+
+
+					<a href="http://johnmaskell.github.io/">Home</a>
+
+
+
+					·
+
+
+
+					<a href="http://johnmaskell.github.io/html/about.html">About</a>
+
+
+
+					·
+
+
+
+					<a href="http://johnmaskell.github.io/html/news.html">News</a>
+
+
+
+					·
+
+
+
+					<a href="http://johnmaskell.github.io/html/blog.html">Blog</a>
+
+
+
+					·
+
+
+
+					<a href="mailto:john.maskell@jmcoastal.co.uk">Contact</a>
+
+					
+
+					.
+
+
+
+				</p>
+
+
+
+
+
+
+
+				<p class="footer-company-name">JMCoastal &copy; 2016</p>
+
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="footer-center">
+
+
+
+
+
+
+
+				<div>
+
+
+
+					<i class="fa fa-map-marker"></i>
+
+
+
+					<p><span></span>10 Station Road, </br>Wrea Green,</br>Preston,</br>Lancashire, UK </br>PR4 2PH</p>
+
+
+
+				</div>
+
+
+
+
+
+
+
+				<div>
+
+
+
+					<i class="fa fa-phone"></i>
+
+
+
+					<p>+447808299637</p>
+
+
+
+				</div>
+
+
+
+
+
+
+
+				<div>
+
+
+
+					<i class="fa fa-envelope"></i>
+
+
+
+					<p class="psmallScreen"><a href="mailto:john.maskell@jmcoastal.co.uk">john.maskell@jmcoastal.co.uk</a></p>
+
+
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="footer-right">
+
+
+
+
+
+
+
+				<p class="footer-company-about">
+
+
+
+					<span>About the company</span>
+
+
+
+					We specialise in coastal modelling projects.
+
+
+
+				</p>
+
+
+
+
+
+
+
+				<div class="footer-icons">
+
+
+
+
+
+
+
+				
+
+				
+
+					<a href="https://www.linkedin.com/company/jm-coastal?trk=biz-companies-cym"><i class="fa fa-linkedin"></i></a>
+
+
+
+					
+
+
+
+
+
+
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+		</footer>
+
+<script src="//d3js.org/d3.v4.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+	
+
+var mychartDiv = document.getElementById("myChart");
+
+var width = mychartDiv.clientWidth;
+
+var aspectRatio = 400./768.;
+
+var height = width * aspectRatio;
+
+var svg = d3.select(mychartDiv).append("svg")
+
+.attr("width",768)
+
+.attr("height",400)
+
+//.call(responsivefy);
+
+	
+
+//set up the values for the scatter plot
+
+// setup x
+
+var xValue = function(dd) { return dd.waterlevel;};  
+
+var yValue = function(dd) { return dd["waveheight"];};  
+
+var xMap = function(dd) { return x(xValue(dd));};
+
+var yMap = function(dd) { return y(yValue(dd));};
+
+  
+
+var xValuent = function(nt) { return nt.waterlevel;};  
+
+var yValuent = function(nt) { return nt["waveheight"];};  
+
+var xMapnt = function(nt) { return x(xValuent(nt));};
+
+var yMapnt = function(nt) { return y(yValuent(nt));};  
+
+  
+
+var xValuec = function(dp) { return dp.otwl;};  
+
+var yValuec = function(dp) { return dp["oths"];};  
+
+var xMapc = function(dp) { return x(xValuec(dp));};
+
+var yMapc = function(dp) { return y(yValuec(dp));};  
+
+    /*.attr("preserveAspectRatio", "xMinYMin meet")
+
+    .attr("viewBox", "0 0 768 400")
+
+    .classed("svg-content", true)*/
+
+    //.call(responsivefy)
+
+    margin = {top: 20, right: 80, bottom: 30, left: 50},
+
+    width = svg.attr("width") - margin.left - margin.right,
+
+    height = svg.attr("height") - margin.top - margin.bottom,
+
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
+
+// add the tooltip area to the webpage
+
+var tooltip = d3.select("body").append("div")
+
+    .attr("class", "tooltip")
+
+    .style("opacity", 0);
+
+var x = d3.scaleLinear().range([0, width]),
+
+    y = d3.scaleLinear().range([height, 0]);
+
+  
+
+var line = d3.line()
+
+    .x(function(d) { return x(d.wl); })
+
+    .y(function(d) { return y(d.hs); });
+
+var cntr = 0;
+
+var wlcolid = "";
+
+var hscolid = "";
+
+d3.csv("allrpcontoursv2_SLRise.csv", type, function(error, data) {
+
+  if (error) throw error;
+
+  var wlhs = data.columns.slice(1).map(function(id) {    
+
+    return {
+
+      id: id,
+
+      values: data.map(function(d) {
+
+       wlcolid = id.slice(0,-2) + "wl";
+
+       hscolid = id.slice(0,-2) + "hs";
+
+          return {wl: d[wlcolid], hs: d[hscolid]};
+
+      })
+
+      
+
+    };
+
+    cntr = cntr + 1;
+
+  });
+
+  x.domain([
+
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.wl; }); }),
+
+    d3.max(wlhs, function(c) { return d3.max(c.values, function(d) { return d.wl; }); })
+
+  ]);
+
+  y.domain([
+
+    d3.min(wlhs, function(c) { return d3.min(c.values, function(d) { return d.hs; }); }),
+
+    6.0
+
+  ]);
+
+  g.append("g")
+
+      .attr("class", "x axis")
+
+      .attr("transform", "translate(0," + height + ")")
+
+      .call(d3.axisBottom(x))
+
+     .append("text")
+
+      .attr("x", width/2) 
+
+      .attr("y", 30)
+
+      .attr("dx", "0.71em")
+
+      .attr("fill", "#000")
+
+      .text("Water level (m)");
+
+  g.append("g")
+
+      .attr("class", "y axis")
+
+      .call(d3.axisLeft(y))
+
+    .append("text")
+
+      .attr("transform", "rotate(-90)")
+
+      .attr("y", 6)
+
+      .attr("dy", "0.71em")
+
+      .attr("fill", "#000")
+
+      .text("Sig. wave height, Hs (m)")   
+
+      .attr("text-anchor", "middle") 
+
+      .attr("transform", "translate("+ x(-0.5) +","+y(3.0) +")rotate(-90)");
+
+     
+
+  var city = g.selectAll(".city")
+
+    .data(wlhs)
+
+    .enter().append("g")
+
+    .attr("class", "city");
+
+  city.append("path")
+
+      .attr("class", "line")
+
+      .attr("d", function(d) { return line(d.values); })
+
+      //.style("stroke", function(d) { return z(d.id); });
+
+      .attr("stroke", "Teal")
+
+  city.append("text")
+
+      .datum(function(d) { return {id: (d.id).slice(0,-2), value: d.values[d.values.length-5]}; })
+
+      .attr("transform", function(d) { return "translate(" + x(0.5) + "," + y(d.value.hs + 0.1) + ")"; })
+
+      .attr("x", 3)
+
+      .attr("dy", "0.35em")
+
+      .style("font", "10px sans-serif")
+
+      .text(function(d) { return d.id; });
+
+});
+
+function type(d, _, columns) {
+
+ for (var i = 0, n = columns.length, c; i < n; ++i) d[c=columns[i]] = +d[c];
+
+  return d;
+
+}
+
+//load the scatter data
+
+// load data
+
+d3.csv("liv_hshw_no_tooltip.csv", function(error, ntdata) {
+
+  // change string (from CSV) into number format
+
+  ntdata.forEach(function(nt) {
+
+    nt["date"] = nt["date"];
+
+    nt["waterlevel"] = +nt["waterlevel"] + 0.50;
+
+    nt["waveheight"] = +nt["waveheight"] - 0.36;
+
+  });
+
+  // draw dots
+
+  svg.selectAll(".morered.dot")
+
+    .data(ntdata)
+
+    .enter().append("circle")
+
+      .attr("class", "morered dot")
+
+      .attr("r", 3.5)
+
+      .attr("cx", xMapnt)
+
+      .attr("cy", yMapnt)
+
+      .style("fill", "red")
+
+      .style("opacity", .5);
+
+    // draw dots 
+
+});  
+
+//load the scatter data
+
+// load data
+
+d3.csv("liv_hshw_jps_2000yrs_1000maxjp.csv", function(error, sdata) {
+
+  // change string (from CSV) into number format
+
+  sdata.forEach(function(dd) {
+
+    dd["date"] = dd["date"];
+
+    dd["waterlevel"] = +dd["waterlevel"] + 0.50;
+
+    dd["waveheight"] = +dd["waveheight"] - 0.36;  
+
+    dd["rpwl"] = +dd["rpwl"];
+
+    dd["rphs"] = +dd["rphs"];
+
+    dd["rpjp"] = +dd["rpjp"];
+
+    if (dd["rpjp"] > 200.) {
+
+      dd["rpjp"] = ">200 years"
+
+    } else if (dd["rpjp"] <=1.) {
+
+      dd["rpjp"] = "<1 year"
+
+    } else {
+
+      dd["rpjp"] = dd["rpjp"].toString() + " years";
+
+    }
+
+    if (dd["rpwl"] < 1.) {
+
+       dd["rpwl"] = "<1 year"
+
+    } else {
+
+       dd["rpwl"] = dd["rpwl"].toString() + " years";
+
+    }
+
+    if (dd["rphs"] < 1.) {
+
+       dd["rphs"] = "<1 year"
+
+    } else {
+
+       dd["rphs"] = dd["rphs"].toString() + " years";
+
+    } 
+
+	  
+
+  }); 
+
+  svg.selectAll(".red.dot")
+
+      .data(sdata)
+
+    .enter().append("circle")
+
+      .attr("class", "red dot")
+
+      .attr("r", 3.5)
+
+      .attr("cx", xMap)
+
+      .attr("cy", yMap)
+
+      .style("fill", "red") 
+
+      .on("mouseover", function(dd) {
+
+          tooltip.transition()
+
+               .duration(200)
+
+               .style("opacity", .9);
+
+          tooltip.html(dd["date"] + "<br/>" + "Water level - " + (parseFloat(dd["waterlevel"])-0.50).toFixed(2) + "m" + "<br/>" + "Sig. wave height - " + (parseFloat(dd["waveheight"])+0.36).toFixed(2) + "m" + "<br/>" + "WL RP - " + dd["rpwl"] +  "<br/>" + "HS RP - " + dd["rphs"] +  "<br/>" + "Joint RP - " + dd["rpjp"]  )
+
+               .style("left", (d3.event.pageX + 5) + "px")
+
+               .style("top", (d3.event.pageY - 28) + "px");
+
+      })
+
+      .on("mouseout", function(dd) {
+
+          tooltip.transition()
+
+               .duration(500)
+
+               .style("opacity", 0);
+
+      })
+
+    // draw dots 
+
+});
+
+  // load overtopping points
+
+  d3.csv("rp100_overtoppts.csv", function(error, otpts) {
+
+  // change string (from CSV) into number format
+
+  otpts.forEach(function(dp) {    
+
+    dp["otwl"] = +dp["otwl"]+0.5;
+
+    dp["oths"] = +dp["oths"]-0.36;       
+
+  });
+
+    var myPts = svg.selectAll(".green.dot")
+
+      .data(otpts)
+
+      .enter().append("circle")
+
+      .attr("class", "green dot")
+
+      .attr("r", 7.0)
+
+      .attr("cx", xMapc)
+
+      .attr("cy", yMapc)
+
+      .style("fill", "green")
+
+      myPts.on("click", click);
+
+      function click(dp) {
+
+         if (dp["otwl"]-0.5 < 2.0) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim8-img");
+
+	    //showDivs(1)	 
+
+	  }
+
+	  if (dp["otwl"]-0.5 > 2.0 && dp["otwl"]-0.5 < 4.0) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim7-img");
+
+            //showDivs(2)
+
+	  }
+
+	  if (dp["otwl"]-0.5 > 4.0 && dp["otwl"]-0.5 < 5.0) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim6-img");
+
+	    //showDivs(3)
+
+	  }    
+
+	  if (dp["otwl"]-0.5 > 5.0 && dp["otwl"]-0.5 < 5.5) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim5-img");
+
+	    //showDivs(4)
+
+	  }
+
+	  if (dp["otwl"]-0.5 > 5.5 && dp["otwl"]-0.5 < 6.0) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim4-img");
+
+	    //showDivs(5)
+
+	  }
+
+	  if (dp["otwl"]-0.5 > 6.0 && dp["otwl"]-0.5 < 6.5) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim3-img");
+
+	    //showDivs(6)
+
+	  }
+
+	  if (dp["otwl"]-0.5 > 6.5 && dp["otwl"]-0.5 < 6.7) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim2-img");
+
+            //showDivs(7)
+
+	  }
+
+	  if (dp["otwl"]-0.5 > 6.7) {
+
+	    $("#imgBox").removeClass();
+
+            $("#imgBox").addClass("sim1-img");
+
+	    /*showDivs(8)*/
+
+	  }
+
+      };
+
+  });
+
+	     
+
+});
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
